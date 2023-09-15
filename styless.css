@@ -1,0 +1,47 @@
+
+body {
+    margin: 0cm;
+    
+  }
+  .cover {
+    height: 200px;
+    
+    background-image: url(https://cdn.glitch.global/845fe7b7-4114-4270-ae72-269aa4dd088d/rsz_nathan-da-silva-k-rkfqsm4l4-unsplash.jpg?v=1676859342647);
+    color: white;
+    
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color:rgba(0,0,0,0.6);
+    
+    
+  }
+  
+  .titulo{
+    font-size: 54px;
+    font-weight: 1000;
+  }
+  .cover-small{
+    height: 120px;
+    background-blend-mode: normal;
+  }
+  
+  .card-title{
+    background-position: center;
+    min-height: 2.5rem;
+  }
+  /* Agrega este código a tu archivo styless.css */
+
+.pi {
+    height: 147px; /* Altura fija para las imágenes con clase .pi */
+    width: 100%; /* Ancho 100% para ajustarse al contenedor */
+  }
+  
+  .card{
+    
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4p -1px rgba(0,0,0,0.06);
+    
+  }
+    
+  

@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5{
 .cover {
   height: 100vh;
   width: 100%;
-  background-image: url(https://cdn.glitch.global/845fe7b7-4114-4270-ae72-269aa4dd088d/rsz_nathan-da-silva-k-rkfqsm4l4-unsplash.jpg?v=1676859342647);
+  background-image: url("https://cdn.glitch.global/845fe7b7-4114-4270-ae72-269aa4dd088d/rsz_nathan-da-silva-k-rkfqsm4l4-unsplash.jpg?v=1676859342647");
   color: white;
   
   background-size: cover;

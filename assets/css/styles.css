@@ -348,13 +348,15 @@ body.dark-theme {
 
 /* Clase para cuando el usuario hace scroll */
 .header.scroll-header .header-bg {
+  -webkit-backdrop-filter: blur(30px); /* Prefijo para Safari */
   backdrop-filter: blur(30px); /* Desenfoque más fuerte */
 }
 
 .header.scroll-header {
-  background-color: rgba(255, 255, 255, 0.2); /* Fondo oscuro semi-transparente */
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
+
 
 
 /* Clase para mostrar el menú (sin interferir con scroll-header) */

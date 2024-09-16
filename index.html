@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/faviM.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Miguel Huizache</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <div class="header-bg"></div>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./assets/img/sonriepng.png" alt="Miguel Huizache Logo" class="nav__logo-img" height="10px" />
+        </a>
+        
+
+        <div class="nav__menu" id="nav-menu">
+          <span class="nav__title">Menú</span>
+
+          <h3 class="nav__name">Sonríe</h3>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Inicio</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Qué hacemos</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Proyectos</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="./assets/MiguelCV/index.html" class="nav__link">CV</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link nav__link-button">Contáctame</a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <!-- Theme button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <video autoplay muted loop class="home__video-background">
+          <source src="./assets/img/sonrievideo.mp4" type="video/mp4">
+          <!-- Puedes agregar un formato adicional si es necesario -->
+          Tu navegador no soporta videos HTML5.
+        </video>
+    
+        <div class="home__container container grid">
+          <h1 class="home__name" id="homeName">Sonríe Mx</h1>
+    
+          <div class="home__perfil">
+            <div class="home__image">
+              <img src="./assets/img/curved-arrow.svg" alt="" class="home__arrow" />
+              <img src="./assets/img/random-lines.svg" alt="" class="home__line" />
+              <div class="geometric-box"></div>
+            </div>
+          </div>
+    
+          <div class="home__info">
+            <p class="home__description" id="homeDescription">
+              <b>Somos una red de jóvenes</b>, comprometidos con mejorar el medio ambiente y nuestra comunidad. Nos enfocamos en formar agentes de cambio que inspiren y lideren iniciativas para crear un futuro mejor y más sostenible.
+            </p>
+          
+            <!-- Aquí los botones -->
+            <div class="home__action-buttons">
+              <a href="#" class="home__button" id="homeButton1">INVOLÚCRATE</a>
+              <a href="#" class="home__button home__button--ghost" id="homeButton2">PROYECTOS </a>
+            </div>
+          
+            <a href="#about" class="home__scroll">
+              <div class="home__scroll-box">
+                <i class="ri-arrow-down-s-line"></i>
+              </div>
+              <span class="home__scroll-text">Baja</span>
+            </a>
+          </div>
+          
+          
+          
+        </div>
+      </section>
+    </main>
+    
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <h2 class="section__title-1">
+            <span>Sobre Mí.</span>
+          </h2>
+
+          <div class="about__perfil">
+            <div class="about__image">
+              <img
+                src="./assets/img/MigParado.jpg"
+                alt="image"
+                class="about__img"
+              />
+
+              <div class="about__shadow"></div>
+
+              <div class="geometric-box"></div>
+
+              <img
+                src="./assets/img/random-lines.svg"
+                alt=""
+                class="about__line"
+              />
+              <div class="about__box"></div>
+            </div>
+          </div>
+
+          <div class="about__info">
+            <p class="about__description">
+              
+              Hola, soy un <b>Chavo que Inspira</b> becado de la <b>Fundación BBVA </b> 
+              con experiencia en el Desarrollo de
+              <b>Proyectos Sociales, Tecnológicos</b> y de  <b> Emprendimiento</b> como <a href="https://ruedatec.com"><b> RuedaTec</b></a> y <a href="https://www.instagram.com/sonrie_cortazargto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><b> Sonríe</b></a>.
+            </p>
+
+            <ul class="about__list">
+              <li class="about__item">
+                <b>Conozco sobre:</b> HTML, CSS, JavaScript, Git &
+                GitHub, Bootstrap, Dart, Flutter & Figma, Python, Java, Arduino.
+              </li>
+            </ul>
+
+            <div class="about__buttons">
+              <a href="./assets/MiguelCV/index.html" class="button">
+                <i class="ri-send-plane-line"></i> Ve a mi CV
+              </a>
+
+              <a
+                href="https://www.instagram.com/miguelhuizache_/"
+                target="_blank"
+                class="button__ghost"
+              >
+                <i class="ri-instagram-line"></i>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+      
+
+
+
+
+      
+      <!--==================== SERVICES ====================-->
+      <section class="services section">
+        <h2 class="section__title-2"><span>Me gusta</span></h2>
+
+        <div class="services__container container grid">
+
+          <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-layout-5-line"></i>
+              </div>
+
+              <h2 class="services__title">Diseño Web</h2>
+
+              <p class="services__description">
+                Hacer bonitos diseños dependiendo el gusto y las necesidades del usuario con interfaces eficientes, intuitivas y agradables de usar.
+              </p>
+            </div>
+          </article>
+
+          <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-layout-5-line"></i>
+              </div>
+
+              <h2 class="services__title">Desarrollo Web</h2>
+
+              <p class="services__description">
+                El desarrollar Webs de una manera personalizada totalmente adaptada a las especificaciones del usuario, diseñadas para brindar 
+                una experiencia fácil e intuitiva.
+              </p>
+            </div>
+          </article>
+          
+
+          <article class="services__card">
+            <div class="services__border"></div>
+
+            <div class="services__content">
+              <div class="services__icon">
+                <div class="services__box"></div>
+                <i class="ri-smartphone-line"></i>
+              </div>
+
+              <h2 class="services__title">Desarrollar Apps</h2>
+
+              <p class="services__description">
+                Diseñar y transformar ideas en proyectos como aplicacioes móviles en Flutter que sean funcionales, divertidas y útiles para el usuario.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h2 class="section__title-1">
+          <span>Proyectos.</span>
+        </h2>
+
+        <div class="projects__container container grid">
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                class="projects__img"
+                src="assets/img/23_1x_shots_so.png"
+                alt="image"
+              />
+
+              <a href="https://elclubdel100.com" class="projects__button button">
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Website</h3>
+              <h2 class="projects__title">Creando tu Negocio</h2>
+
+              <p class="projects__description">
+                Adquiere las habilidades necesarias para construir tu negocio desde cero, usando Redes Neuronales con Python, Excel, Power BI, Onshape y demás....
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://elclubdel100.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+              <a
+                href="https://elclubdel100.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                class="projects__img"
+                src="assets/img/337_1x_shots_so.png"
+                alt="image"
+              />
+
+              <a
+                href="https://www.ruedatec.com/
+              "
+                class="projects__button button"
+              >
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Website</h3>
+              <h2 class="projects__title">RuedaTec</h2>
+
+              <p class="projects__description">
+                Sitio web oficial de mi proyecto y negocio RuedaTec, donde podemos ver tanto sus especificaciones como también la posibilidad de comprarlo.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://www.ruedatec.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+              <a
+                href="https://www.ruedatec.com/"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                class="projects__img"
+                src="assets/img/467_1x_shots_so.png"
+                alt="image"
+              />
+
+              <a
+                href="https://miguelin777.github.io/RuedaTec/index.html
+              "
+                class="projects__button button"
+              >
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Website</h3>
+              <h2 class="projects__title">Historia de RuedaTec</h2>
+
+              <p class="projects__description">
+                Diseñé este sitio para enseñarles la historia de RuedaTec y así puedan ver que no hay imposibles cuando se trata de algo que nos gusta.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://miguelin777.github.io/RuedaTec/index.html"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+              <a
+                href="https://miguelin777.github.io/RuedaTec/index.html"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                class="projects__img"
+                src="assets/img/251_1x_shots_so.png"
+                alt="image"
+              />
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.miguelin.elbichosiono&hl=es_419
+              "
+                class="projects__button button"
+              >
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">App</h3>
+              <h2 class="projects__title">SIUU-NO El Bicho</h2>
+
+              <p class="projects__description">
+                Desarrollé esta App para cuando tengas una duda el Bicho, Cristiano Ronaldo te pueda contestar entre un "SIUU" o un "No" y te mande un meme relacionado a la respuesta.
+              </p>
+            </div>
+
+            <div class="projects__buttons">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.miguelin.elbichosiono&hl=es_419"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-github-line"></i> View
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.miguelin.elbichosiono&hl=es_419"
+                target="_blank"
+                class="projects__link"
+              >
+                <i class="ri-dribbble-line"></i> View
+              </a>
+            </div>
+          </article>
+
+          
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container grid">
+          <div class="contact__data">
+            <h2 class="section__title-2">
+              <span>Contáctame.</span>
+            </h2>
+
+            <p class="contact__description-1">
+              Puedes enviarme cualquier tipo de duda o mensaje y te responderé de vuelta.
+            </p>
+
+            <p class="contact__description-2">
+              Solo con tu <b>Nombre</b> y <b>Correo Electrónico</b> o directamente puedes
+              escribirme a mis Redes Sociales.
+            </p>
+
+            <div class="geometric-box"></div>
+          </div>
+
+          <div class="contact__mail">
+            <h2 class="contact__title">Envíame un mensaje</h2>
+
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__group">
+                <div class="contact__box">
+                  <input
+                    type="text"
+                    class="contact__input"
+                    id="name"
+                    name="user_name"
+                    required
+                    placeholder="First Name"
+                  />
+                  <label for="name" class="contact__label">Nombre</label>
+                </div>
+
+                <div class="contact__box">
+                  <input
+                    type="email"
+                    class="contact__input"
+                    id="email"
+                    name="user_email"
+                    required
+                    placeholder="Email Address"
+                  />
+                  <label for="email" class="contact__label">Correo Electrónico</label>
+                </div>
+              </div>
+
+              <div class="contact__box">
+                <input
+                  type="text"
+                  class="contact__input"
+                  id="subject"
+                  name="user_subject"
+                  required
+                  placeholder="Subject"
+                />
+                <label for="subject" class="contact__label">Sujeto</label>
+              </div>
+
+              <div class="contact__box contact__area">
+                <textarea
+                  name="user_message"
+                  id="message"
+                  class="contact__input"
+                  required
+                  placeholder="Message"
+                ></textarea>
+                <label for="message" class="contact__label">Mensaje</label>
+              </div>
+
+              <p class="contact__message" id="contact-message"></p>
+
+              <button type="submit" class="contact__button button">
+                <i class="ri-send-plane-line"></i> Enviar Mensaje
+              </button>
+            </form>
+          </div>
+
+          <div class="contact__social">
+            <img
+              src="./assets/img/curved-arrow.svg"
+              alt="image"
+              class="contact__social-arrow"
+            />
+
+            <div class="contact__social-data">
+              <div>
+                <p class="contact__social-description-1">
+                  Cuando quieras
+                </p>
+
+                <p class="contact__social-description-2">
+                  Escríbeme en mis Redes Sociales
+                </p>
+              </div>
+
+              <div class="contact__social-links">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100089298697289&mibextid=LQQJ4d"
+                  target="_blank"
+                  class="contact__social-link"
+                ><i class="ri-facebook-circle-line"></i></a>
+
+                <a
+                  href="https://www.instagram.com/miguelhuizache_/"
+                  target="_blank"
+                  class="contact__social-link"
+                ><i class="ri-instagram-line"></i></a>
+
+                <a
+                  href="https://wa.me/524111271872?text=Hola%20hola "
+                  target="_blank"
+                  class="contact__social-link"
+                ><i class="ri-whatsapp-line"></i></a>
+
+                <!-- <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="contact__social-link"
+                ><i class="ri-linkedin-box-line"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <ul class="footer__links">
+          <li><a href="#about" class="footer__link">Sobre Mí</a></li>
+          <li><a href="#projects" class="footer__link">Proyectos</a></li>
+          <li><a href="./assets/MiguelCV/index.html" class="footer__link">CV</a></li>
+        </ul>
+
+        <span class="footer__copy">
+          &#169; Hola amigos :)
+          <a href="">Sonríe </a>
+        </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-s-line"></i>
+    </a>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -230,9 +230,290 @@ body.dark-theme {
   }
 
   .home__button {
-    width: 70%;
+    width: 87%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Secciones más compactas */
+.custom-section {
+  padding: 6rem 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Sticky behavior para las primeras cuatro secciones */
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: inherit;
+  transition: z-index 0.4s ease, position 0.4s ease;
+}
+
+/* Clase para desactivar sticky cuando se llega a la siguiente sección */
+.no-sticky {
+  position: relative;
+  top: auto;
+}
+
+/* Ajustes de las franjas de color para cada sección */
+.section-one {
+  background-color: #1B8FCF;
+}
+/* Imagen en la parte superior izquierda, detrás del texto */
+/* Imagen en la parte superior izquierda, detrás del texto */
+
+
+.section-two {
+  background-color: #b95daa;
+}
+
+.section-three {
+  background-color: #8858e0;
+}
+
+.section-four {
+  background-color: #1f409b;
+}
+
+/* Grid y contenido más centrado */
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Estilos para el contenido de texto */
+.text-content {
+  padding: 2rem;
+}
+
+/* Remover efecto hover en las imágenes */
+/* Contenedor de la imagen en la sección 1 */
+.image-wrapper {
+  position: relative;
+  width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+  max-width: 500px; /* Ajusta este tamaño según el diseño */
+  height: 300px; /* Fija una altura para evitar que cambie al cambiar las imágenes */
+  margin: 0 auto; /* Centra el contenedor de la imagen */
+  overflow: hidden;
+}
+
+/* Ajuste de la imagen para que se ajuste al tamaño del contenedor */
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantiene la proporción de la imagen, ajustándola al contenedor */
+}
+
+.animated-image {
+  max-width: 100%;
+}
+
+/* Estilos para los títulos */
+.text-content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+/* Estilos para los títulos, primera y segunda parte */
+.title-part-one {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
+
+.title-part-two {
+  font-family: 'Nerko One', cursive;
+  font-size: 4.237rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* Estilos para el párrafo */
+.text-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.39rem;
+  line-height: 1.6;
+  text-align: start;
+  color: #fff;
+}
+
+/* Estilos para los botones */
+.section-button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+/* Botón de la primera sección - Transparente con borde */
+.section-one .section-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.section-one .section-button:hover {
+  background-color: #fff;
+  color: #5b8bf3;
+}
+
+/* Botón de la segunda sección */
+.section-two .section-button {
+  background-color: #d97fca;
+  border: none;
+}
+
+.section-two .section-button:hover {
+  background-color: #b95daa;
+}
+
+/* Botón de la tercera sección */
+.section-three .section-button {
+  background-color: #a57cf9;
+  border: none;
+}
+
+.section-three .section-button:hover {
+  background-color: #8858e0;
+}
+
+/* Botón de la cuarta sección */
+.section-four .section-button {
+  background-color: #2a4dc3;
+  border: none;
+}
+
+.section-four .section-button:hover {
+  background-color: #1f409b;
+}
+/* Responsividad */
+@media (max-width: 768px) {
+  .custom-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .text-content{
+    padding: 2rem 0rem;
+  }
+
+  .text-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .title-part-one {
+    font-size: 2rem;
+  }
+
+  .title-part-two {
+    font-size: 3rem;
+  }
+
+  .text-content p {
+    font-size: 1.3rem;
+  }
+
+  /* Botón en pantallas pequeñas */
+  .section-button {
+    display: block;
+    width: calc(100% - 40px); /* Deja un pequeño margen a los lados */
+    margin: 1.5rem auto; /* Centra el botón y agrega espacio */
+    font-size: 1rem;
+    padding: 0.75rem 0; /* Ajusta el padding para que el botón sea más alto */
+  }
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .custom-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .text-content h2 {
+    font-size: 2.5rem;
+  }
+
+  .title-part-one {
+    font-size: 2.3rem;
+  }
+
+  .title-part-two {
+    font-size: 3rem;
+  }
+
+  .text-content p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+
+  .section-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+/* Estilo para la imagen en la esquina inferior derecha */
+.bottom-right-image {
+  position: absolute;
+  bottom: 0; /* Posición en la parte inferior */
+  right: 0; /* Posición en la parte derecha */
+  width: auto; /* Mantén el tamaño original de la imagen */
+  height: auto; /* Mantén la proporción original */
+  z-index: 1; /* Asegura que esté detrás del contenido */
+  pointer-events: none; /* No permite que interfiera con clics u otros elementos */
+}
+
+/* Asegura que la sección sea el contenedor de referencia */
+/* .custom-section {
+  position: relative; /* Hace que la imagen sea relativa a la sección */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -516,6 +797,7 @@ body.dark-theme {
 .home__name {
   font-size: var(--biggest-font-size);
   text-align: center;
+  color: var(--white-color);
 }
 .home{
   height: 100vh;
@@ -613,7 +895,7 @@ body.dark-theme {
 
 .home__description {
   text-align: center;
-  color: var(--title-color);
+  color: var(--white-color);
   margin-bottom: 1.5rem;
 }
 
@@ -767,6 +1049,8 @@ body.dark-theme {
   -ms-transition: background-color .4s;
   -o-transition: background-color .4s;
   transition: background-color .4s;
+  position: relative;
+  z-index: 10;
 }
 .about__container {
   row-gap: 0;
@@ -793,7 +1077,7 @@ body.dark-theme {
   top: -2.5rem;
   right: -3.5rem;
   width: 150px;
-  height: 385px;
+  height: 305.1203px;
   background-color: var(--body-color);
   border-bottom: 4px solid var(--first-color);
   -webkit-transition: background-color 0.4s;
@@ -834,7 +1118,7 @@ body.dark-theme {
   
 }
 .about__description a{
-  color: var(--text-color);
+  color: var(--title-color);
   background: linear-gradient(
     90deg,
     hsla(214, 98%, 50%, 0.253),
@@ -842,7 +1126,9 @@ body.dark-theme {
   );
 }
 
-
+.services__description{
+  color: var(--title-color);
+}
 .about__description::after {
   content: "";
   background-color: var(--title-color);
@@ -892,7 +1178,11 @@ body.dark-theme {
 
 
 
-
+.services{
+  position: relative;
+  z-index: 10;
+  background-color: var(--body-color);
+}
 
 .services__card {
   position: relative;
@@ -903,7 +1193,7 @@ body.dark-theme {
   background-color: var(--body-color);
   border: 4px solid var(--black-color);
   padding: 6rem 1rem 3rem;
-  z-index: 5;
+  z-index: 10;
   position: relative;
   transition: background-color 0.4s, border 0.4s;
 }
@@ -952,6 +1242,8 @@ body.dark-theme {
 .projects {
   background-color: var(--container-color);
   transition: background-color 0.4s;
+  z-index: 11;
+  position: relative;
 }
 
 .projects__container {
@@ -1040,6 +1332,9 @@ body.dark-theme {
 /*=============== CONTACT ===============*/
 .contact {
   padding-bottom: 0;
+  position: relative;
+  z-index: 13;
+  background-color: var(--body-color);
 }
 
 .contact__container {
@@ -1248,6 +1543,8 @@ body.dark-theme {
 /*=============== FOOTER ===============*/
 .footer {
   background-color: var(--black-color);
+  position: relative;
+  z-index: 10;
 }
 
 .footer__container {
@@ -1319,7 +1616,7 @@ body.dark-theme {
 .show-scroll {
   bottom: 3rem;  
 }
-
+/* aqui va el css de lo*/
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width:340px) {
@@ -1344,6 +1641,17 @@ body.dark-theme {
   }
   .contact__data .section__title-2 {
     transform: translateX(0);
+  }
+}
+@media only screen and (min-width: 181px) and (max-width: 767px) {
+  .home__scroll-box {
+    
+    margin-top: 15px;
+  }
+  .home__container{
+    padding-top: 10rem;
+    margin: 17px;
+    font-size: 17px;
   }
 }
 
@@ -1385,6 +1693,10 @@ body.dark-theme {
   .dark-theme .contact__social-arrow {
     filter: none;
   }
+  .home__scroll-box {
+    
+    margin-top: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1395,6 +1707,11 @@ body.dark-theme {
   .projects__container {
     grid-template-columns: repeat(2, 350px);
   }
+  .home__scroll-box {
+    
+    margin-top: 20px;
+  }
+  
 }
 
 /* For large devices */
@@ -1406,6 +1723,7 @@ body.dark-theme {
   .section {
     padding-block: 7rem 2rem;
   }
+  
 
   .section__title-1::after,
   .section__title-2::after {

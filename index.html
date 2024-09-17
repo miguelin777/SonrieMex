@@ -14,6 +14,9 @@
       href="assets/img/faviM.png"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!--=============== REMIXICONS ===============-->
     <link
@@ -24,6 +27,7 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/styles2.css" />
 
     <title>Miguel Huizache</title>
   </head>
@@ -44,23 +48,23 @@
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Inicio</a>
+              <a href="#home" class="nav__link">INICIO</a>
             </li>
 
             <li class="nav__item">
-              <a href="#about" class="nav__link">Qué hacemos</a>
+              <a href="#about" class="nav__link">QUÉ HACEMOS</a>
             </li>
 
             <li class="nav__item">
-              <a href="#projects" class="nav__link">Proyectos</a>
+              <a href="#projects" class="nav__link">PROYECTOS</a>
             </li>
 
             <li class="nav__item">
-              <a href="./assets/MiguelCV/index.html" class="nav__link">CV</a>
+              <a href="./assets/MiguelCV/index.html" class="nav__link">DÓNDE ESTAMOS</a>
             </li>
 
             <li class="nav__item">
-              <a href="#contact" class="nav__link nav__link-button">Contáctame</a>
+              <a href="#contact" class="nav__link nav__link-button">ÚNETE</a>
             </li>
           </ul>
 
@@ -113,8 +117,9 @@
             <!-- Aquí los botones -->
             <div class="home__action-buttons">
               <a href="#" class="home__button" id="homeButton1">INVOLÚCRATE</a>
-              <a href="#" class="home__button home__button--ghost" id="homeButton2">PROYECTOS </a>
+              <a href="#projectss" class="home__button home__button--ghost" id="homeButton2">PROYECTOS</a>
             </div>
+            
           
             <a href="#about" class="home__scroll">
               <div class="home__scroll-box">
@@ -129,18 +134,134 @@
         </div>
       </section>
     </main>
+
+
+
+
+
+
+    <section class="custom-section section-one" data-scroll>
+      <div class="custom-container custom-grid">
+        <div class="text-content">
+          <h2>
+            <span class="title-part-one">PARTICIPA CON</span> 
+            <span class="title-part-two">NOSOTROS</span>
+          </h2>
+          <p>
+            Formar parte de Sonríe significa ayudar a construir un mundo más justo y sostenible. Únete a nuestros esfuerzos y sé parte del cambio.
+          </p>
+          <a href="#contact" class="section-button">Participa Ahora</a>
+        </div>
+        <div class="image-content">
+          <div class="image-wrapper">
+            <img id="switchable-image" src="./assets/img/2png-removebg-preview.png" alt="Join us" class="animated-image" />
+          </div>
+        </div>
+        <!-- Imagen PNG agregada a la esquina inferior derecha -->
+        <img src="./assets/img/Group-2-2-1024x276.png" alt="Decoración" class="bottom-right-image" />
+      </div>
+    </section>
+    
+    
+
+    <!--==================== SECCIÓN 2 ====================-->
+    <section class="custom-section section-two" data-scroll>
+      <div class="custom-container custom-grid">
+        <div class="image-content">
+          <div class="image-wrapper">
+            <img src="./assets/img/sun.png" alt="Environment" class="animated-image" />
+          </div>
+        </div>
+        <div class="text-content">
+          <h2>
+            <span class="title-part-one">CONOCE LAS</span> 
+            <span class="title-part-two">INICIATIVAS</span>
+          </h2>
+          <p>
+            Nuestras iniciativas están diseñadas para preservar y restaurar el medio ambiente. Creemos que cada pequeño esfuerzo cuenta.
+          </p>
+          <a href="#contact" class="section-button">Descubre Más</a>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SECCIÓN 3 ====================-->
+    <section class="custom-section section-three" data-scroll>
+      <div class="custom-container custom-grid">
+        <div class="text-content">
+          <h2>
+            <span class="title-part-one">CONOCE NUESTRA</span> 
+            <span class="title-part-two">MISIÓN</span>
+          </h2>
+          <p>
+            Nos enfocamos en proyectos sociales que mejoren la vida de las personas en nuestras comunidades. Participa y marca la diferencia.
+          </p>
+          <a href="#contact" class="section-button">Ver Proyectos</a>
+        </div>
+        <div class="image-content">
+          <div class="image-wrapper">
+            <img src="./assets/img/sun.png" alt="Social Projects" class="animated-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== SECCIÓN 4 ====================-->
+    <section class="custom-section section-four" id="final-section" data-scroll>
+      <div class="custom-container custom-grid">
+        <div class="image-content">
+          <div class="image-wrapper">
+            <img src="./assets/img/sun.png" alt="Future" class="animated-image" />
+          </div>
+        </div>
+        <div class="text-content">
+          <h2>
+            <span class="title-part-one">Mira hacia</span> 
+            <span class="title-part-two">EL FUTURO</span>
+          </h2>
+          <p>
+            Con nuestras acciones, estamos sembrando las semillas para un futuro más brillante y sostenible. Juntos podemos lograrlo.
+          </p>
+          <a href="#contact" class="section-button">Mira Más</a>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
       <!--==================== ABOUT ====================-->
       <section class="about section" id="about">
         <div class="about__container container grid">
           <h2 class="section__title-1">
-            <span>Sobre Mí.</span>
+            <span>Sé parte de esto.</span>
           </h2>
 
           <div class="about__perfil">
             <div class="about__image">
               <img
-                src="./assets/img/MigParado.jpg"
+                src="./assets/img/SonrieQR.jpg"
                 alt="image"
                 class="about__img"
               />
@@ -161,25 +282,28 @@
           <div class="about__info">
             <p class="about__description">
               
-              Hola, soy un <b>Chavo que Inspira</b> becado de la <b>Fundación BBVA </b> 
-              con experiencia en el Desarrollo de
-              <b>Proyectos Sociales, Tecnológicos</b> y de  <b> Emprendimiento</b> como <a href="https://ruedatec.com"><b> RuedaTec</b></a> y <a href="https://www.instagram.com/sonrie_cortazargto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><b> Sonríe</b></a>.
+              
+              Si te interesa la realización de <b>Proyectos sociales, Campañas de Donación, Torneos, Dinámicas</b>
+              o quieres ser el <a href="https://www.instagram.com/sonrie_cortazargto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><b> Líder</b></a> o  
+              <a href="https://www.instagram.com/sonrie_cortazargto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><b> Representante</b></a>
+              de <b>"Sonríe" en tu Comunidad</b>
+              estas en en <b>Lugar Correcto.</b>
             </p>
+            
 
             <ul class="about__list">
               <li class="about__item">
-                <b>Conozco sobre:</b> HTML, CSS, JavaScript, Git &
-                GitHub, Bootstrap, Dart, Flutter & Figma, Python, Java, Arduino.
+                Nuestra <b>misión</b> es <b>llegar a todo México</b> y sabemos que mediante con tu ayuda podremos <b>cumplir esta meta. </b> 
               </li>
             </ul>
 
             <div class="about__buttons">
-              <a href="./assets/MiguelCV/index.html" class="button">
-                <i class="ri-send-plane-line"></i> Ve a mi CV
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF45wJ-o1NG7utR22QReI8o83I6qxhMpJnznvYPood75BIlQ/viewform?pli=1" class="button">
+                <i class="ri-send-plane-line"></i> Involúcrate
               </a>
 
               <a
-                href="https://www.instagram.com/miguelhuizache_/"
+                href="https://www.instagram.com/sonrie_cortazargto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                 target="_blank"
                 class="button__ghost"
               >
@@ -190,6 +314,11 @@
           </div>
         </div>
       </section>
+
+      
+
+
+      
 
       
       
@@ -262,7 +391,7 @@
       <!--==================== PROJECTS ====================-->
       <section class="projects section" id="projects">
         <h2 class="section__title-1">
-          <span>Proyectos.</span>
+          <span>Súmate a las iniciativas.</span>
         </h2>
 
         <div class="projects__container container grid">
@@ -270,7 +399,7 @@
             <div class="projects__image">
               <img
                 class="projects__img"
-                src="assets/img/23_1x_shots_so.png"
+                src="assets/img/S2.jpg"
                 alt="image"
               />
 
@@ -305,17 +434,18 @@
               </a>
             </div>
           </article>
+          
 
           <article class="projects__card">
             <div class="projects__image">
               <img
                 class="projects__img"
-                src="assets/img/337_1x_shots_so.png"
+                src="assets/img/S2.jpg"
                 alt="image"
               />
 
               <a
-                href="https://www.ruedatec.com/
+                href="https://www.ruedatec.coSm/
               "
                 class="projects__button button"
               >
@@ -443,133 +573,11 @@
       </section>
 
       <!--==================== CONTACT ====================-->
-      <section class="contact section" id="contact">
-        <div class="contact__container grid">
-          <div class="contact__data">
-            <h2 class="section__title-2">
-              <span>Contáctame.</span>
-            </h2>
+      
+          
 
-            <p class="contact__description-1">
-              Puedes enviarme cualquier tipo de duda o mensaje y te responderé de vuelta.
-            </p>
-
-            <p class="contact__description-2">
-              Solo con tu <b>Nombre</b> y <b>Correo Electrónico</b> o directamente puedes
-              escribirme a mis Redes Sociales.
-            </p>
-
-            <div class="geometric-box"></div>
-          </div>
-
-          <div class="contact__mail">
-            <h2 class="contact__title">Envíame un mensaje</h2>
-
-            <form action="" class="contact__form" id="contact-form">
-              <div class="contact__group">
-                <div class="contact__box">
-                  <input
-                    type="text"
-                    class="contact__input"
-                    id="name"
-                    name="user_name"
-                    required
-                    placeholder="First Name"
-                  />
-                  <label for="name" class="contact__label">Nombre</label>
-                </div>
-
-                <div class="contact__box">
-                  <input
-                    type="email"
-                    class="contact__input"
-                    id="email"
-                    name="user_email"
-                    required
-                    placeholder="Email Address"
-                  />
-                  <label for="email" class="contact__label">Correo Electrónico</label>
-                </div>
-              </div>
-
-              <div class="contact__box">
-                <input
-                  type="text"
-                  class="contact__input"
-                  id="subject"
-                  name="user_subject"
-                  required
-                  placeholder="Subject"
-                />
-                <label for="subject" class="contact__label">Sujeto</label>
-              </div>
-
-              <div class="contact__box contact__area">
-                <textarea
-                  name="user_message"
-                  id="message"
-                  class="contact__input"
-                  required
-                  placeholder="Message"
-                ></textarea>
-                <label for="message" class="contact__label">Mensaje</label>
-              </div>
-
-              <p class="contact__message" id="contact-message"></p>
-
-              <button type="submit" class="contact__button button">
-                <i class="ri-send-plane-line"></i> Enviar Mensaje
-              </button>
-            </form>
-          </div>
-
-          <div class="contact__social">
-            <img
-              src="./assets/img/curved-arrow.svg"
-              alt="image"
-              class="contact__social-arrow"
-            />
-
-            <div class="contact__social-data">
-              <div>
-                <p class="contact__social-description-1">
-                  Cuando quieras
-                </p>
-
-                <p class="contact__social-description-2">
-                  Escríbeme en mis Redes Sociales
-                </p>
-              </div>
-
-              <div class="contact__social-links">
-                <a
-                  href="https://www.facebook.com/profile.php?id=100089298697289&mibextid=LQQJ4d"
-                  target="_blank"
-                  class="contact__social-link"
-                ><i class="ri-facebook-circle-line"></i></a>
-
-                <a
-                  href="https://www.instagram.com/miguelhuizache_/"
-                  target="_blank"
-                  class="contact__social-link"
-                ><i class="ri-instagram-line"></i></a>
-
-                <a
-                  href="https://wa.me/524111271872?text=Hola%20hola "
-                  target="_blank"
-                  class="contact__social-link"
-                ><i class="ri-whatsapp-line"></i></a>
-
-                <!-- <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  class="contact__social-link"
-                ><i class="ri-linkedin-box-line"></i></a> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <!-- <form action="" class="contact__form" id="contact-form"> -->
+              
       
     </main>
 

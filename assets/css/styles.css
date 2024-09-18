@@ -1158,6 +1158,9 @@ body.dark-theme {
 }
 
 
+.about, .services {
+  overflow-x: hidden; /* Aplicado solo a las secciones problemáticas */
+}
 
 
 
@@ -1237,6 +1240,471 @@ body.dark-theme {
   font-size: var(--h2-font-size);
   margin-bottom: 1.25rem;
 }
+
+
+
+
+
+
+
+/*=============== SOCIAL BENEFITS SECTION ===============*/
+.sonrie-title-image {
+  width: auto; /* Ajusta el ancho según tu preferencia */
+  height: 50px; /* Ajusta la altura según sea necesario */
+  vertical-align: middle; /* Alinea la imagen con el texto */
+}
+.section__title-22 {
+  display: flex; /* Hace que el texto y la imagen estén en la misma línea */
+  align-items: center; /* Alinea verticalmente el texto y la imagen */
+  justify-content: center; /* Centra el contenido */
+  padding-bottom: 5.1351203rem;
+  
+}
+
+.section__title-22 span {
+  font-size: 2.5rem; /* Ajusta el tamaño según lo que necesites */
+  font-weight: bold; /* Si deseas que el texto sea más grueso */
+  margin-right: 0.5rem; /* Añade un pequeño espacio entre el texto y la imagen *//* Añade un pequeño espacio entre el texto y la imagen */
+}
+
+.sonrie-title-image {
+  width: auto;
+  height: 50px; /* Ajusta la altura de la imagen según sea necesario */
+  vertical-align: middle; /* Asegura que la imagen se alinee con el texto */
+}
+
+
+.social-benefits {
+  background-color: #f1f1f1;
+  padding: 6rem 2rem;
+  position: relative;
+  z-index: 15;
+  text-align: center;
+}
+
+.social-benefits__container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  z-index: 15;
+  padding-top: 33px;
+}
+
+.social-benefit {
+  position: relative;
+  width: 600px; /* Aumenta el ancho para pantallas grandes */
+  overflow: hidden;
+  z-index: 15;
+  padding-bottom: 5rem;
+}
+
+.social-benefit__image-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.social-benefit__image {
+  width: 100%;
+  height: 450px; /* Ajustada a 450px en computadoras */
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.social-benefit__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px; /* Ajustada a 450px en computadoras */
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  z-index: 12;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-benefit__title {
+  font-size: 1.8rem;
+  color: #1B8FCF;
+  font-weight: bold;
+}
+
+.social-benefit__text p {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
+.social-benefit__button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: var(--normal-font-size);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 20;
+}
+
+.social-benefit__button:hover {
+  background-color: var(--first-color-alt);
+}
+
+/* Centrar el título y ponerlo en azul */
+.section__title {
+  font-size: 2.5rem;
+  color: #1B8FCF;
+  margin-bottom: 4rem; /* Más espacio debajo del título */
+}
+
+/* Responsivo para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .social-benefits {
+    padding: 3rem 0;
+    
+  }
+
+  .social-benefits__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .social-benefit {
+    width: 100%;
+  }
+
+  .social-benefit__image {
+    height: 400px; /* Ajuste en pantallas pequeñas */
+  }
+
+  .social-benefit__text {
+    height: 400px;
+  }
+
+  .social-benefit__button {
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor general */
+/* Contenedor general sin espacio entre las secciones */
+.info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  
+  margin: 0; /* Elimina margen para que no haya separación con otras secciones */
+  padding: 0; /* Elimina padding para que no haya espacio extra */
+  position: relative;
+  background-color: #f1f1f1; /* Fondo para toda la sección */
+  z-index: 50; /* Z-index alto para asegurar que todo sea visible */
+  overflow: hidden; /* Evitar que los elementos se salgan del contenedor */
+  min-height: 600px; /* Altura mínima para la sección */
+}
+.reverse{
+  padding-top: 100px;
+  position: relative;
+  z-index: 52;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Ajustes para que el fondo no se vea interrumpido */
+.info-section {
+  padding-top: 4rem; /* Espacio entre secciones */
+  background-color: #f1f1f1; /* Asegura que el fondo se vea */
+  position: relative; /* Para asegurar que el z-index funcione */
+  z-index: 10; /* Asegúrate de que esté por encima de las secciones anteriores */
+}
+
+/* Sección sticky que puede estar interfiriendo */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Imagen ocupando el 40% */
+.info-image {
+  width: 40%;
+  z-index: 50;
+}
+
+.info-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bloques de información a la derecha */
+.info-content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  z-index: 51; /* Un z-index alto para asegurar que los bloques de información se vean */
+  justify-content: space-between; /* Asegura que los bloques se distribuyan */
+}
+
+/* Bloque superior con 2/3 del espacio */
+.info-content__main {
+  flex: 2;
+  background-color: #f1f1f1; /* Color de fondo */
+  padding: 3rem 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 51;
+  position: relative;
+}
+
+.info-content__main h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000; /* Texto negro */
+}
+
+.info-content__main p {
+  font-size: 1.2rem;
+  color: #000; /* Texto negro */
+}
+
+
+/* Bloque inferior con 1/3 del espacio y línea media recta */
+.info-content__secondary {
+  flex: 1;
+  background-color: #1b8fcf; /* Fondo azul */
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  position: relative;
+  padding: 3rem 7rem;
+  z-index: 51;
+  clip-path: polygon(0 0, 100% 30px, 100% 100%, 0% 100%); /* Media recta */
+}
+
+/* Responsivo para móviles: Imagen debajo del contenido */
+@media screen and (max-width: 768px) {
+  .info-container {
+    flex-direction: column-reverse; /* Cambia el orden para poner la imagen debajo */
+  }
+  .reverse{
+    flex-direction: column ;
+  }
+  .info-content__main {
+    flex: 2;
+    background-color: #f1f1f1; /* Color de fondo */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 51;
+    position: relative;
+  }
+  .info-content__secondary {
+    flex: 1;
+    background-color: #1b8fcf; /* Fondo azul */
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+    padding: 3rem;
+    z-index: 51;
+    clip-path: polygon(0 0, 100% 30px, 100% 100%, 0% 100%); /* Media recta */
+  }
+  
+  .info-image {
+    width: 100%; /* Imagen ocupa todo el ancho en móviles */
+    height: 300px; /* Ajusta la altura en móviles */
+  }
+
+  .info-content {
+    width: 100%; /* Los bloques ocupan todo el ancho */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============== CUSTOM BANNER ===============*/
+.custom-banner {
+  position: relative;
+  background-color:#4f87c0;
+  padding-top: 4rem; /* Mantén el padding alto para la sección */
+  height: 700px; /* Mantén la altura del banner */
+  overflow: hidden; /* Para que la imagen no desborde */
+  z-index: 10; /* Asegura que esté visible */
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+  justify-content: space-between; /* Espacio entre el texto y la imagen */
+}
+
+.custom-banner__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Alinea el texto a la izquierda */
+  max-width: 45%; /* Limita el ancho del texto */
+  z-index: 12;
+  position: relative;
+  padding: 20px;
+  padding-right: 2rem; /* Espacio entre el texto y la imagen */
+}
+
+.custom-banner__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.custom-banner__description {
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.custom-banner__button {
+  padding: 1rem 2rem; /* Botón más grande */
+  background-color: var(--first-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: var(--normal-font-size);
+  transition: background-color 0.3s ease;
+}
+
+.custom-banner__button:hover {
+  background-color: var(--first-color-alt);
+}
+
+/* Imagen del banner */
+.custom-banner__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; /* Ajusta para que ocupe lo que queda de la pantalla */
+  height: 100%;
+  z-index: 9; /* Imagen debajo del texto */
+  overflow: hidden; /* Evita que la imagen desborde */
+}
+
+.custom-banner__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.85; /* Ajusta la transparencia si deseas que sea más visible o más sutil */
+}
+
+/* Responsivo para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .custom-banner {
+    flex-direction: column;
+    height: auto; /* Permitir que el banner se ajuste a la altura del contenido */
+  }
+
+  .custom-banner__content {
+    max-width: 90%; /* Limita el ancho del texto en pantallas pequeñas */
+    text-align: center;
+    margin-bottom: 2rem; /* Añade margen inferior para evitar que el texto choque con la imagen */
+    padding-right: 0; /* Quita el espacio lateral en pantallas pequeñas */
+  }
+
+  .custom-banner__image {
+    position: relative;
+    width: 100%; /* La imagen ocupará el 100% de la pantalla en móviles */
+    height: auto;
+    z-index: 1;
+  }
+
+  .custom-banner__image img {
+    height: auto;
+  }
+
+  .custom-banner__button {
+    width: 100%; /* El botón ocupa todo el ancho en pantallas pequeñas */
+    padding: 0.75rem; /* Ajusta el tamaño del botón */
+  }
+}
+
+
+
+
+
+
+
 
 /*=============== PROJECTS ===============*/
 .projects {

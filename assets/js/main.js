@@ -299,3 +299,28 @@ document.addEventListener("DOMContentLoaded", function () {
       isImage1 = !isImage1; // Alterna entre las dos imágenes
   }, 300); // Intervalo de 2 segundos
 });
+
+document.querySelectorAll('.social-benefit__button').forEach(button => {
+  button.addEventListener('click', function() {
+    const imageWrapper = this.parentElement;
+    const image = imageWrapper.querySelector('.social-benefit__image');
+    const text = imageWrapper.querySelector('.social-benefit__text');
+
+    // Verifica si el texto está oculto y desplázalo suavemente hacia abajo
+    if (text.style.opacity === '0' || text.style.opacity === '') {
+      text.style.opacity = '1';
+      text.style.transform = 'translateY(0)'; // Desplazamos el texto suavemente hacia abajo
+      image.style.opacity = '0'; // Ocultamos la imagen
+      this.textContent = 'Volver'; // Cambiamos el texto del botón a "Volver"
+    } else {
+      text.style.opacity = '0';
+      text.style.transform = 'translateY(-100%)'; // Retornamos el texto a la parte superior
+      image.style.opacity = '1'; // Mostramos de nuevo la imagen
+      this.textContent = 'Descubre más'; // Cambiamos de nuevo el texto a "Descubre más"
+    }
+  });
+});
+
+
+
+

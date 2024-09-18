@@ -2,35 +2,93 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/sonriecarita.png"
-      type="image/x-icon"
-    />
+    <!-- Descripción para SEO -->
+    <meta name="description" content="Sonríe es una red de jóvenes comprometidos con mejorar el medio ambiente y la comunidad a través de iniciativas sociales y ambientales.">
+    
+    <!-- Palabras clave para SEO -->
+    <meta name="keywords" content="sonríe, jóvenes, medio ambiente, comunidad, proyectos sociales, donaciones, iniciativas, sostenibilidad">
+    
+    <!-- Meta para redes sociales: Facebook Open Graph -->
+    <meta property="og:title" content="Sonríe - Red de jóvenes comprometidos con el medio ambiente y la comunidad">
+    <meta property="og:description" content="Únete a Sonríe, una red de jóvenes Mexicana trabajando para un mundo más sostenible.">
+    <meta property="og:image" content="assets/img/sonriecarita.png">
+    <meta property="og:url" content="https://miguelin777.github.io/SonrieMex/">
+    <meta property="og:type" content="website">
+
+    <!-- Meta para redes sociales: Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sonríe - Red de jóvenes comprometidos">
+    <meta name="twitter:description" content="Únete a Sonríe, una red de jóvenes trabajando para un mundo más sostenible.">
+    <meta name="twitter:image" content="assets/img/sonriecarita.png">
+    
+    <!-- Preconexión para acelerar la carga de fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload para cargar las fuentes de manera eficiente -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
+    
+    <!-- Favicon y iconos para dispositivos -->
+    <link rel="shortcut icon" href="assets/img/sonriecarita.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/sonriecarita-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/sonriecarita-152x152.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/sonriecarita-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/sonriecarita-76x76.png">
+    
+    <!-- Manifesto para PWA (Progressive Web App) -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Color de la barra de navegación móvil -->
+    <meta name="theme-color" content="#1b8fcf">
+    
+    <!-- Meta etiquetas de verificación para Google y Bing -->
+    <meta name="google-site-verification" content="your-verification-code"> <!-- Verificación de Google Search Console -->
+    <meta name="bing-site-verification" content="your-verification-code"> <!-- Verificación de Bing Webmaster Tools -->
+
+    <!-- Control de cache -->
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+
+    <!-- Content Security Policy (CSP) para mejorar la seguridad -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net;">
+    
+    <!-- Meta para la compatibilidad con idioma -->
+    <meta name="language" content="es-MX">
+
+    <!-- Preconexión de DNS para mejorar la carga -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
 
     <!--=============== REMIXICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
-      crossorigin=""
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css">
+    
+    <!-- Optimización para iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Permitir que el sitio se vea como una app a pantalla completa en iOS -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Ajustar el estilo de la barra de estado en iOS -->
+    <meta name="apple-mobile-web-app-title" content="Sonríe"> <!-- Título cuando el sitio está guardado en la pantalla de inicio de iOS -->
+    <link rel="apple-touch-icon-precomposed" href="assets/img/sonriecarita-180x180.png"> <!-- Icono para la pantalla de inicio de iOS -->
 
+    <!-- Fix para evitar zoom en formularios en Safari iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Desactivar detección de números de teléfono en iOS -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Meta adicional para iOS Safari -->
+    <meta name="apple-mobile-web-app-orientations" content="portrait"> <!-- Permitir solo el modo retrato en la app web -->
+    <meta name="apple-mobile-web-app-orientations" content="landscape"> <!-- También permitir modo apaisado si es necesario -->
+    
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="./assets/css/styles2.css" />
 
     <title>Sonríe</title>
-  </head>
+</head>
+
+
+
+
   <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
@@ -542,8 +600,9 @@
           <div class="social-benefit__image-wrapper">
             <img src="assets/img/sonrieyen.jpg" alt="Beneficio 1" class="social-benefit__image" />
             <div class="social-benefit__text">
-              <h3 class="social-benefit__title">Vivienda Progresiva</h3>
-              <p>Es progresiva, flexible y accesible para las familias de los asentamientos populares. La vivienda progresiva ofrece una respuesta evolutiva, dando a las familias la posibilidad de ampliarla y mejorarla, integrando distintos servicios, de acuerdo a sus necesidades.</p>
+              <h3 class="social-benefit__title">Ser Mejor Persona</h3>
+              <p>Ayudar a los demás no solo beneficia a quienes reciben, sino que también te convierte en una mejor persona,
+                promoviendo empatía, solidaridad y crecimiento personal.</p>
             </div>
             <button class="social-benefit__button">Descubre más</button>
           </div>
@@ -553,14 +612,17 @@
           <div class="social-benefit__image-wrapper">
             <img src="assets/img/sonriet.jpg" alt="Beneficio 2" class="social-benefit__image" />
             <div class="social-benefit__text">
-              <h3 class="social-benefit__title">Mejora de Servicios</h3>
-              <p>Las mejoras en los servicios públicos aseguran acceso a agua potable, electricidad y saneamiento para las comunidades más necesitadas, mejorando su calidad de vida y desarrollo.</p>
+              <h3 class="social-benefit__title">Cambia tus ideas</h3>
+              <p>Valorar la vida desde una nueva perspectiva. Ayudar a otros puede cambiar por completo cómo vemos nuestro día a día,
+                dándonos una apreciación más profunda por todo lo que tenemos.</p>
             </div>
             <button class="social-benefit__button">Conoce más</button>
           </div>
         </div>
       </div>
     </section>
+    
+  
 
     
 
@@ -621,7 +683,7 @@
     
         <!-- Imagen ocupando el 40% -->
         <div class="info-image">
-          <img src="assets/img/niño.png" alt="Descripción de la imagen">
+          <img src="assets/img/sonrienat.jpeg" alt="Descripción de la imagen">
         </div>
       </div>
     </section>
@@ -629,64 +691,62 @@
 
 
     <section class="services section">
-      <h2 class="section__title-2"><span>Me gusta</span></h2>
-
+      <h2 class="section__title-2"><span>Nuestras Iniciativas</span></h2>
+    
       <div class="services__container container grid">
-
         <article class="services__card">
           <div class="services__border"></div>
-
+    
           <div class="services__content">
             <div class="services__icon">
               <div class="services__box"></div>
-              <i class="ri-layout-5-line"></i>
+              <i class="ri-leaf-line"></i>
             </div>
-
-            <h2 class="services__title">Diseño Web</h2>
-
+    
+            <h2 class="services__title">Cuidado del Medio Ambiente</h2>
+    
             <p class="services__description">
-              Hacer bonitos diseños dependiendo el gusto y las necesidades del usuario con interfaces eficientes, intuitivas y agradables de usar.
+              A través de la reforestación, la limpieza de áreas naturales y campañas de reciclaje, nos dedicamos a proteger el medio ambiente y a crear conciencia sobre su importancia.
             </p>
           </div>
         </article>
-
+    
         <article class="services__card">
           <div class="services__border"></div>
-
+    
           <div class="services__content">
             <div class="services__icon">
               <div class="services__box"></div>
-              <i class="ri-layout-5-line"></i>
+              <i class="ri-hand-heart-line"></i>
             </div>
-
-            <h2 class="services__title">Desarrollo Web</h2>
-
+    
+            <h2 class="services__title">Apoyo Comunitario</h2>
+    
             <p class="services__description">
-              El desarrollar Webs de una manera personalizada totalmente adaptada a las especificaciones del usuario, diseñadas para brindar 
-              una experiencia fácil e intuitiva.
+              Organizamos donaciones de ropa, juguetes y alimentos para las personas más vulnerables, promoviendo la empatía y la solidaridad en nuestra comunidad.
             </p>
           </div>
         </article>
-        
-
+    
         <article class="services__card">
           <div class="services__border"></div>
-
+    
           <div class="services__content">
             <div class="services__icon">
               <div class="services__box"></div>
-              <i class="ri-smartphone-line"></i>
+              <i class="ri-team-line"></i>
             </div>
-
-            <h2 class="services__title">Desarrollar Apps</h2>
-
+    
+            <h2 class="services__title">Formación de Agentes de Cambio</h2>
+    
             <p class="services__description">
-              Diseñar y transformar ideas en proyectos como aplicacioes móviles en Flutter que sean funcionales, divertidas y útiles para el usuario.
+              Nos enfocamos en formar jóvenes comprometidos, enseñándoles a ser líderes en iniciativas sociales y ambientales, impulsando el cambio desde las bases de la comunidad.
             </p>
           </div>
         </article>
       </div>
     </section>
+    
     
     
     

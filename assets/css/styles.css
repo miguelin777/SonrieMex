@@ -1249,30 +1249,23 @@ body.dark-theme {
 
 /*=============== SOCIAL BENEFITS SECTION ===============*/
 .sonrie-title-image {
-  width: auto; /* Ajusta el ancho según tu preferencia */
-  height: 50px; /* Ajusta la altura según sea necesario */
-  vertical-align: middle; /* Alinea la imagen con el texto */
+  width: auto;
+  height: 50px; 
+  vertical-align: middle;
 }
+
 .section__title-22 {
-  display: flex; /* Hace que el texto y la imagen estén en la misma línea */
-  align-items: center; /* Alinea verticalmente el texto y la imagen */
-  justify-content: center; /* Centra el contenido */
-  padding-bottom: 5.1351203rem;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5.135rem;
 }
 
 .section__title-22 span {
-  font-size: 2.5rem; /* Ajusta el tamaño según lo que necesites */
-  font-weight: bold; /* Si deseas que el texto sea más grueso */
-  margin-right: 0.5rem; /* Añade un pequeño espacio entre el texto y la imagen *//* Añade un pequeño espacio entre el texto y la imagen */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
 }
-
-.sonrie-title-image {
-  width: auto;
-  height: 50px; /* Ajusta la altura de la imagen según sea necesario */
-  vertical-align: middle; /* Asegura que la imagen se alinee con el texto */
-}
-
 
 .social-benefits {
   background-color: #f1f1f1;
@@ -1293,7 +1286,7 @@ body.dark-theme {
 
 .social-benefit {
   position: relative;
-  width: 600px; /* Aumenta el ancho para pantallas grandes */
+  width: 600px;
   overflow: hidden;
   z-index: 15;
   padding-bottom: 5rem;
@@ -1312,7 +1305,7 @@ body.dark-theme {
 
 .social-benefit__image {
   width: 100%;
-  height: 450px; /* Ajustada a 450px en computadoras */
+  height: 450px; 
   object-fit: cover;
   display: block;
   transition: opacity 0.3s ease;
@@ -1323,7 +1316,7 @@ body.dark-theme {
   top: 0;
   left: 0;
   width: 100%;
-  height: 450px; /* Ajustada a 450px en computadoras */
+  height: 450px;
   background-color: rgba(255, 255, 255, 0.95);
   color: #000;
   display: flex;
@@ -1369,18 +1362,22 @@ body.dark-theme {
   background-color: var(--first-color-alt);
 }
 
+/* Cambios en el botón para que no se pierda en móviles */
+.social-benefit__button.social-benefit__button--active {
+  background-color: #1B8FCF;
+}
+
 /* Centrar el título y ponerlo en azul */
 .section__title {
   font-size: 2.5rem;
   color: #1B8FCF;
-  margin-bottom: 4rem; /* Más espacio debajo del título */
+  margin-bottom: 4rem;
 }
 
 /* Responsivo para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
   .social-benefits {
     padding: 3rem 0;
-    
   }
 
   .social-benefits__container {
@@ -1394,7 +1391,7 @@ body.dark-theme {
   }
 
   .social-benefit__image {
-    height: 400px; /* Ajuste en pantallas pequeñas */
+    height: 400px;
   }
 
   .social-benefit__text {
@@ -1404,6 +1401,17 @@ body.dark-theme {
   .social-benefit__button {
     padding: 0.75rem 1.25rem;
   }
+}
+
+/* Animación adicional para hacer que el texto aparezca correctamente */
+.social-benefit__text.show-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ajustes para que el botón cambie correctamente en móviles */
+.social-benefit__button.social-benefit__button--active:hover {
+  background-color: var(--first-color-alt);
 }
 
 
@@ -1537,6 +1545,7 @@ body.dark-theme {
   clip-path: polygon(0 0, 100% 30px, 100% 100%, 0% 100%); /* Media recta */
 }
 
+
 /* Responsivo para móviles: Imagen debajo del contenido */
 @media screen and (max-width: 768px) {
   .info-container {
@@ -1569,10 +1578,13 @@ body.dark-theme {
     z-index: 51;
     clip-path: polygon(0 0, 100% 30px, 100% 100%, 0% 100%); /* Media recta */
   }
+  .reverse{
+    padding-top: 29.13px;
+  }
   
   .info-image {
     width: 100%; /* Imagen ocupa todo el ancho en móviles */
-    height: 300px; /* Ajusta la altura en móviles */
+    height: 395.3px; /* Ajusta la altura en móviles */
   }
 
   .info-content {

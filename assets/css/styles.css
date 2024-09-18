@@ -279,22 +279,26 @@ body.dark-theme {
 
 /* Ajustes de las franjas de color para cada sección */
 .section-one {
-  background-color: #1B8FCF;
+  background-color: transparent; /* Elimina el fondo azul */
+  background-image: url('./../img/bg4.png'); /* Agrega la imagen de fondo */
 }
 /* Imagen en la parte superior izquierda, detrás del texto */
 /* Imagen en la parte superior izquierda, detrás del texto */
 
 
 .section-two {
-  background-color: #b95daa;
+  background-color: transparent; /* Elimina el fondo azul */
+  background-image: url('./../img/bg2.png'); /* Agrega la imagen de fondo */
 }
 
 .section-three {
-  background-color: #8858e0;
+  background-color: transparent; /* Elimina el fondo azul */
+  background-image: url('./../img/bg5.png'); /* Agrega la imagen de fondo */
 }
 
 .section-four {
-  background-color: #1f409b;
+  background-color: transparent; /* Elimina el fondo azul */
+  background-image: url('./../img/bg2.png'); /* Agrega la imagen de fondo */
 }
 
 /* Grid y contenido más centrado */

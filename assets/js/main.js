@@ -59,7 +59,7 @@ function changeContent() {
 }
 
 // Cambia el contenido cada 3 segundos
-setInterval(changeContent, 3013);
+setInterval(changeContent, 7013);
 
 
 
@@ -324,3 +324,26 @@ document.querySelectorAll('.social-benefit__button').forEach(button => {
 
 
 
+document.addEventListener('scroll', function() {
+  const sections = document.querySelectorAll('.section-one, .section-two, .section-three, .section-four');
+  const lastSection = document.querySelector('.section-four');
+  const scrollPosition = window.scrollY;
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    // Si la sección ya no está visible (debajo del scroll), se le quita el sticky
+    if (scrollPosition > sectionTop + sectionHeight) {
+      section.classList.add('no-sticky');
+    } else {
+      section.classList.remove('no-sticky');
+    }
+  });
+
+  // Detectar cuando se pasa de la última sección para desactivar completamente el sticky
+  const lastSectionBottom = lastSection.offsetTop + lastSection.offsetHeight;
+  if (scrollPosition > lastSectionBottom) {
+    sections.forEach((section) => section.classList.add('no-sticky'));
+  }
+});

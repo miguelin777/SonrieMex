@@ -321,29 +321,42 @@ document.querySelectorAll('.social-benefit__button').forEach(button => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const stickySections = document.querySelectorAll('.section-one, .section-two, .section-three');
+  const sectionFour = document.querySelector('.section-four'); // Seleccionamos la sección 4
+  const stickyWrapper = document.querySelector('.sticky-wrapper'); // El wrapper que envuelve las secciones
+  const sectionFourOffset = sectionFour.offsetTop; // Posición de la parte superior de la sección 4
+  
+  let wrapperHeight = stickyWrapper.offsetHeight; // Almacenar la altura inicial del wrapper
+  let isStickyDisabled = false; // Bandera para controlar el estado sticky
 
+  // Función que detecta el scroll
+  function handleScroll() {
+    const scrollPosition = window.scrollY;
 
-
-document.addEventListener('scroll', function() {
-  const sections = document.querySelectorAll('.section-one, .section-two, .section-three, .section-four');
-  const lastSection = document.querySelector('.section-four');
-  const scrollPosition = window.scrollY;
-
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
-
-    // Si la sección ya no está visible (debajo del scroll), se le quita el sticky
-    if (scrollPosition > sectionTop + sectionHeight) {
-      section.classList.add('no-sticky');
+    // Si el scroll ha pasado la parte superior de la sección 4
+    if (scrollPosition >= sectionFourOffset) {
+      if (!isStickyDisabled) {
+        // Desactivar sticky y mantener la altura fija
+        stickySections.forEach((section) => {
+          section.style.position = 'relative'; // Fijar la posición como relativa para detener el sticky
+        });
+        stickyWrapper.style.height = `${wrapperHeight}px`; // Mantener la altura del contenedor sin brinco
+        isStickyDisabled = true; // Desactivar más cambios de sticky
+      }
     } else {
-      section.classList.remove('no-sticky');
+      if (isStickyDisabled) {
+        // Restaurar sticky si el usuario ha subido
+        stickySections.forEach((section) => {
+          section.style.position = 'sticky'; // Restaurar sticky en secciones anteriores
+          section.style.top = '0'; // Resetear la posición
+        });
+        stickyWrapper.style.height = 'auto'; // Ajustar la altura de forma dinámica
+        isStickyDisabled = false; // Permitir cambios nuevamente
+      }
     }
-  });
-
-  // Detectar cuando se pasa de la última sección para desactivar completamente el sticky
-  const lastSectionBottom = lastSection.offsetTop + lastSection.offsetHeight;
-  if (scrollPosition > lastSectionBottom) {
-    sections.forEach((section) => section.classList.add('no-sticky'));
   }
+
+  // Detectamos el evento de scroll
+  window.addEventListener('scroll', handleScroll);
 });

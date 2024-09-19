@@ -250,6 +250,8 @@ body.dark-theme {
 
 
 /* Secciones más compactas */
+/* Secciones más compactas */
+/* Secciones más compactas */
 .custom-section {
   padding: 6rem 0;
   min-height: 80vh;
@@ -259,7 +261,9 @@ body.dark-theme {
   overflow: hidden;
 }
 
-/* Sticky behavior para las primeras cuatro secciones */
+/* Sticky sections */
+/* Sticky sections */
+/* Secciones sticky */
 .section-one,
 .section-two,
 .section-three,
@@ -271,11 +275,16 @@ body.dark-theme {
   transition: z-index 0.4s ease, position 0.4s ease;
 }
 
-/* Clase para desactivar sticky cuando se llega a la siguiente sección */
+/* Clase para desactivar sticky */
 .no-sticky {
-  position: relative;
+  position: relative; /* Resetea el sticky */
   top: auto;
+  z-index: 1; /* Asegura que otras secciones puedan aparecer encima */
 }
+
+/* Asegúrate de que no haya otras transiciones conflictivas */
+
+
 
 /* Ajustes de las franjas de color para cada sección */
 .section-one {
@@ -504,6 +513,11 @@ body.dark-theme {
   z-index: 1; /* Asegura que esté detrás del contenido */
   pointer-events: none; /* No permite que interfiera con clics u otros elementos */
 }
+.section-one, .section-two, .section-three, .section-four {
+  will-change: position;
+  transition: position 0.3s ease, z-index 0.3s ease; /* Transición suave */
+}
+
 
 /* Asegura que la sección sea el contenedor de referencia */
 /* .custom-section {
@@ -1683,7 +1697,6 @@ body.dark-theme {
   object-position: center;
   opacity: 0.85; /* Ajusta la transparencia si deseas que sea más visible o más sutil */
 }
-
 /* Responsivo para pantallas más pequeñas */
 @media screen and (max-width: 768px) {
   .custom-banner {

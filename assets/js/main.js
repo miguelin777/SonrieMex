@@ -9,31 +9,31 @@ const info = [
     description: "Somos una red de jóvenes, comprometidos con mejorar el medio ambiente y nuestra comunidad. Nos enfocamos en formar agentes de cambio que inspiren y lideren iniciativas para crear un futuro mejor y más sostenible.",
     button1: "ÚNETE A LA CAUSA",
     button2: "VER IMPACTO",
-    link1: "#unete", // Enlace para el primer botón
-    link2: "#impacto" // Enlace para el segundo botón
+    link1: "#projects", // Enlace para el primer botón
+    link2: "#projects" // Enlace para el segundo botón
   },
   {
     name: "Ayuda a otros",
     description: "Inspira a otros con actos de bondad. Juntos podemos hacer un cambio significativo en nuestra sociedad, creando un futuro más justo y sostenible con el esfuerzo colectivo.",
     button1: "ACTÚA AHORA",
     button2: "VE LAS INICIATIVAS",
-    link1: "#actua",
-    link2: "#iniciativas"
+    link1: "#projects",
+    link2: "#projects"
   },
   {
     name: "Cambia el mundo",
     description: "Un pequeño acto puede generar un gran impacto. Sé el cambio que quieres ver en el mundo, apoyando a quienes más lo necesitan y siempre impulsando el progreso.",
     button1: "INICIA EL CAMBIO",
     button2: "APRENDE MÁS",
-    link1: "#cambio",
-    link2: "#aprende"
+    link1: "#projects",
+    link2: "#projects"
   },
   {
     name: "Únete al cambio",
     description: "Juntos podemos lograr un futuro más justo y sostenible. ¡Únete a nuestra causa y contribuye a mejorar la vida de millones de personas en todo el mundo!",
     button1: "NOSOTROS",
     button2: "VER PROYECTOS",
-    link1: "#nosotros",
+    link1: "#projects",
     link2: "#projects"
   }
 ];

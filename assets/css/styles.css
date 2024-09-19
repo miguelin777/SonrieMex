@@ -418,17 +418,17 @@ body.dark-theme {
 
 /* Botón de la tercera sección */
 .section-three .section-button {
-  background-color: #a57cf9;
+  background-color: #29691b;
   border: none;
 }
 
 .section-three .section-button:hover {
-  background-color: #8858e0;
+  background-color: #2e7c3b;
 }
 
 /* Botón de la cuarta sección */
 .section-four .section-button {
-  background-color: #2a4dc3;
+  background-color: #3e88c5;
   border: none;
 }
 
@@ -1704,7 +1704,7 @@ body.dark-theme {
     height: auto; /* Permitir que el banner se ajuste a la altura del contenido */
   }
   .home{
-    height: 93vh;
+    height: 100vh;
   }
   .home__line{
     right: -70rem;
@@ -2045,7 +2045,7 @@ body.dark-theme {
 
 /*=============== FOOTER ===============*/
 .footer {
-  background-color: var(--black-color);
+  background-color: var(--first-color);
   position: relative;
   z-index: 10;
 }

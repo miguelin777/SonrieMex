@@ -1690,6 +1690,12 @@ body.dark-theme {
     flex-direction: column;
     height: auto; /* Permitir que el banner se ajuste a la altura del contenido */
   }
+  .home{
+    height: 93vh;
+  }
+  .home__line{
+    right: -70rem;
+  }
 
   .custom-banner__content {
     max-width: 90%; /* Limita el ancho del texto en pantallas pequeñas */

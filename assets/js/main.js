@@ -325,23 +325,37 @@ document.addEventListener('DOMContentLoaded', function() {
   const stickySections = document.querySelectorAll('.section-one, .section-two, .section-three');
   const sectionFour = document.querySelector('.section-four'); // Seleccionamos la sección 4
   const stickyWrapper = document.querySelector('.sticky-wrapper'); // El wrapper que envuelve las secciones
-  const sectionFourOffset = sectionFour.offsetTop; // Posición de la parte superior de la sección 4
   
-  let wrapperHeight = stickyWrapper.offsetHeight; // Almacenar la altura inicial del wrapper
-  let isStickyDisabled = false; // Bandera para controlar el estado sticky
+  let isStickyDisabled = true; // Bandera para controlar el estado sticky
+  const threshold = 50; // Umbral para suavizar la transición
+
+  // Función que ajusta el sticky al cargar la página, dependiendo de la posición actual del scroll
+  function initializeSticky() {
+    const sectionFourOffset = sectionFour.getBoundingClientRect().top + window.scrollY;
+    const scrollPosition = window.scrollY;
+
+    // Verificamos la posición del scroll al cargar la página
+    if (scrollPosition >= (sectionFourOffset - threshold)) {
+      // Si ya estamos más allá del umbral, desactivamos el sticky de inmediato
+      stickySections.forEach((section) => {
+        section.style.position = 'relative';
+      });
+      isStickyDisabled = true;
+    }
+  }
 
   // Función que detecta el scroll
   function handleScroll() {
+    const sectionFourOffset = sectionFour.getBoundingClientRect().top + window.scrollY; // Posición actual de la sección 4
     const scrollPosition = window.scrollY;
 
-    // Si el scroll ha pasado la parte superior de la sección 4
-    if (scrollPosition >= sectionFourOffset) {
+    // Si el scroll está cerca de la sección 4, pero antes de alcanzarla completamente
+    if (scrollPosition >= (sectionFourOffset - threshold)) {
       if (!isStickyDisabled) {
-        // Desactivar sticky y mantener la altura fija
+        // Desactivar sticky y mantener las secciones en su lugar
         stickySections.forEach((section) => {
-          section.style.position = 'relative'; // Fijar la posición como relativa para detener el sticky
+          section.style.position = 'relative'; // Fijar la posición como relativa
         });
-        stickyWrapper.style.height = `${wrapperHeight}px`; // Mantener la altura del contenedor sin brinco
         isStickyDisabled = true; // Desactivar más cambios de sticky
       }
     } else {
@@ -351,12 +365,15 @@ document.addEventListener('DOMContentLoaded', function() {
           section.style.position = 'sticky'; // Restaurar sticky en secciones anteriores
           section.style.top = '0'; // Resetear la posición
         });
-        stickyWrapper.style.height = 'auto'; // Ajustar la altura de forma dinámica
         isStickyDisabled = false; // Permitir cambios nuevamente
       }
     }
   }
 
+  // Ejecutamos la inicialización cuando la página carga para verificar la posición actual
+  initializeSticky();
+
   // Detectamos el evento de scroll
   window.addEventListener('scroll', handleScroll);
 });
+

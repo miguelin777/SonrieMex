@@ -279,23 +279,26 @@ body.dark-theme {
 
 /* Ajustes de las franjas de color para cada sección */
 .section-one {
-  background-color: transparent;
-  background-image: url('./../img/bg4.png');
+  background-color: transparent; /* Elimina el fondo azul */
+  background-image: url('./../img/bg4.png'); /* Agrega la imagen de fondo */
 }
+/* Imagen en la parte superior izquierda, detrás del texto */
+/* Imagen en la parte superior izquierda, detrás del texto */
+
 
 .section-two {
-  background-color: transparent;
-  background-image: url('./../img/bg2.png');
+  background-color: transparent; /* Elimina el fondo azul */
+  background-image: url('./../img/bg2.png'); /* Agrega la imagen de fondo */
 }
 
 .section-three {
-  background-color: transparent;
-  background-image: url('./../img/bg5.png');
+  background-color: transparent; /* Elimina el fondo azul */
+  background-image: url('./../img/bg5.png'); /* Agrega la imagen de fondo */
 }
 
 .section-four {
-  background-color: transparent;
-  background-image: url('./../img/bg2.png');
+  background-color: transparent; /* Elimina el fondo azul */
+  background-image: url('./../img/bg2.png'); /* Agrega la imagen de fondo */
 }
 
 /* Grid y contenido más centrado */
@@ -2271,7 +2274,8 @@ body.dark-theme {
   }
 
   .home__container {
-  margin: 129.35129713px 193px;
+  margin-top:2%;
+  margin-left: 13%;
   padding-top: 100px;
   grid-template-columns: 1fr 460px; /* Hace que la primera columna sea más amplia */
   gap: 1rem 2rem; /* Ajusta los espacios entre las columnas */

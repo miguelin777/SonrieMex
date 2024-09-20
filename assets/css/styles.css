@@ -14,8 +14,9 @@
   --title-color: hsl(0, 0%, 0%);
   --text-color: hsl(0, 0%, 100%);
   --text-color-light: hsl(0, 0%, 100%);
-  --body-color: hsl(0, 0%, 87%);
+  --body-color: hsl(0, 0%, 83%);
   --container-color: hsl(0, 0%, 83%);
+  --color-down: hsl(0, 0%, 87%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -114,8 +115,9 @@ body.dark-theme {
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%, 95%);
   --text-color: hsl(0, 0%, 100%);
-  --body-color: hsl(0, 0%, 8%);
+  --body-color: hsl(0, 0%, 12%);
   --container-color: hsl(0, 0%, 12%);
+  --color-down: hsl(0, 0%, 8%);
 }
 
 
@@ -232,6 +234,57 @@ body.dark-theme {
   .home__button {
     width: 87%;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sección Parallax más pequeña con borde ondulado */
+/* Sección Parallax más pequeña con borde inclinado */
+/* Sección Parallax más pequeña con borde superior inclinado */
+/* Sección Parallax con fondo de color y línea inclinada */
+.parallax-section {
+
+  position: relative;
+  height: 60vh; /* Altura más pequeña */
+  background-color: #f0f0f0 !important; /* Cambia este color al que desees */
+  background-image: url('./../img/sonriejuntos.jpg'); /* Cambia la ruta de la imagen */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%); /* Inclinación superior */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.parallax-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+
+.parallax-content h2 {
+  font-size: 2.5rem; /* Ajustamos el tamaño para que sea más pequeño */
+  margin-bottom: 1rem;
+}
+
+.parallax-content p {
+  font-size: 1.2rem; /* Reducimos un poco el texto */
 }
 
 
@@ -733,7 +786,7 @@ body.dark-theme {
 @media screen and (max-width: 1150px) {
   .nav__menu {
     position: fixed;
-    top: -100%;
+    top: -953%;
     left: 0;
     background-color: hsla(0, 0%, 0%, 0.75);
     width: 100%;
@@ -1128,7 +1181,7 @@ body.dark-theme {
   right: -3.5rem;
   width: 150px;
   height: 305.1203px;
-  background-color: var(--body-color);
+  background-color: var(--color-down);
   border-bottom: 4px solid var(--first-color);
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
@@ -1234,7 +1287,7 @@ body.dark-theme {
 .services{
   position: relative;
   z-index: 10;
-  background-color: var(--body-color);
+  background-color: var(--container-color);
 }
 
 .services__card {
@@ -1741,6 +1794,13 @@ body.dark-theme {
   .home__line{
     right: -70rem;
   }
+  .hihi{
+    height: 270px !important;
+  }
+  .map, img{
+    width: 120%;
+  }
+
 
   .custom-banner__content {
     max-width: 90%; /* Limita el ancho del texto en pantallas pequeñas */
@@ -1805,13 +1865,15 @@ body.dark-theme {
 .projects__content {
   margin-bottom: 1.25rem;
 }
-
+.projects .projects__link,p{
+  color: var(--title-color);
+}
 .projects__subtitle {
   position: relative;
   display: inline-block;
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
-  color: var(--text-color);
+  color: var(--title-color);
   margin-bottom: 0.75rem;
   padding-left: 1.75rem;
 }

@@ -2494,7 +2494,7 @@ body.dark-theme {
   }
   .about__shadow {
     width: 240px;
-    height: 615px;
+    height: 470px;
     top: -4rem;
     right: -5.5rem;
     border-bottom: 6px solid var(--first-color);

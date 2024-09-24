@@ -14,6 +14,7 @@
       href="./../../assets/img/faviM.png"
       type="image/x-icon"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <!--=============== REMIXICONS ===============-->
     <link
@@ -27,278 +28,249 @@
     <link rel="stylesheet" href="./../../assets/css/styles.css" />
 
     <title>Miguel Huizache</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
-        }
-        
-        body{
-            
-            font-size: 14px;
-            line-height: 20px;
-        }
-    </style>
+
   </head>
   <body>
+
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
-        <nav class="nav container">
-          <a href="#" class="nav__logo">
-            <span class="nav__logo-circle">M</span>
-            <span class="nav__logo-name">Miguel Huizache.</span>
-          </a>
+      <div class="header-bg"></div>
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img src="./../../assets/img/sonriepng.png" alt="Miguel Huizache Logo" class="nav__logo-img" height="10px" />
+        </a>
+        
+
+        <div class="nav__menu" id="nav-menu">
+          <span class="nav__title">Menú</span>
+
+          <h3 class="nav__name">Sonríe</h3>
+
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">INICIO</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">QUÉ HACEMOS</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">PROYECTOS</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#mex" class="nav__link">DÓNDE ESTAMOS</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" class="nav__link nav__link-button">ÚNETE</a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__buttons">
+          <!-- Theme button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+      <br><br><br><br><br>
+
       
-          <div class="nav__menu" id="nav-menu">
-            <span class="nav__title">Menú</span>
+
+
+      <section class="course-intro">
+        <div class="course-intro__content">
+            <h1 class="course-intro__title">Aprende Lengua de Señas Mexicana con</h1>
+            <p class="course-intro__description">
+                En este curso de lengua de señas mexicana aprenderás a aplicar los fundamentos de la lengua de señas dentro del contexto mexicano. El objetivo es fomentar la inclusión, la comunicación y la interacción efectiva con las personas con discapacidad auditiva.
+                Este curso es adecuado para principiantes y no requiere experiencia previa. Aprenderás desde lo más básico hasta la conversación en lengua de señas.
+            </p>
+        </div>
+    
+        <!-- Imagen en vez del video -->
+        <div class="course-intro__image">
+            <img src="./../img/lsm_sonrie.png" alt="Lengua de Señas Mexicana" class="course-intro__image-content" />
+            <!-- Botón debajo de la imagen -->
+            <a href="#" class="course-intro__button">Ir al curso</a>
+        </div>
+    </section>
+    
+
+
+      <section class="info-lsm-section">
+        <div class="info-lsm-container">
+          <!-- Primer cuadro -->
+          <div class="info-lsm-box">
+            <h3>Comunicarte en LSM</h3>
+            <p>Aprender Lengua de Señas Mexicana (LSM) te abrirá un mundo de comunicación con la comunidad sorda, facilitando la inclusión y entendimiento.</p>
+          </div>
+          <!-- Segundo cuadro -->
+          <div class="info-lsm-box">
+            <h3>Beneficios del LSM</h3>
+            <p>El manejo del LSM te ayudará a mejorar tu capacidad de comunicación y te permitirá conectar con nuevas personas en diferentes contextos.</p>
+          </div>
+        </div>
+      </section>
       
-            <h3 class="nav__name">Huizache</h3>
+
+
+
+
+
+
+      <section class="course-content">
+        <!-- Contenedor donde se mostrará el video o el quiz -->
+        <div class="course-video" id="content-container">
+          <iframe id="course-video-player" width="100%" height="500" src="https://www.youtube.com/embed/BXD1wu6yEOQ?si=wsNF6NEA-wL_nFXf"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a href="./../../index.html" class="nav__link">Inicio</a>
-              </li>
-              <li class="nav__item">
-                <a href="./../../index.html#about" class="nav__link">Sobre Mí</a>
-              </li>
-              <li class="nav__item">
-                <a href="./../../index.html#projects" class="nav__link">Proyectos</a>
-              </li>
-              <li class="nav__item">
-                <a href="./index.html" class="nav__link">CV</a>
-              </li>
-              <li class="nav__item">
-                <a href="./../../index.html#contact" class="nav__link nav__link-button">Contáctame</a>
-              </li>
+        <div class="course-menu">
+          <h2>Programa del Curso</h2>
+      
+          <!-- Unidad 1 -->
+          <div class="tab tab-1"> <!-- Aquí agregué la clase 'tab-1' -->
+            <input id="tab-1" type="checkbox">
+            <label for="tab-1">
+              <h4>Unidad 1. Vocabulario: Señas Básicas</h4>
+              <img width="15" height="8" src="./../img/sonriecarita.png" class="unidad1" />
+            </label>
+            <ul class="tab-content list-class">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/BXD1wu6yEOQ?si=wsNF6NEA-wL_nFXf">
+                <img width="10" height="12" src="./../img/sonriecarita.png">
+                <div class="name-class">Introducción a la unidad 1</div>
+              </a>
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-2">
+                <img width="10" height="12" src="./../img/sonriecarita.png">
+                <div class="name-class">El alfabeto</div>
+              </a>
+              <!-- Nueva opción para la práctica -->
+              <a class="row" href="#" id="practice-link">
+                <img width="10" height="12" src="./../img/sonriecarita.png">
+                <div class="name-class">Práctica del Alfabeto</div>
+              </a>
             </ul>
-      
-            <!-- Close button -->
-            <div class="nav__close" id="nav-close">
-              <i class="ri-close-line"></i>
-            </div>
           </div>
       
-          <div class="nav__buttons">
-            <!-- Theme button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
-      
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-              <i class="ri-menu-4-line"></i>
-            </div>
+          <!-- Unidad 2 -->
+          <div class="tab tab-2"> <!-- Aquí agregué la clase 'tab-2' -->
+            <input id="tab-2" type="checkbox">
+            <label for="tab-2">
+              <h4>Unidad 2. Verbos</h4>
+              <img width="15" height="8" src="./../img/sonriecarita.png" class="unidad2" />
+            </label>
+            <ul class="tab-content list-class">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-3">
+                <img width="10" height="12" src="./../img/sonriecarita.png">
+                <div class="name-class">Verbos - Primera parte</div>
+              </a>
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-4">
+                <img width="10" height="12" src="./../img/sonriecarita.png">
+                <div class="name-class">Verbos - Segunda parte</div>
+              </a>
+            </ul>
           </div>
-        </nav>
-      </header>
-
-    <br> <br> <br>
-
-
-
-      <div class="resume_wrapper">
-        <div class="resume_left">
-            <div class="resume_image">
-                <img src="./../img/MIg.jpg" alt="Resume_image">
-            </div>
-            <div class="resume_bottom">
-                <div class="resume_item resume_namerole">
-                    <div class="name">Miguel Huizache Vázquez</div>
-                    <div class="role">Técnico en Programación</div>
-                </div>
-                <div class="resume_item resume_profile">
-                    <div class="resume_title">Perfil Profesional</div>
-                    <div class="resume_info">
-                        Técnico en Programación y Chavo que Inspira por la Fundación BBVA con experiencia en el Desarrollo de Proyectos Tecnológicos y Emprendimiento. 
-                        Destacado por liderar el proyecto "RuedaTec" en la competencia internacional Invention Convention Americas 2023, obteniendo el Segundo lugar. 
-                        Amplia experiencia en la creación de un negocio, con habilidades en Desarrollo Web (HTML, CSS, JavaScript), Desarrollo de Aplicaciones Móviles (Flutter, Dart), 
-                        y conocimientos avanzados en Sistemas Operativos (Linux) y Ciberseguridad, respaldados por Certificación en Cisco Networking. Competente en comunicación asertiva, 
-                        adaptabilidad y gestión de proyectos, con un historial comprobado en planificación financiera, marketing digital y ventas. Ganador de premios en Track Talents y Talen-tic, 
-                        demostrando capacidad para transformar ideas en soluciones efectivas y exitosas.
-                    </div>
-                </div>
-                <div class="resume_item resume_contact">
-                    <div class="resume_title">Contacto</div>
-                    <div class="resume_info">
-                        <div class="resume_subtitle">Phone</div>
-                        <div class="resume_subinfo">+52 411 127 1872</div>
-                    </div>
-                    <div class="resume_info">
-                        <div class="resume_subtitle">Email</div>
-                        <div class="resume_subinfo">soportemiguelhuizache@gmail.com</div>
-                    </div>
-                </div>
-                <div class="resume_item resume_skills">
-                    <div class="resume_title">Me gusta</div>
-                    <div class="resume_info">
-                        <div class="skills_list">
-                            <div class="skills_left">Entrenar</div>
-                            <div class="skills_bar">
-                                <p>
-                                    <span style="width: 90%"></span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="skills_list">
-                            <div class="skills_left">Programar</div>
-                            <div class="skills_bar">
-                                <p>
-                                    <span style="width: 80%"></span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="skills_list">
-                            <div class="skills_left">Ayudar</div>
-                            <div class="skills_bar">
-                                <p>
-                                    <span style="width: 77%"></span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="skills_list">
-                            <div class="skills_left">Ser un Líder</div>
-                            <div class="skills_bar">
-                                <p>
-                                    <span style="width: 100%"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      
+          <!-- Unidad 3 -->
+          <div class="tab tab-3"> <!-- Clase 'tab-3' ya está aquí -->
+            <input id="tab-3" type="checkbox">
+            <label for="tab-3">
+              <h4>Unidad 3. Conversaciones Simples</h4>
+              <img width="15" height="8" src="./../img/sonriecarita.png" class="unidad3" />
+            </label>
+            <ul class="tab-content list-class">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-5">
+                <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad3">
+                <div class="name-class">Conversación básica</div>
+              </a>
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-6">
+                <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad3">
+                <div class="name-class">Presentaciones formales</div>
+              </a>
+            </ul>
+          </div>
+      
+          <!-- Unidad 4 -->
+          <div class="tab tab-4"> <!-- Clase 'tab-4' ya está aquí -->
+            <input id="tab-4" type="checkbox">
+            <label for="tab-4">
+              <h4>Unidad 4. Expresiones Comunes</h4>
+              <img width="15" height="8" src="./../img/sonriecarita.png" class="unidad4" />
+            </label>
+            <ul class="tab-content list-class">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-7">
+                <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad4">
+                <div class="name-class">Saludos y despedidas</div>
+              </a>
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-8">
+                <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad4">
+                <div class="name-class">Frases cotidianas</div>
+              </a>
+            </ul>
+          </div>
+      
+          <!-- Unidad 5 -->
+          <div class="tab tab-5"> <!-- Clase 'tab-5' ya está aquí -->
+            <input id="tab-5" type="checkbox">
+            <label for="tab-5">
+              <h4>Unidad 5. Números y Fechas</h4>
+              <img width="15" height="8" src="./../img/sonriecarita.png" class="unidad5" />
+            </label>
+            <ul class="tab-content list-class">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-9">
+                <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad5">
+                <div class="name-class">Números del 1 al 100</div>
+              </a>
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-10">
+                <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad5">
+                <div class="name-class">Cómo expresar fechas</div>
+              </a>
+            </ul>
+          </div>
+      
         </div>
-        <div class="resume_right">
-            <div class="resume_item resume_namerole">
-                <div class="name">Miguel Huizache </div>
-                <br>
-                <div class="role">Técnico en Programación</div>
-            </div>
-            <div class="resume_item resume_education">
-                <div class="resume_title">Educación</div>
-                <div class="resume_info">
-                    <ul>
-                        <li>
-                            <strong>Aspirante Seleccionado en Mecatrónica</strong><br>
-                            Tecnológico de Monterrey (Ahora).
-                        </li>
-                        <br>
-                        <li>
-                            <strong>Técnico en Programación</strong><br>
-                            Colegio de Estudios Científicos y Tecnológicos del Estado de Guanajuato, Plantel Cortazar.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="resume_item resume_experience">
-                <div class="resume_title">Participación en Proyectos</div>
-                <div class="resume_info">
-                    <ul>
-                        <li>
-                            <strong>Chavo que Insipra BBVA</strong><br>
-                            Reconocido por la Fundación BBVA desde la Secundaria por mi capacidad para motivar e inspirar a otros jóvenes a través de proyectos innovadores y liderazgo.
-                        </li>
-                        <li>
-                            <strong>Invention Convention Americas 2023</strong><br>
-                            Líder del proyecto "<a href="https://ruedatec.com/" target="_blank">RuedaTec</a>", ganando un Segundo lugar representando a México en competencia internacional.
-                        </li>
-                        <li>
-                            <strong>Participación en Capital Startup Capital 2023</strong><br>
-                            Creación de una startup con RuedaTec, incluyendo: desarrollo de modelo de negocio y estrategia de mercado, implementación de estrategias de marketing digital y ventas, 
-                            planificación financiera y levantamiento de capital.
-                        </li>
-                        <li>
-                            <strong>Creación de Sitio Web para Crear tu Negocio</strong><br>
-                            Selección y organización de áreas para crear el negocio desde cero, incluyendo: Onshape, Excel, Power BI y Python con Redes Neuronales. Ganador del Track Talents 2023.
-                        </li>
-                        <li>
-                            <strong>Obteniendo Vínculo al Sector Empresarial</strong><br>
-                            Liderando RuedaTec como un negocio tecnológico de innovación, aplicando técnicas de emprendimiento en desarrollo de modelo de negocio, marketing digital y ventas, y 
-                            planificación financiera. 1er Lugar en Talen-tic en la sede de León.
-                        </li>
-                        <li>
-                            <strong>Fundador de "Sonríe"</strong><br>
-                            Coordinador del grupo "<a href="https://www.instagram.com/sonrie_cortazargto/" target="_blank">Sonríe</a>", que junta Jóvenes para apoyar a la comunidad mediante 
-                            proyectos sociales como donación de ropa, útiles escolares, plantación de árboles, entre otros.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="resume_item resume_competencies">
-                <div class="resume_title">Competencias</div>
-                <div class="resume_info">
-                    <ul>
-                        <li>
-                            <strong>Desarrollo Web</strong><br>
-                            Experiencia en la creación de sitios web totalmente personalizados utilizando HTML, CSS, JavaScript y tecnologías asociadas.
-                        </li>
-                        <li>
-                            <strong>Desarrollo de Aplicaciones Móviles</strong><br>
-                            Proficiencia en el desarrollo de aplicaciones móviles personalizadas utilizando Flutter.
-                        </li>
-                        <li>
-                            <strong>Sistemas Operativos y Ciberseguridad</strong><br>
-                            Conocimiento avanzado en Linux y ciberseguridad, con certificación en Cisco Networking: Partner: NDG Linux Unhatched | Partner: NDG Linux Essentials | Introduction to Cybersecurity.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="resume_item resume_competencies">
-                <div class="resume_title">Habilidades</div>
-                <div class="resume_info">
-                    <ul>
-                        <li>
-                            <strong>Habilidades Blandas</strong><br>
-                            <p>Comunicación Asertiva | Adaptabilidad | Trabajo en Equipo | Resolución de Problemas | Gestión del Tiempo.</p>
-                        </li>
-                        <li>
-                            <strong>Habilidades Técnicas</strong><br>
-                            <p>Desarrollo Web: HTML | CSS | JavaScript.</p>
-                            <p>Desarrollo de Aplicaciones Móviles: Flutter | Dart.</p> 
-                            <p>Lenguajes de Programación: Java | Python | Arduino | PHP | C.</p>  
-                            <p>Sistemas Operativos: Linux | Windows.</p> 
-                            <p>Ciberseguridad: Conocimientos esenciales, certificación en Cisco.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- 
-            <div class="resume_item resmue_interests">
-                <div class="resume_title">Interests</div>
-                <div class="resume_info">
-                    <div class="interests">
-                        <div class="int_icon">
-                            <i class="fas fa-volleyball-ball"></i>
-                        </div>
-                        <div class="int_data">Volleyball</div>
-                    </div>
-                    <div class="interests">
-                        <div class="int_icon">
-                            <i class="fas fa-book-open"></i>
-                        </div>
-                        <div class="int_data">Reading</div>
-                    </div>
-                    <div class="interests">
-                        <div class="int_icon">
-                            <i class="fas fa-film"></i>
-                        </div>
-                        <div class="int_data">Movies</div>
-                    </div>
-                    <div class="interests">
-                        <div class="int_icon">
-                            <i class="fas fa-biking"></i>
-                        </div>
-                        <div class="int_data">Riding</div>
-                    </div>
-                </div>
-            </div>
-            -->
+      </section>
+      
+
+      <section class="alphabet-quiz" id="quiz-section" style="display: none;">
+        <h2>¿Cuál es la letra que corresponde a la imagen?</h2>
+        <div class="quiz-container">
+          <!-- Imagen de la letra en LSM -->
+          <div class="quiz-image">
+            <img src="img/letra_a.jpg" alt="Seña de la letra A" id="lsm-image">
+          </div>
+      
+          <!-- Cuadro de texto para ingresar la letra -->
+          <div class="quiz-input-container">
+            <input type="text" id="quiz-input" maxlength="1" placeholder="Ingresa la letra aquí">
+          </div>
+      
+          <!-- Mensaje de resultado -->
+          <div class="quiz-result" id="quiz-result"></div>
+      
+          <!-- Botón para la siguiente letra -->
+          <button class="next-button" id="next-button" style="display: none;">Siguiente</button>
         </div>
-    </div>
-
-
-        <form action="" class="contact__form" id="contact-form">
-
+      </section>
+      
+    
+      
+      
+    
     <!--==================== FOOTER ====================-->
     <footer class="footer">
       <div class="footer__container container grid">
@@ -327,5 +299,126 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="./../../assets/js/main.js"></script>
+    <script>
+// Cambiar el video dinámicamente
+const videoLinks = document.querySelectorAll('.row');
+const videoPlayer = document.getElementById('course-video-player');
+const contentContainer = document.getElementById('content-container');
+const practiceLink = document.getElementById('practice-link');
+const quizSection = document.getElementById('quiz-section');
+
+// Variable para almacenar el iframe original
+let originalVideoContent = contentContainer.innerHTML;
+
+videoLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const videoURL = link.getAttribute('data-video');
+    videoPlayer.src = videoURL;
+
+    // Asegurarse de que el video se muestre cuando se selecciona un video
+    quizSection.style.display = 'none';
+    contentContainer.innerHTML = originalVideoContent;
+  });
+});
+
+// Datos de las imágenes y letras para el abecedario
+const images = [
+  { letter: "A", imgSrc: "./../img/a.jpg" },
+  { letter: "B", imgSrc: "./../img/b.jpg" },
+  { letter: "C", imgSrc: "./../img/c.jpg" },
+  { letter: "D", imgSrc: "./../img/d.jpg" },
+  { letter: "E", imgSrc: "./../img/e.jpg" },
+  { letter: "F", imgSrc: "./../img/f.jpg" },
+  { letter: "G", imgSrc: "./../img/g.jpg" },
+  { letter: "H", imgSrc: "./../img/h.jpg" },
+  { letter: "I", imgSrc: "./../img/i.jpg" },
+  { letter: "J", imgSrc: "./../img/j.jpg" },
+  { letter: "K", imgSrc: "./../img/k.jpg" },
+  { letter: "L", imgSrc: "./../img/l.jpg" },
+  { letter: "M", imgSrc: "./../img/m.jpg" },
+  { letter: "N", imgSrc: "./../img/n.jpg" },
+  { letter: "O", imgSrc: "./../img/o.jpg" },
+  { letter: "P", imgSrc: "./../img/p.jpg" },
+  { letter: "Q", imgSrc: "./../img/q.jpg" },
+  { letter: "R", imgSrc: "./../img/r.jpg" },
+  { letter: "S", imgSrc: "./../img/s.jpg" },
+  { letter: "T", imgSrc: "./../img/t.jpg" },
+  { letter: "U", imgSrc: "./../img/u.jpg" },
+  { letter: "V", imgSrc: "./../img/v.jpg" },
+  { letter: "W", imgSrc: "./../img/w.jpg" },
+  { letter: "X", imgSrc: "./../img/x.jpg" },
+  { letter: "Y", imgSrc: "./../img/y.jpg" },
+  { letter: "Z", imgSrc: "./../img/z.jpg" }
+];
+
+let currentQuestion = 0;
+let attempts = 0; // Contador de intentos
+
+const lsmImage = document.getElementById('lsm-image');
+const quizInput = document.getElementById('quiz-input'); // Cuadro de texto para la respuesta
+const quizResult = document.getElementById('quiz-result');
+const nextButton = document.getElementById('next-button');
+
+// Cargar dinámica de práctica cuando se hace clic en el enlace de práctica
+practiceLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  
+  // Ocultar el video y mostrar la práctica
+  contentContainer.innerHTML = ''; // Limpiamos el contenido
+  contentContainer.appendChild(quizSection); // Insertamos el quiz
+  quizSection.style.display = 'block'; // Mostrar la sección del quiz
+  
+  loadQuestion(); // Cargar la primera pregunta de la práctica
+});
+
+// Cargar la pregunta
+function loadQuestion() {
+  lsmImage.src = images[currentQuestion].imgSrc; // Mostrar la imagen de la letra
+  quizResult.textContent = ''; // Limpiar el resultado previo
+  quizInput.value = ''; // Limpiar el campo de entrada
+  nextButton.style.display = 'none'; // Ocultar el botón de siguiente
+  attempts = 0; // Reiniciar los intentos
+}
+
+// Verificar la respuesta ingresada
+quizInput.addEventListener('input', () => {
+  const enteredLetter = quizInput.value.toUpperCase(); // Convertir a mayúscula para comparar
+  const correctLetter = images[currentQuestion].letter;
+
+  if (enteredLetter.length === 0) {
+    // No realizar ninguna acción si el campo está vacío
+    quizResult.textContent = '';
+    return;
+  }
+
+  if (enteredLetter === correctLetter) {
+    quizResult.textContent = '¡Correcto!';
+    quizResult.style.color = 'green';
+    nextButton.style.display = 'block'; // Mostrar el botón de siguiente cuando la respuesta es correcta
+  } else {
+    attempts += 1; // Incrementar los intentos solo si hay una letra
+    if (attempts >= 3) {
+      quizResult.textContent = `Incorrecto. La letra correcta es ${correctLetter}.`;
+      quizResult.style.color = 'blue';
+      nextButton.style.display = 'block'; // Mostrar el botón de siguiente
+    } else {
+      quizResult.textContent = `Incorrecto. Te quedan ${3 - attempts} intentos.`;
+      quizResult.style.color = 'red';
+    }
+  }
+});
+
+// Pasar a la siguiente letra
+nextButton.addEventListener('click', () => {
+  currentQuestion = (currentQuestion + 1) % images.length; // Avanzar a la siguiente letra
+  loadQuestion();
+});
+
+// Ocultar la sección de quiz cuando no se usa
+quizSection.style.display = 'none'; // Al iniciar, se oculta la sección
+
+
+    </script>
   </body>
 </html>

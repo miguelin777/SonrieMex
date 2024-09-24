@@ -1,230 +1,463 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* Curso - Introducción */
 
 
-.resume_item .resume_info ul li a {
-	color: black; /* Cambia el color del texto del enlace a negro */
-	text-decoration: underline; /* Subraya el texto del enlace */
-	font-weight: bold; /* Pone en negrita el texto del enlace */
-	transition: color 0.3s ease; /* Añade una transición suave para el color */
-}
 
-.resume_item .resume_info ul li a:hover {
-	color: rgb(61, 158, 237); /* Cambia el color del texto a azul cuando se pasa el cursor sobre el enlace */
-}
-.resume_wrapper{
+
+
+
+/* Sección de información LSM */
+.info-lsm-section {
+	background-color: var(--white-color); /* Fondo claro */
+	padding: 40px 0;
+  }
+  
+  .info-lsm-container {
 	display: flex;
-	width: 800px;
-	margin: 50px auto;
-	background: #fff;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 0 auto;
+	gap: 20px; /* Espacio entre los cuadros */
+	flex-wrap: wrap; /* Permite que los cuadros se adapten en pantallas pequeñas */
+  }
+  
+  .info-lsm-box {
+	background-color: #eef3fa; /* Color clarito para los cuadros */
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+	flex: 1; /* Permite que los cuadros se adapten al ancho disponible */
+	min-width: 280px; /* Ancho mínimo para los cuadros */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  .info-lsm-box h3 {
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+	color: #333;
+  }
+  
+  .info-lsm-box p {
+	font-size: 1rem;
+	color: #555;
+  }
+  .course-intro__image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-intro__image-content {
+    width: 100%; 
+    height: auto;
+    max-height: 315px; /* Altura máxima para que tenga la misma proporción que el video */
+    object-fit: cover; /* Ajusta la imagen para que mantenga sus proporciones */
+    border-radius: 5px; /* Bordes redondeados, opcional */
+    margin-bottom: 1rem;
+}
+
+.course-intro__button {
+    background-image: url(./../img/bg3.png);
+    color: var(--boton-color) !important;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    transition: background-color 0.3s ease;
+}
+
+  /* Estilos para la imagen de fondo */
+.home__image-background {
+	width: 100% !important;  /* La imagen ocupará todo el ancho */
+	height: auto !important; /* La altura se ajustará automáticamente */
+	object-fit: cover !important; /* Asegura que la imagen mantenga sus proporciones */
+	display: block !important;
+  }
+  .nav__link {
+	color: black !important;
+  }
+  /* Responsivo para móviles: los cuadros se apilan uno sobre otro */
+  @media (max-width: 768px) {
+	.info-lsm-container {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.info-lsm-box {
+	  width: 90%; /* Ocuparán casi todo el ancho de la pantalla */
+	  margin-bottom: 20px;
+	}
+  }
+  
+
+
+
+
+
+
+
+
+.course-intro {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	background-color: var(--white-color);
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .course-intro__content {
+	flex: 1;
+	padding-right: 2rem;
+  }
+  
+  .course-intro__title {
+	font-size: var(--h1-font-size);
+	margin-bottom: 1rem;
+	color: var(--title-color);
+  }
+  
+  .course-intro__description {
+	font-size: 20px;
+	margin-bottom: 1rem;
+	color: var(--title-color);
+  }
+  
+  .course-intro__info {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+  }
+  
+  .course-intro__info span {
+	font-size: var(--normal-font-size);
+	color: var(--title-color);
+  }
+  
+  /* Video y botón a la derecha */
+  .course-intro__video {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .course-intro__video iframe {
+	width: 100%;
+	height: 315px;
+	margin-bottom: 1rem;
+  }
+  
+  .course-intro__button {
+	background-image: url(./../img/bg3.png);
+	color: var(--boton-color) !important;
+	padding: 0.75rem 1.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	max-width: 900px;
+	transition: background-color 0.3s ease;
+  }
+  h4{
+	color: black !important;
+  }
+  .course-intro__button:hover {
+	background-color: var(--black-color-light);
+  }
+  
+  /* Responsivo: todo en una sola columna en pantallas pequeñas */
+  /* Elimina la información del curso en dispositivos móviles */
+  @media (max-width: 768px) {
+	.course-intro {
+	  flex-direction: column;
+	  padding: 1rem;
+	}
+  
+	.course-intro__content {
+	  padding-right: 0;
+	  width: 100%;
+	}
+  
+	.course-intro__video {
+	  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+	  margin-top: 1rem;
+	}
+  
+	.course-intro__video iframe {
+	  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+	  height: 270px;
+	}
+  
+	.course-intro__button {
+	  width: 100%;
+	  max-width: none;
+	}
+  
+	/* Oculta la información del curso en móviles */
+	.course-intro__info, .course-intro__description {
+	  display: none;
+	}
+  }
+
+
+
+
+
+
+  body{
+	background-color: var(--white-color) !important;
+  }
+
+
+
+  .course-content {
+	display: flex;
+	padding: 20px;
+	gap: 20px;
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+.course-menu {
+	width: 30%;
+	background-color: var(--white-color);
 	padding: 10px;
+	border-radius: 8px;
 }
 
-.resume_wrapper .resume_left{
-	width: 35%;
-	background: #26252d;
+.tab {
+	margin-bottom: 1rem;
 }
 
-.resume_wrapper .resume_left .resume_image{
-	width: 100%;
+.tab input {
+	display: none;
 }
 
-.resume_wrapper .resume_left .resume_image img{
-	width: 100%;
+.tab label {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	padding: 15px; /* Aumentado para más espacio */
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+/* Colores actualizados para las unidades */
+.tab-1 label {
+	background-color: #b9d1ec; /* Azul claro */
+}
+
+.tab-2 label {
+	background-color: #f0e198; /* Amarillo suave */
+}
+
+.tab-3 label {
+	background-color: #ffcabf; /* Naranja suave */
+}
+
+.tab-4 label {
+	background-color: #ace5af; /* Verde suave */
+}
+
+.tab-5 label {
+	background-color: #cdc4f5; /* Morado suave */
+}
+
+/* Estilos para el contenido que se despliega */
+.tab-content {
+	display: none;
+	list-style: none;
+	padding-left: 20px;
+	background-color: var(--white-color); /* Fondo blanco */
+	border-radius: 5px;
+	margin-top: 5px;
+	border: 2px solid transparent;
+}
+
+/* Submenús hover: mantienen los colores previos */
+.tab-1 .tab-content .row:hover {
+	background-color: #F2F8FF;
+	border-color: #b9d1ec;
+	color: black;
+}
+
+.tab-2 .tab-content .row:hover {
+	background-color: #FFF9DB;
+	border-color: #FFD700;
+	color: black;
+}
+
+.tab-3 .tab-content .row:hover {
+	background-color: #FFE6E1;
+	border-color: #FF5722;
+	color: black;
+}
+
+.tab-4 .tab-content .row:hover {
+	background-color: #E4F9E5;
+	border-color: #4CAF50;
+	color: black;
+}
+
+.tab-5 .tab-content .row:hover {
+	background-color: #EDE9FF;
+	border-color: #7E57C2;
+	color: black;
+}
+
+/* Filas de los submenús */
+.tab-content .row {
+	display: flex;
+	align-items: center;
+	padding: 10px 0;
+	border: 2px solid transparent;
+	background-color: var(--white-color); /* Fondo blanco */
+	border-radius: 5px;
+	margin-bottom: 5px;
+	color: var(--title-color); /* Color del texto del submenú */
+	transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Iconos en los submenús */
+.tab-content .row img {
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+
+/* Cambiar el contenido desplegable cuando se selecciona */
+.tab input:checked + label + .tab-content {
 	display: block;
 }
 
-.resume_wrapper .resume_title{
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 16px;
-	margin-bottom: 10px;
-	letter-spacing: 4px;
+.course-video {
+	width: 70%;
+	padding-left: 20px;
 }
 
-.resume_wrapper .resume_left .resume_info{
-	color: #84838b;
+/* Estilos responsivos para móviles */
+@media (max-width: 768px) {
+	.course-content {
+		flex-direction: column-reverse; /* Cambiamos el orden */
+	}
+
+	.course-menu {
+		width: 100%;
+	}
+
+	.course-video {
+		width: 100%;
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+
+	.tab-content {
+		padding-left: 15px;
+		font-size: 0.9rem;
+	}
+
+	.tab label {
+		padding: 12px; /* Ajuste del padding en móviles */
+		font-size: 0.95rem;
+	}
+
+	.tab-content .row img {
+		width: 14px !important; /* Tamaño un poco más grande */
+		height: 14px !important;
+	}
+
+	.unidad1,
+	.unidad2,
+	.unidad3,
+	.unidad4,
+	.unidad5 {
+		width: 18px !important; /* Iconos ligeramente más grandes */
+		height: 18px !important;
+	}
 }
 
-.resume_wrapper .resume_left .resume_bottom{
-	padding: 20px 30px;
-}
 
-.resume_wrapper .resume_item{
-	padding: 20px 0;
-	border-bottom: 1px solid #0175b2;
-}
-
-.resume_wrapper  .resume_item:last-child{
-	border-bottom: 0;
-}
-
-.resume_wrapper .resume_left .resume_namerole{
-	display: none;
-}
-
-.resume_wrapper .resume_namerole .name{
-	font-size: 20px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 700;
-	margin-bottom: 5px;
-	letter-spacing: 4px;
-}
-
-.resume_wrapper .resume_left .resume_namerole .role{
-	color: #84838b;
-}
-
-.resume_wrapper .resume_left .resume_contact .resume_info:last-child{
-	 margin-top: 10px;
-}
-.show-menu {
-	top: 0; /* Mostrar el menú al hacer clic */
+.alphabet-quiz {
+	text-align: center;
+	padding: 20px;
+	background-color: var(--white-color);
+	max-width: 1250px;
+	margin: 0 auto;
   }
   
-.resume_wrapper .resume_left .resume_contact .resume_subtitle{
-	color: #fff;
-	margin-bottom: 2px;
-}
-
-.resume_wrapper .resume_left .resume_skills .skills_list{
+  .quiz-container {
 	display: flex;
-	justify-content: space-between;
-	margin-bottom: 5px;
-}
-
-.resume_wrapper .resume_left .resume_skills .skills_list .skills_bar p{
-	position: relative;
-	width: 125px;
-    height: 20px;
-    background: #fff;
-}
-
-.resume_wrapper .resume_left .resume_skills .skills_list .skills_bar p span{	
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #0175b2;
-	width: 100%;
-	height: 100%;
-}
-
-.resume_wrapper .resume_right{
-	width: 65%;
-	padding: 20px 40px;
-	color: #26252d;
-}
-
-.resume_wrapper .resume_right .resume_namerole .name{
-	color: #26252d;
-	font-size: 32px;
-}
-
-.resume_wrapper .resume_right .resume_namerole .role{
-	font-size: 14px;
-	text-transform: uppercase;
-}
-
-.resume_wrapper .resume_right .resume_item .resume_title{
-	color: #26252d;
-}
-
-.resume_wrapper .resume_right .resume_data{
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+  }
+  
+  .quiz-image img {
+	max-width: 200px;
+	border-radius: 10px;
+  }
+  
+  .quiz-options {
 	display: flex;
-}
-
-.resume_wrapper .resume_right .resume_data .year{
-	padding-right: 35px;
-	width: 115px;
-	position: relative;
-}
-
-.resume_wrapper .resume_right .resume_data .content{
-	padding-left: 35px;
-	margin-bottom: 20px;
-	width: calc(100% - 115px);
-}
-
-.resume_wrapper .resume_right .resume_data .year:before{
-	content: "";
-	position: absolute;
-	top: 5px;
-	right: 0;
-	width: 10px;
-	height: 10px;
-	background: #fff;
-	border: 1px solid #26252d;
-	border-radius: 50%;
-}
-
-.resume_wrapper .resume_right .resume_data .year:after{
-	content: "";
-    position: absolute;
-    top: 17px;
-    right: 4px;
-    width: 3px;
-    height: 90%;
-    background: #0175b2;
-}
-
-.resume_wrapper .resume_right .resume_data:last-child .year:after{
-	display: none;
-}
-
-.resume_wrapper .resume_right .resmue_interests .resume_info{
-	display: flex;
-	justify-content: space-between;
+	gap: 20px;
+  }
+  
+  .quiz-option {
+	padding: 10px 20px;
+	background-color: var(--first-color);
+	color: var(--white-color);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease;
+  }
+  
+  .quiz-option:hover {
+	background-color: var(--black-color-light);
+  }
+  
+  .quiz-result {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--first-color);
+  }
+  
+  .next-button {
+	padding: 10px 20px;
+	background-color: var(--black-color);
+	color: var(--white-color);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 1.2rem;
+	display: none; /* Se muestra cuando se necesita */
+	transition: background-color 0.3s ease;
+  }
+  
+  .next-button:hover {
+	background-color: var(--black-color-light);
+  }
+  .quiz-input-container {
+	margin-top: 20px;
+  }
+  
+  #quiz-input {
+	padding: 10px;
+	font-size: 1.2rem;
+	border-radius: 5px;
+	border: 2px solid #b9d1ec;
 	text-align: center;
-}
-
-.resume_wrapper .resume_right .resmue_interests .interests .int_icon{
-	font-size: 38px;
-	color: #0175b2;
-	margin-bottom: 10px;
-}
-
-
-@media screen and (max-width: 800px){
-	.resume_wrapper .resume_right .resume_namerole{
-		display: none;
-	}
-	.resume_wrapper .resume_left .resume_namerole{
-		display: block;
-	}
-	.resume_wrapper{
-		width: 95%;
-		margin: 10px auto;
-		flex-direction: column;
-	}
-	.resume_wrapper .resume_left,
-	.resume_wrapper .resume_right{
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 424px){
-	.resume_wrapper .resume_right{
-		padding: 20px 30px;
-	}
-	.resume_wrapper .resume_right .resume_data{
-		flex-direction: column;
-	}
-	.resume_wrapper .resume_right .resume_data .year{
-		padding: 0;
-		margin-bottom: 5px;
-		width: 100%;
-		color: #0175b2;
-	}
-	.resume_wrapper .resume_right .resume_data .year:before,
-	.resume_wrapper .resume_right .resume_data .year:after{
-		display: none;
-	}
-	.resume_wrapper .resume_right .resume_data .content{
-		width: 100%;
-		padding: 0;
-	}
-	.resume_wrapper .resume_right .resmue_interests .interests .int_icon{
-		font-size: 24px;
-	}
-}
+	width: 153.9px;
+  }
+  

@@ -17,6 +17,8 @@
   --body-color: hsl(0, 0%, 83%);
   --container-color: hsl(0, 0%, 83%);
   --color-down: hsl(0, 0%, 87%);
+  --boton-color: hsl(0, 0%, 95%);
+  
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -118,6 +120,8 @@ body.dark-theme {
   --body-color: hsl(0, 0%, 12%);
   --container-color: hsl(0, 0%, 12%);
   --color-down: hsl(0, 0%, 8%);
+  --white-color: hsl(0, 0%, 12%);
+  --boton-color: hsl(0, 0%, 95%);
 }
 
 

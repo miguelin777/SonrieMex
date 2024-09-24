@@ -18,6 +18,7 @@
   --container-color: hsl(0, 0%, 83%);
   --color-down: hsl(0, 0%, 87%);
   --boton-color: hsl(0, 0%, 95%);
+  --cuadro-color: #cfdbed;
   
 
   /*========== Font and typography ==========*/
@@ -122,6 +123,7 @@ body.dark-theme {
   --color-down: hsl(0, 0%, 8%);
   --white-color: hsl(0, 0%, 12%);
   --boton-color: hsl(0, 0%, 95%);
+  --cuadro-color: hsl(0, 0%, 18%);
 }
 
 

@@ -1,34 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
   <head>
+    <!-- Google tag (gtag.js) para Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWBRHL4EK0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FWBRHL4EK0');
+    </script>
+
+    <!-- Meta tags estándar -->
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href="./../../assets/img/faviM.png"
-      type="image/x-icon"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Descripción para SEO -->
+    <meta name="description" content="Aprende Lengua de Señas Mexicana con recursos interactivos, promoviendo la inclusión y la comunicación efectiva en la comunidad sorda.">
 
-    <!--=============== REMIXICONS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
-      crossorigin=""
-    />
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <!-- Palabras clave para SEO -->
+    <meta name="keywords" content="Lengua de Señas Mexicana, LSM, inclusión, comunidad sorda, curso de señas, comunicación, educación">
 
-    <!--=============== CSS ===============-->
+    <!-- URL canónica -->
+    <link rel="canonical" href="https://tu-nueva-web.com/" />
+
+    <!-- Meta para redes sociales: Facebook Open Graph -->
+    <meta property="og:title" content="Curso de Lengua de Señas Mexicana - Promoviendo la Inclusión">
+    <meta property="og:description" content="Únete a nuestro curso de LSM y aprende a comunicarte efectivamente con la comunidad sorda.">
+    <meta property="og:image" content="https://tu-nueva-web.com/assets/img/lsm_thumbnail.png">
+    <meta property="og:url" content="https://tu-nueva-web.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Meta para redes sociales: Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Curso de LSM - Aprende y Promueve la Inclusión">
+    <meta name="twitter:description" content="Aprende Lengua de Señas Mexicana y contribuye a una sociedad más inclusiva.">
+    <meta name="twitter:image" content="https://tu-nueva-web.com/assets/img/lsm_thumbnail.png">
+
+    <!-- Verificaciones para buscadores -->
+    <meta name="google-site-verification" content="codigo-verificacion-google" />
+    <meta name="bing-site-verification" content="codigo-verificacion-bing" />
+
+    <!-- SEO: Idioma y región -->
+    <meta name="language" content="es-MX">
+
+    <!-- Favicon e iconos para dispositivos -->
+    <link rel="shortcut icon" href="./../../assets/img/sonrieicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./../../assets/img/sonriecarita-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./../../assets/img/sonriecarita-152x152.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./../../assets/img/sonriecarita-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./../../assets/img/sonriecarita-76x76.png">
+
+    <!-- Manifesto para Progressive Web App (PWA) -->
+    <link rel="manifest" href="https://tu-nueva-web.com/manifest.json" />
+
+    <!-- Optimización para dispositivos móviles -->
+    <meta name="theme-color" content="#1b8fcf" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="LSM Curso">
+
+    <!-- Content Security Policy (CSP) -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.googletagmanager.com https://www.youtube.com; style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; frame-src 'self' https://www.youtube.com; media-src 'self' https://www.youtube.com; img-src 'self' https://i.ytimg.com data:;">
+
+    <!-- Preconexión para acelerar la carga -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Carga de fuentes y estilos -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
+
+    <!-- Enlace a las hojas de estilo -->
     <link rel="stylesheet" href="./../../assets/css/styles.css" />
 
-    <title>Miguel Huizache</title>
+    <!-- Título de la página -->
+    <title>Curso de Lengua de Señas Mexicana | Sonríe México</title>
 
+    <!-- DNS Prefetch para mejorar rendimiento -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+
+   
   </head>
   <body>
 
@@ -104,7 +156,7 @@
         <div class="course-intro__image">
             <img src="./../img/lsm_sonrie.png" alt="Lengua de Señas Mexicana" class="course-intro__image-content" />
             <!-- Botón debajo de la imagen -->
-            <a href="#" class="course-intro__button">Ir al curso</a>
+            <a href="#course-video-player" class="course-intro__button">Ir al curso</a>
         </div>
     </section>
     
@@ -146,18 +198,23 @@
           <div class="tab tab-1"> <!-- Aquí agregué la clase 'tab-1' -->
             <input id="tab-1" type="checkbox">
             <label for="tab-1">
-              <h4>Unidad 1. Vocabulario: Señas Básicas</h4>
-              <img width="15" height="8" src="./../img/sonriecarita.png" class="unidad1" />
+              <h4>Unidad 1.  Señas Básicas</h4>
+              <img width="25" height="18" src="./../img/pngabajo-removebg-preview.png" class="unidad1" />
             </label>
             <ul class="tab-content list-class">
               <a class="row" href="#" data-video="https://www.youtube.com/embed/BXD1wu6yEOQ?si=wsNF6NEA-wL_nFXf">
                 <img width="10" height="12" src="./../img/sonriecarita.png">
-                <div class="name-class">Introducción a la unidad 1</div>
+                <div class="name-class">Alfabeto</div>
               </a>
-              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-2">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/YNBeHPcxlR0?si=mPTeBBnnxwGE6ddJ">
                 <img width="10" height="12" src="./../img/sonriecarita.png">
-                <div class="name-class">El alfabeto</div>
+                <div class="name-class">Saludos</div>
               </a>
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/yVV-8WlaWWk?si=d0qUI8qNE2E4mtyh">
+                <img width="10" height="12" src="./../img/sonriecarita.png">
+                <div class="name-class">Números</div>
+              </a>
+              
               <!-- Nueva opción para la práctica -->
               <a class="row" href="#" id="practice-link">
                 <img width="10" height="12" src="./../img/sonriecarita.png">
@@ -170,17 +227,17 @@
           <div class="tab tab-2"> <!-- Aquí agregué la clase 'tab-2' -->
             <input id="tab-2" type="checkbox">
             <label for="tab-2">
-              <h4>Unidad 2. Verbos</h4>
-              <img width="15" height="8" src="./../img/sonriecarita.png" class="unidad2" />
+              <h4>Unidad 2. Fechas</h4>
+              <img width="25" height="18" src="./../img/pngabajo-removebg-preview.png" class="unidad2" />
             </label>
             <ul class="tab-content list-class">
-              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-3">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/UVzIceVucBg?si=mmpwWHizKKw9_ytm">
                 <img width="10" height="12" src="./../img/sonriecarita.png">
-                <div class="name-class">Verbos - Primera parte</div>
+                <div class="name-class">Fechas - Días de la semana</div>
               </a>
-              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-4">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/tzyp-rFujXg?si=bkxau_kLzPldiQZY">
                 <img width="10" height="12" src="./../img/sonriecarita.png">
-                <div class="name-class">Verbos - Segunda parte</div>
+                <div class="name-class">Fechas - Meses</div>
               </a>
             </ul>
           </div>
@@ -189,17 +246,17 @@
           <div class="tab tab-3"> <!-- Clase 'tab-3' ya está aquí -->
             <input id="tab-3" type="checkbox">
             <label for="tab-3">
-              <h4>Unidad 3. Conversaciones Simples</h4>
-              <img width="15" height="8" src="./../img/sonriecarita.png" class="unidad3" />
+              <h4>Unidad 3. Familia y Actividades</h4>
+              <img width="25" height="18" src="./../img/pngabajo-removebg-preview.png" class="unidad3" />
             </label>
             <ul class="tab-content list-class">
-              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-5">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/58cEXqR_e4A?si=JP88tVnGWZF9TLk5">
                 <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad3">
-                <div class="name-class">Conversación básica</div>
+                <div class="name-class">Señas de la Familia</div>
               </a>
-              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-6">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/1ooLTVZMwEQ?si=wnNj-YPTei-ghB8-&amp;controls=1">
                 <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad3">
-                <div class="name-class">Presentaciones formales</div>
+                <div class="name-class">Actividades Diarias</div>
               </a>
             </ul>
           </div>
@@ -208,17 +265,17 @@
           <div class="tab tab-4"> <!-- Clase 'tab-4' ya está aquí -->
             <input id="tab-4" type="checkbox">
             <label for="tab-4">
-              <h4>Unidad 4. Expresiones Comunes</h4>
-              <img width="15" height="8" src="./../img/sonriecarita.png" class="unidad4" />
+              <h4>Unidad 4. Expresiones para Clase</h4>
+              <img width="25" height="18" src="./../img/pngabajo-removebg-preview.png" class="unidad4" />
             </label>
             <ul class="tab-content list-class">
-              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-7">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/66wV8n6yrH4?si=Ed3haxjIIk2aW82L&amp">
                 <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad4">
-                <div class="name-class">Saludos y despedidas</div>
+                <div class="name-class">Señas en el salón de clases</div>
               </a>
-              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-8">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/DvUTl35rv74?si=EjK9X9CX4INT-JYA&amp">
                 <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad4">
-                <div class="name-class">Frases cotidianas</div>
+                <div class="name-class">Salón de clases 2</div>
               </a>
             </ul>
           </div>
@@ -227,17 +284,17 @@
           <div class="tab tab-5"> <!-- Clase 'tab-5' ya está aquí -->
             <input id="tab-5" type="checkbox">
             <label for="tab-5">
-              <h4>Unidad 5. Números y Fechas</h4>
-              <img width="15" height="8" src="./../img/sonriecarita.png" class="unidad5" />
+              <h4>Unidad 5. ¿Listo para una Conversación?</h4>
+              <img width="25" height="18" src="./../img/pngabajo-removebg-preview.png" class="unidad5" />
             </label>
             <ul class="tab-content list-class">
-              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-9">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/tQkHLIIE5bU?si=NQG8ygDkPC8q_ZPx&amp">
                 <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad5">
-                <div class="name-class">Números del 1 al 100</div>
+                <div class="name-class">Iniciar una conversación</div>
               </a>
-              <a class="row" href="#" data-video="https://www.youtube.com/embed/sample-video-10">
+              <a class="row" href="#" data-video="https://www.youtube.com/embed/rLL4LJdPRtY?si=HHOKejijLcXGF_VJ&amp">
                 <img width="10" height="12" src="./../img/sonriecarita.png" class="unidad5">
-                <div class="name-class">Cómo expresar fechas</div>
+                <div class="name-class">Repaso</div>
               </a>
             </ul>
           </div>
@@ -275,9 +332,10 @@
     <footer class="footer">
       <div class="footer__container container grid">
         <ul class="footer__links">
-          <li><a href="./../../index.html" class="footer__link">Inicio</a></li>
-          <li><a href="./../../index.html#about" class="footer__link">Sobre Mí</a></li>
-          <li><a href="./../../index.html#projects" class="footer__link">Proyectos</a></li>
+          <li><a href="./../../index.html#about" class="footer__link"><b>Sobre Sonríe</b></a></li>
+          <li><a href="./../../index.html#projects" class="footer__link"><b>Proyectos</b></a></li>
+          <li><a href="./../../index.html#about" class="footer__link"><b>Únete</b></a></li>
+          <li><a href="./../../index.html#about" class="footer__link"><b>Misión</b></a></li>
         </ul>
 
         <span class="footer__copy">
@@ -300,29 +358,36 @@
     <!--=============== MAIN JS ===============-->
     <script src="./../../assets/js/main.js"></script>
     <script>
-// Cambiar el video dinámicamente
+// Seleccionar los enlaces de video y el reproductor de video
 const videoLinks = document.querySelectorAll('.row');
 const videoPlayer = document.getElementById('course-video-player');
-const contentContainer = document.getElementById('content-container');
-const practiceLink = document.getElementById('practice-link');
-const quizSection = document.getElementById('quiz-section');
+const quizSection = document.getElementById('quiz-section'); // Sección de quiz
+const contentContainer = document.getElementById('content-container'); // Contenedor de video/quiz
+const practiceLink = document.getElementById('practice-link'); // Enlace a la práctica
 
-// Variable para almacenar el iframe original
+// Variable para almacenar el contenido original del video
 let originalVideoContent = contentContainer.innerHTML;
 
+// Función para actualizar el video
 videoLinks.forEach(link => {
   link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const videoURL = link.getAttribute('data-video');
-    videoPlayer.src = videoURL;
+    e.preventDefault(); // Prevenir la acción por defecto del enlace
+    const videoURL = link.getAttribute('data-video'); // Obtener la URL del video
 
-    // Asegurarse de que el video se muestre cuando se selecciona un video
-    quizSection.style.display = 'none';
+    // Restaurar el contenido original del contenedor y actualizar el src del video
     contentContainer.innerHTML = originalVideoContent;
+    const newVideoPlayer = document.getElementById('course-video-player'); // Reobtener el nuevo iframe
+    newVideoPlayer.src = videoURL; // Actualizar el src del iframe con el nuevo video
+
+    // Asegurarse de que el quiz no esté visible
+    quizSection.style.display = 'none';
+
+    // Desplazar hacia abajo hasta el video
+    contentContainer.scrollIntoView({ behavior: 'smooth' });
   });
 });
 
-// Datos de las imágenes y letras para el abecedario
+// Datos de las imágenes y letras para el abecedario (quiz)
 const images = [
   { letter: "A", imgSrc: "./../img/a.jpg" },
   { letter: "B", imgSrc: "./../img/b.jpg" },
@@ -352,30 +417,34 @@ const images = [
   { letter: "Z", imgSrc: "./../img/z.jpg" }
 ];
 
-let currentQuestion = 0;
+let currentQuestion = 0; // Mantener la pregunta actual
 let attempts = 0; // Contador de intentos
 
+// Elementos del quiz
 const lsmImage = document.getElementById('lsm-image');
-const quizInput = document.getElementById('quiz-input'); // Cuadro de texto para la respuesta
+const quizInput = document.getElementById('quiz-input');
 const quizResult = document.getElementById('quiz-result');
 const nextButton = document.getElementById('next-button');
 
-// Cargar dinámica de práctica cuando se hace clic en el enlace de práctica
+// Mostrar el quiz cuando se hace clic en el enlace de práctica
 practiceLink.addEventListener('click', (e) => {
   e.preventDefault();
-  
+
   // Ocultar el video y mostrar la práctica
-  contentContainer.innerHTML = ''; // Limpiamos el contenido
-  contentContainer.appendChild(quizSection); // Insertamos el quiz
+  contentContainer.innerHTML = ''; // Limpiar el contenido
+  contentContainer.appendChild(quizSection); // Insertar el quiz en el contenedor
   quizSection.style.display = 'block'; // Mostrar la sección del quiz
   
-  loadQuestion(); // Cargar la primera pregunta de la práctica
+  loadQuestion(); // Cargar la primera pregunta del quiz
+
+  // Desplazar hacia abajo hasta la sección del quiz
+  quizSection.scrollIntoView({ behavior: 'smooth' });
 });
 
-// Cargar la pregunta
+// Cargar la pregunta actual en el quiz
 function loadQuestion() {
-  lsmImage.src = images[currentQuestion].imgSrc; // Mostrar la imagen de la letra
-  quizResult.textContent = ''; // Limpiar el resultado previo
+  lsmImage.src = images[currentQuestion].imgSrc; // Mostrar la imagen correspondiente a la letra
+  quizResult.textContent = ''; // Limpiar los resultados previos
   quizInput.value = ''; // Limpiar el campo de entrada
   nextButton.style.display = 'none'; // Ocultar el botón de siguiente
   attempts = 0; // Reiniciar los intentos
@@ -387,21 +456,20 @@ quizInput.addEventListener('input', () => {
   const correctLetter = images[currentQuestion].letter;
 
   if (enteredLetter.length === 0) {
-    // No realizar ninguna acción si el campo está vacío
-    quizResult.textContent = '';
+    quizResult.textContent = ''; // Si está vacío, no hacer nada
     return;
   }
 
   if (enteredLetter === correctLetter) {
     quizResult.textContent = '¡Correcto!';
     quizResult.style.color = 'green';
-    nextButton.style.display = 'block'; // Mostrar el botón de siguiente cuando la respuesta es correcta
+    nextButton.style.display = 'block'; // Mostrar el botón de siguiente si es correcto
   } else {
-    attempts += 1; // Incrementar los intentos solo si hay una letra
+    attempts += 1; // Incrementar los intentos
     if (attempts >= 3) {
       quizResult.textContent = `Incorrecto. La letra correcta es ${correctLetter}.`;
       quizResult.style.color = 'blue';
-      nextButton.style.display = 'block'; // Mostrar el botón de siguiente
+      nextButton.style.display = 'block'; // Mostrar el botón de siguiente después de 3 intentos
     } else {
       quizResult.textContent = `Incorrecto. Te quedan ${3 - attempts} intentos.`;
       quizResult.style.color = 'red';
@@ -409,14 +477,21 @@ quizInput.addEventListener('input', () => {
   }
 });
 
-// Pasar a la siguiente letra
+// Pasar a la siguiente letra cuando se hace clic en el botón de siguiente
 nextButton.addEventListener('click', () => {
   currentQuestion = (currentQuestion + 1) % images.length; // Avanzar a la siguiente letra
-  loadQuestion();
+  loadQuestion(); // Cargar la nueva pregunta
 });
+window.onload = function() {
+  const video = document.querySelector('.course-intro__video iframe');
+  if (window.innerWidth < 768) {
+      video.style.height = '170px';
+  }
+};
 
-// Ocultar la sección de quiz cuando no se usa
-quizSection.style.display = 'none'; // Al iniciar, se oculta la sección
+
+// Ocultar la sección de quiz inicialmente
+quizSection.style.display = 'none';
 
 
     </script>

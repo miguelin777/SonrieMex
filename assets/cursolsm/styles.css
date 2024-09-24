@@ -3,7 +3,11 @@
 
 
 
-
+.nav__link-button {
+	background-color: var(--black-color);
+	color: var(--white-color) !important;
+	padding: 1.1rem 1.5rem;
+}
 
 /* Sección de información LSM */
 .info-lsm-section {
@@ -21,24 +25,25 @@
   }
   
   .info-lsm-box {
-	background-color: #eef3fa; /* Color clarito para los cuadros */
+	background-color: var(--cuadro-color); /* Color clarito para los cuadros */
 	border-radius: 10px;
 	padding: 20px;
 	text-align: center;
 	flex: 1; /* Permite que los cuadros se adapten al ancho disponible */
 	min-width: 280px; /* Ancho mínimo para los cuadros */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+	color: var(--title-color) !important;
   }
   
   .info-lsm-box h3 {
 	font-size: 1.5rem;
 	margin-bottom: 15px;
-	color: #333;
+	color: var(--title-color);
   }
   
   .info-lsm-box p {
 	font-size: 1rem;
-	color: #555;
+	color: var(--title-color);
   }
   .course-intro__image {
     flex: 1;
@@ -77,9 +82,14 @@
 	object-fit: cover !important; /* Asegura que la imagen mantenga sus proporciones */
 	display: block !important;
   }
-  .nav__link {
-	color: black !important;
+  a.nav__link {
+	color: var(--title-color) !important;
   }
+  a.nav__link.nav__link-button {
+	color: white !important;
+  }
+
+
   /* Responsivo para móviles: los cuadros se apilan uno sobre otro */
   @media (max-width: 768px) {
 	.info-lsm-container {
@@ -173,6 +183,11 @@
   .course-intro__button:hover {
 	background-color: var(--black-color-light);
   }
+  #course-video-player{
+	height: 500px !important;
+	width: 100% !important;
+  }
+  
   
   /* Responsivo: todo en una sola columna en pantallas pequeñas */
   /* Elimina la información del curso en dispositivos móviles */
@@ -181,6 +196,10 @@
 	  flex-direction: column;
 	  padding: 1rem;
 	}
+	#course-video-player{
+		height: 200px !important;
+		width: 100% !important;
+	  }
   
 	.course-intro__content {
 	  padding-right: 0;
@@ -193,9 +212,9 @@
 	}
   
 	.course-intro__video iframe {
-	  width: 100%; /* Asegura que ocupe todo el ancho disponible */
-	  height: 270px;
-	}
+        width: 100%;
+        height: 180px; /* Ajuste de altura para pantallas móviles */
+    }
   
 	.course-intro__button {
 	  width: 100%;
@@ -293,7 +312,7 @@
 
 .tab-2 .tab-content .row:hover {
 	background-color: #FFF9DB;
-	border-color: #FFD700;
+	border-color: #f0e198;
 	color: black;
 }
 
@@ -319,7 +338,7 @@
 .tab-content .row {
 	display: flex;
 	align-items: center;
-	padding: 10px 0;
+	padding: 10px 10px;
 	border: 2px solid transparent;
 	background-color: var(--white-color); /* Fondo blanco */
 	border-radius: 5px;
@@ -403,8 +422,9 @@
   }
   
   .quiz-image img {
-	max-width: 200px;
+	max-width: 250px;
 	border-radius: 10px;
+	padding-top: 30px;
   }
   
   .quiz-options {

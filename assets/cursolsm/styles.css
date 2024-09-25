@@ -11,7 +11,7 @@
 
 /* Sección de información LSM */
 .info-lsm-section {
-	background-color: var(--white-color); /* Fondo claro */
+	background-color: var(--color-body2); /* Fondo claro */
 	padding: 40px 0;
   }
   
@@ -142,7 +142,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: flex-start;
-	background-color: var(--white-color);
+	background-color: var(--color-body2);
 	padding: 2rem;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -255,11 +255,15 @@
 
 
 
-
+  body.dark-theme {
+	--color-body2: hsl(0, 0%, 12%);
+	
+	
+  }
 
 
   body{
-	background-color: var(--white-color) !important;
+	background-color: var(--color-body2);
   }
 
 
@@ -274,7 +278,7 @@
 
 .course-menu {
 	width: 30%;
-	background-color: var(--white-color);
+	background-color: var(--color-body2);
 	padding: 10px;
 	border-radius: 8px;
 }
@@ -323,7 +327,7 @@
 	display: none;
 	list-style: none;
 	padding-left: 20px;
-	background-color: var(--white-color); /* Fondo blanco */
+	background-color: var(--color-body2); /* Fondo blanco */
 	border-radius: 5px;
 	margin-top: 5px;
 	border: 2px solid transparent;
@@ -366,7 +370,7 @@
 	align-items: center;
 	padding: 10px 10px;
 	border: 2px solid transparent;
-	background-color: var(--white-color); /* Fondo blanco */
+	background-color: var(--color-body2); /* Fondo blanco */
 	border-radius: 5px;
 	margin-bottom: 5px;
 	color: var(--title-color); /* Color del texto del submenú */
@@ -435,7 +439,7 @@
 .alphabet-quiz {
 	text-align: center;
 	padding: 20px;
-	background-color: var(--white-color);
+	background-color: var(--color-body2);
 	max-width: 1250px;
 	margin: 0 auto;
   }
@@ -461,7 +465,7 @@
   .quiz-option {
 	padding: 10px 20px;
 	background-color: var(--first-color);
-	color: var(--white-color);
+	color: var(--color-body2);
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
@@ -482,7 +486,7 @@
   .next-button {
 	padding: 10px 20px;
 	background-color: var(--black-color);
-	color: var(--white-color);
+	color: var(--color-body2);
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;

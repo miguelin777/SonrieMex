@@ -19,6 +19,7 @@
   --color-down: hsl(0, 0%, 87%);
   --boton-color: hsl(0, 0%, 95%);
   --cuadro-color: #cfdbed;
+  --color-body2: hsl(0, 0%, 95%);
   
 
   /*========== Font and typography ==========*/
@@ -113,6 +114,7 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
+  
   --first-color: hsl(14, 80%, 50%);
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
@@ -124,6 +126,7 @@ body.dark-theme {
   --white-color: hsl(0, 60%, 95%);
   --boton-color: hsl(0, 0%, 95%);
   --cuadro-color: hsl(0, 0%, 18%);
+  
 }
 
 

@@ -69,6 +69,7 @@ setInterval(changeContent, 14003);
 if (navToggle) {
   navToggle.addEventListener("click", () => {
     navMenu.classList.add("show-menu");
+    document.body.classList.add("menu-open"); // Añadir clase al body para controlar el color
   });
 }
 
@@ -77,6 +78,7 @@ if (navToggle) {
 if (navClose) {
   navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
+    document.body.classList.remove("menu-open"); // Remover clase al cerrar el menú
   });
 }
 
@@ -84,10 +86,11 @@ if (navClose) {
 const navLink = document.querySelectorAll(".nav__link");
 const linkAction = () => {
   const navMenu = document.getElementById("nav-menu");
-  // Al hacer clic en cada enlace de navegación, elimina la clase show-menu
   navMenu.classList.remove("show-menu");
+  document.body.classList.remove("menu-open"); // Remover clase al seleccionar un enlace
 };
 navLink.forEach((link) => link.addEventListener("click", linkAction));
+
 
 /*=============== SHADOW HEADER ===============*/
 const shadowHeader = () => {
@@ -376,4 +379,5 @@ document.addEventListener('DOMContentLoaded', function() {
   // Detectamos el evento de scroll
   window.addEventListener('scroll', handleScroll);
 });
+
 

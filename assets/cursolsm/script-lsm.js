@@ -1,4 +1,3 @@
-
 // Seleccionar los enlaces de video y el reproductor de video
 const videoLinks = document.querySelectorAll('.row');
 const videoPlayer = document.getElementById('course-video-player');
@@ -61,6 +60,18 @@ const images = [
 let currentQuestion = 0; // Mantener la pregunta actual
 let attempts = 0; // Contador de intentos
 
+// Función para mezclar el array de imágenes (Fisher-Yates Shuffle)
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]]; // Intercambiar elementos
+  }
+  return array;
+}
+
+// Aleatorizar las imágenes al cargar la página
+shuffle(images);
+
 // Elementos del quiz
 const lsmImage = document.getElementById('lsm-image');
 const quizInput = document.getElementById('quiz-input');
@@ -102,7 +113,7 @@ quizInput.addEventListener('input', () => {
   }
 
   if (enteredLetter === correctLetter) {
-    quizResult.textContent = '¡Correcto!';
+    quizResult.textContent = '¡Correcto :)!';
     quizResult.style.color = 'green';
     nextButton.style.display = 'block'; // Mostrar el botón de siguiente si es correcto
   } else {
@@ -112,7 +123,7 @@ quizInput.addEventListener('input', () => {
       quizResult.style.color = 'blue';
       nextButton.style.display = 'block'; // Mostrar el botón de siguiente después de 3 intentos
     } else {
-      quizResult.textContent = `Incorrecto. Te quedan ${3 - attempts} intentos.`;
+      quizResult.textContent = `Incorrecto :(. Te quedan ${3 - attempts} intentos.`;
       quizResult.style.color = 'red';
     }
   }
@@ -123,14 +134,6 @@ nextButton.addEventListener('click', () => {
   currentQuestion = (currentQuestion + 1) % images.length; // Avanzar a la siguiente letra
   loadQuestion(); // Cargar la nueva pregunta
 });
-window.onload = function() {
-  const video = document.querySelector('.course-intro__video iframe');
-  if (window.innerWidth < 768) {
-      video.style.height = '170px';
-  }
-};
-
 
 // Ocultar la sección de quiz inicialmente
 quizSection.style.display = 'none';
-

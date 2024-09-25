@@ -82,9 +82,35 @@
 	object-fit: cover !important; /* Asegura que la imagen mantenga sus proporciones */
 	display: block !important;
   }
-  a.nav__link {
-	color: var(--title-color) !important;
+ /* Letras negras por defecto */
+.nav__link {
+	color: var(--title-color); /* Color negro por defecto */
+	transition: color 0.3s;
   }
+  
+  /* Cuando el menú está abierto, cambiar a color blanco */
+  .menu-open .nav__link {
+	color: white !important; /* Color blanco cuando el menú está abierto */
+  }
+  
+  /* También puedes asegurar que otros elementos del menú (como el título y botones) sean blancos */
+  .menu-open .nav__title,
+  .menu-open .nav__name,
+  .menu-open .nav__close {
+	color: white !important;
+  }
+  .change-theme {
+	color: var(--title-color) !important;
+}
+.footer__link{
+	color: white;
+}
+  
+  /* Mantener el icono del menú en blanco cuando está abierto */
+  .menu-open .nav__toggle i {
+	color: var(--white-color) !important;
+  }
+  
   a.nav__link.nav__link-button {
 	color: white !important;
   }

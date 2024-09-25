@@ -121,7 +121,7 @@ body.dark-theme {
   --body-color: hsl(0, 0%, 12%);
   --container-color: hsl(0, 0%, 12%);
   --color-down: hsl(0, 0%, 8%);
-  --white-color: hsl(0, 0%, 12%);
+  --white-color: hsl(0, 60%, 95%);
   --boton-color: hsl(0, 0%, 95%);
   --cuadro-color: hsl(0, 0%, 18%);
 }

@@ -1372,6 +1372,20 @@ body.has-cursor .change-theme { cursor: none; }
 .nav__link.dark::after { background-color: var(--sm-tinta); }
 .change-theme.dark { color: var(--sm-tinta); }
 
+/* Texto solo para lectores/SEO (no cambia el diseño, no es cloaking:
+   describe el contenido real de la página). */
+.sm-vh {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* Lenis manda: sin esta regla, el scroll-behavior:smooth global de
    styles.css anima CADA escritura de scroll de Lenis (scroll chicloso,
    pins con jitter). Es la regla oficial recomendada por Lenis. */

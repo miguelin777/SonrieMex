@@ -14,15 +14,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Sonríe México | Red de jóvenes por el medio ambiente y la comunidad</title>
-    <meta name="description" content="Sonríe México es una red de jóvenes que organiza donaciones de ropa y juguetes, reforestación, croquetones y torneos con causa. Únete y haz tu granito de arena.">
+    <title>Sonríe México | Jóvenes voluntarios en Cortázar y Celaya, Guanajuato</title>
+    <meta name="description" content="Sonríe México es una red de jóvenes voluntarios de Cortázar, Guanajuato. Donamos ropa y juguetes, reforestamos, hacemos croquetones y torneos con causa desde 2023. Únete o dona.">
     <link rel="canonical" href="https://sonriemexico.org/" />
     <meta name="theme-color" content="#1b8fcf">
 
+    <!-- Geolocalización -->
+    <meta name="geo.region" content="MX-GUA">
+    <meta name="geo.placename" content="Cortázar, Guanajuato">
+    <meta name="geo.position" content="20.4816;-100.9622">
+    <meta name="ICBM" content="20.4816, -100.9622">
+
     <!-- Open Graph -->
     <meta property="og:site_name" content="Sonríe México">
-    <meta property="og:title" content="Sonríe México | Red de jóvenes por el medio ambiente y la comunidad">
-    <meta property="og:description" content="Donaciones de ropa y juguetes, reforestación, croquetones y torneos con causa. Únete a la red de jóvenes que hace sonreír a México.">
+    <meta property="og:title" content="Sonríe México | Jóvenes voluntarios en Cortázar y Celaya, Guanajuato">
+    <meta property="og:description" content="Red de jóvenes voluntarios de Cortázar, Guanajuato. Donamos ropa y juguetes, reforestamos y hacemos campañas con causa desde 2023. Únete o dona.">
     <meta property="og:image" content="https://sonriemexico.org/assets/img/sonriejuntos.jpg">
     <meta property="og:url" content="https://sonriemexico.org/">
     <meta property="og:type" content="website">
@@ -30,34 +36,124 @@
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sonríe México | Red de jóvenes por México">
-    <meta name="twitter:description" content="Donaciones, reforestación y torneos con causa. Únete a la red de jóvenes que hace sonreír a México.">
+    <meta name="twitter:title" content="Sonríe México | Jóvenes voluntarios en Guanajuato">
+    <meta name="twitter:description" content="Red de jóvenes voluntarios de Cortázar, Guanajuato. Donamos ropa y juguetes, reforestamos y hacemos campañas con causa desde 2023.">
     <meta name="twitter:image" content="https://sonriemexico.org/assets/img/sonriejuntos.jpg">
 
-    <!-- Datos estructurados -->
+    <!-- ============ DATOS ESTRUCTURADOS (Schema.org / JSON-LD) ============ -->
+
+    <!-- Organización (NGO) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "NGO",
+      "@id": "https://sonriemexico.org/#organization",
       "name": "Sonríe México",
+      "alternateName": ["Sonrie Mexico", "Sonríe Mx"],
       "url": "https://sonriemexico.org/",
-      "logo": "https://sonriemexico.org/assets/img/sonrieicon.png",
-      "description": "Red de jóvenes mexicanos que organiza donaciones de ropa y juguetes, reforestación, croquetones y torneos con causa.",
+      "logo": { "@type": "ImageObject", "url": "https://sonriemexico.org/assets/img/sonrieicon.png" },
+      "image": "https://sonriemexico.org/assets/img/sonriejuntos.jpg",
+      "slogan": "Haz tu granito de arena",
+      "description": "Sonríe México es una red de jóvenes voluntarios con base en Cortázar, Guanajuato, México, activa desde 2023. Organiza donaciones de ropa y juguetes, reforestación, croquetones para perritos callejeros, torneos deportivos con causa y un curso gratuito de Lengua de Señas Mexicana.",
       "foundingDate": "2023",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Cortázar",
-        "addressRegion": "Guanajuato",
-        "addressCountry": "MX"
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Cortázar, Guanajuato, México",
+        "address": { "@type": "PostalAddress", "addressLocality": "Cortázar", "addressRegion": "Guanajuato", "addressCountry": "MX" }
       },
+      "address": { "@type": "PostalAddress", "addressLocality": "Cortázar", "addressRegion": "Guanajuato", "addressCountry": "MX" },
+      "areaServed": [
+        { "@type": "Country", "name": "México" },
+        { "@type": "State", "name": "Guanajuato" }
+      ],
+      "knowsAbout": ["Voluntariado juvenil","Altruismo","Campañas sociales","Liderazgo juvenil","Activismo social","Donación de ropa","Donación de juguetes","Reforestación","Bienestar animal","Deporte con causa","Lengua de Señas Mexicana","Inclusión social","Desarrollo comunitario"],
+      "keywords": "jóvenes voluntarios, jóvenes líderes, activismo juvenil, altruismo, voluntariado, campañas sociales, donaciones, reforestación, Cortázar, Celaya, Guanajuato, México",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer support",
-        "url": "https://wa.me/524111271872"
+        "url": "https://wa.me/524111271872",
+        "availableLanguage": ["Spanish"],
+        "areaServed": "MX"
       },
-      "areaServed": { "@type": "Country", "name": "México" },
       "sameAs": [
         "https://www.instagram.com/sonrie_mexico/"
+      ],
+      "potentialAction": {
+        "@type": "DonateAction",
+        "name": "Donar a Sonríe México",
+        "target": { "@type": "EntryPoint", "urlTemplate": "https://sonriemexico.org/#dona", "actionPlatform": ["http://schema.org/DesktopWebPlatform","http://schema.org/MobileWebPlatform"] },
+        "recipient": { "@id": "https://sonriemexico.org/#organization" }
+      }
+    }
+    </script>
+
+    <!-- Sitio web -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://sonriemexico.org/#website",
+      "url": "https://sonriemexico.org/",
+      "name": "Sonríe México",
+      "description": "Red de jóvenes voluntarios de Cortázar, Guanajuato: donaciones, reforestación y campañas con causa.",
+      "inLanguage": "es-MX",
+      "publisher": { "@id": "https://sonriemexico.org/#organization" }
+    }
+    </script>
+
+    <!-- Preguntas frecuentes -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://sonriemexico.org/#faq",
+      "inLanguage": "es-MX",
+      "isPartOf": { "@id": "https://sonriemexico.org/#website" },
+      "about": { "@id": "https://sonriemexico.org/#organization" },
+      "mainEntity": [
+        { "@type": "Question", "name": "¿Cómo me uno a Sonríe?", "acceptedAnswer": { "@type": "Answer", "text": "Entra al grupo de WhatsApp, saluda y listo. Ahí se avisa de cada campaña y evento." } },
+        { "@type": "Question", "name": "¿Participar cuesta algo?", "acceptedAnswer": { "@type": "Answer", "text": "Nada. Traes tus ganas y ya. Si además quieres donar algo, bienvenido sea." } },
+        { "@type": "Question", "name": "¿Necesito experiencia o cierta edad?", "acceptedAnswer": { "@type": "Answer", "text": "Para nada. Cada quien aporta lo suyo: cargar cajas, tomar fotos, hacer diseños o traer las mejores playlists." } },
+        { "@type": "Question", "name": "¿Puedo llevar Sonríe a mi ciudad?", "acceptedAnswer": { "@type": "Answer", "text": "Ese es el plan. Llena el formulario de líderes y te acompañamos a arrancar tu sede." } },
+        { "@type": "Question", "name": "¿Qué puedo donar?", "acceptedAnswer": { "@type": "Answer", "text": "Ropa y cobijas en buen estado, juguetes completos, alimentos no perecederos, croquetas… y si prefieres aportar dinero, en la sección Dona te decimos cómo." } },
+        { "@type": "Question", "name": "¿Cómo ser voluntario en Cortázar o Celaya, Guanajuato?", "acceptedAnswer": { "@type": "Answer", "text": "Cualquier joven de Cortázar, Celaya o alrededores puede entrar al grupo de WhatsApp y caer a la siguiente campaña. No pedimos experiencia ni cuota." } },
+        { "@type": "Question", "name": "¿Dónde puedo donar ropa y juguetes en Cortázar o Celaya?", "acceptedAnswer": { "@type": "Answer", "text": "Con nosotros. Coordinamos la recolección por WhatsApp en Cortázar y Celaya, Guanajuato, y entregamos todo directo a las familias. Antes del Día del Niño y Reyes juntamos juguetes; en invierno, ropa y cobijas." } },
+        { "@type": "Question", "name": "¿Cómo participar en la reforestación en Guanajuato?", "acceptedAnswer": { "@type": "Answer", "text": "Nuestra campaña «Un Árbol, un Cambio» sale a plantar cada temporada de lluvias. Avisamos fecha y punto de reunión en el grupo de WhatsApp y en Instagram." } },
+        { "@type": "Question", "name": "¿Cómo donar croquetas para perritos de la calle en Cortázar?", "acceptedAnswer": { "@type": "Answer", "text": "En el «Croquetón» juntamos croquetas todo el año. Puedes dejar tu bolsa o aportar dinero por WhatsApp y nosotros alimentamos a los perritos callejeros de Cortázar." } }
+      ]
+    }
+    </script>
+
+    <!-- Migas de pan -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sonriemexico.org/" },
+        { "@type": "ListItem", "position": 2, "name": "Proyectos", "item": "https://sonriemexico.org/#projects" },
+        { "@type": "ListItem", "position": 3, "name": "Dona", "item": "https://sonriemexico.org/#dona" }
+      ]
+    }
+    </script>
+
+    <!-- Proyectos y campañas -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "@id": "https://sonriemexico.org/#programas",
+      "name": "Proyectos y campañas de Sonríe México",
+      "description": "Campañas de la red de jóvenes voluntarios Sonríe México en Cortázar, Guanajuato.",
+      "numberOfItems": 6,
+      "itemListOrder": "https://schema.org/ItemListUnordered",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "item": { "@type": "Project", "name": "Donación de Ropa", "description": "+1,000 prendas donadas a familias de la comunidad. Julio 2023.", "url": "https://sonriemexico.org/#projects", "image": "https://sonriemexico.org/assets/img/sonriet.jpg", "startDate": "2023-07" } },
+        { "@type": "ListItem", "position": 2, "item": { "@type": "Project", "name": "Un Árbol, un Cambio", "description": "Campaña de reforestación en Guanajuato. Agosto 2023.", "url": "https://sonriemexico.org/#projects", "image": "https://sonriemexico.org/assets/img/sonrieeddy.jpg", "startDate": "2023-08" } },
+        { "@type": "ListItem", "position": 3, "item": { "@type": "Project", "name": "Croquetón", "description": "Colecta de croquetas para perritos callejeros. Noviembre 2023.", "url": "https://sonriemexico.org/#projects", "image": "https://sonriemexico.org/assets/img/sperros.jpg", "startDate": "2023-11" } },
+        { "@type": "ListItem", "position": 4, "item": { "@type": "Project", "name": "Colecta de Reyes", "description": "+70 niños recibieron un regalo en Día de Reyes. Enero 2024.", "url": "https://sonriemexico.org/#projects", "image": "https://sonriemexico.org/assets/img/sjuguetes2.jpg", "startDate": "2024-01" } },
+        { "@type": "ListItem", "position": 5, "item": { "@type": "Project", "name": "Día del Niño", "description": "+300 juguetes entregados a niños de la comunidad. Abril 2024.", "url": "https://sonriemexico.org/#projects", "image": "https://sonriemexico.org/assets/img/sonrienat.jpeg", "startDate": "2024-04" } },
+        { "@type": "ListItem", "position": 6, "item": { "@type": "Project", "name": "Torneo Sonríe", "description": "Torneo de fútbol con causa: los fondos recaudados se donan. En curso.", "url": "https://sonriemexico.org/#projects", "image": "https://sonriemexico.org/assets/img/sonriefucho.jpg" } }
       ]
     }
     </script>
@@ -153,7 +249,7 @@
 
 
         <div class="home__container container grid">
-          <h1 class="home__name" id="homeName">Sonríe México</h1>
+          <h1 class="home__name" id="homeName"><span id="homeNameText">Sonríe México</span><span class="sm-vh"> — jóvenes voluntarios de Cortázar y Celaya, Guanajuato</span></h1>
 
           <div class="home__perfil">
             <div class="home__image">
@@ -165,7 +261,7 @@
 
           <div class="home__info">
             <p class="home__description" id="homeDescription">
-              <b>Somos una red de jóvenes</b>, comprometidos con mejorar el medio ambiente y nuestra comunidad. Nos enfocamos en formar agentes de cambio que inspiren y lideren iniciativas para crear un futuro mejor y más sostenible.
+              <b>Sonríe México es una red de jóvenes voluntarios de Cortázar, Guanajuato</b>, activa desde 2023. Organizamos donaciones de ropa y juguetes, reforestación, croquetones para perritos y torneos con causa. Formamos jóvenes líderes que inspiran y lideran iniciativas para una comunidad mejor.
             </p>
 
             <!-- Aquí los botones -->
@@ -208,7 +304,7 @@
           </div>
           <div class="image-content">
             <div class="image-wrapper">
-              <img id="switchable-image" src="./assets/img/2png-removebg-preview.png" alt="Join us" class="animated-image" />
+              <img id="switchable-image" src="./assets/img/2png-removebg-preview.png" alt="Jóvenes voluntarios de Sonríe México en Cortázar, Guanajuato" class="animated-image" />
             </div>
           </div>
 
@@ -223,7 +319,7 @@
         <div class="custom-container custom-grid">
           <div class="image-content">
             <div class="image-wrapper">
-              <img src="./assets/img/sun.png" alt="Environment" class="animated-image" />
+              <img src="./assets/img/sun.png" alt="Iniciativas ambientales de Sonríe México en Guanajuato" class="animated-image" />
             </div>
           </div>
           <div class="text-content">
@@ -254,7 +350,7 @@
           </div>
           <div class="image-content">
             <div class="image-wrapper">
-              <img src="./assets/img/1png-removebg-preview.png" alt="Join us" class="animated-image" />
+              <img src="./assets/img/1png-removebg-preview.png" alt="Voluntarios de Sonríe México listos para una campaña" class="animated-image" />
             </div>
           </div>
         </div>
@@ -265,7 +361,7 @@
         <div class="custom-container custom-grid">
           <div class="image-content">
             <div class="image-wrapper">
-              <img src="./assets/img/sun.png" alt="Future" class="animated-image" />
+              <img src="./assets/img/sun.png" alt="Jóvenes construyendo un futuro mejor con Sonríe México" class="animated-image" />
             </div>
           </div>
           <div class="text-content">
@@ -298,12 +394,12 @@
       <section class="sm-intro" id="about">
         <div class="sm-shell">
           <p class="sm-eyebrow" data-reveal>01 · Quiénes somos</p>
-          <h2 class="sm-display" data-lines>Somos jóvenes de México que cambian su comunidad</h2>
+          <h2 class="sm-display" data-lines>Jóvenes voluntarios de Cortázar que cambian su comunidad</h2>
           <p class="sm-script-line"><em class="sm-script sm-script--rosa" data-reveal>sonriendo</em></p>
 
           <div class="sm-intro-grid">
             <figure class="sm-media sm-intro-media" data-clip>
-              <img src="./assets/img/sonriejuntos.jpg" alt="La banda de Sonríe con dos camionetas llenas de donaciones, bajo el sol de Guanajuato" class="sm-par" width="1280" height="960">
+              <img src="./assets/img/sonriejuntos.jpg" alt="Jóvenes voluntarios de Sonríe México con camionetas llenas de donaciones en Cortázar, Guanajuato" class="sm-par" width="1280" height="960">
               <figcaption class="sm-cap">Colecta de ropa · Cortázar, Gto.</figcaption>
             </figure>
             <div class="sm-intro-copy">
@@ -311,6 +407,14 @@
                 Sin oficinas y sin discursos. Juntamos ropa, juguetes y croquetas,
                 plantamos arbolitos y armamos torneos donde hasta el que pierde gana.
                 Así le hacemos desde 2023, y cada vez somos más.
+              </p>
+              <p data-reveal>
+                Sonríe México es una organización juvenil de voluntariado sin fines de lucro
+                fundada en 2023 en Cortázar, Guanajuato, México. Desde entonces ha donado más de
+                1,000 prendas de ropa, entregado más de 370 juguetes en el Día del Niño y el Día
+                de Reyes, reforestado con la campaña «Un Árbol, un Cambio» y alimentado perros
+                callejeros con sus croquetones. Cualquier joven puede sumarse por WhatsApp o
+                Instagram; el altruismo y el activismo juvenil son el motor de la red.
               </p>
               <a class="sm-link" href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" target="_blank" rel="noopener" data-reveal>
                 <span class="sm-link-t" data-text="Cae con la banda">Cae con la banda</span>
@@ -674,6 +778,22 @@
               <details class="sm-faq-item" data-reveal>
                 <summary><span>¿Qué puedo donar?</span><i aria-hidden="true"></i></summary>
                 <div class="sm-faq-body"><p>Ropa y cobijas en buen estado, juguetes completos, alimentos no perecederos, croquetas… y si prefieres aportar dinero, <a href="#dona">aquí te decimos cómo</a>.</p></div>
+              </details>
+              <details class="sm-faq-item" data-reveal>
+                <summary><span>¿Cómo ser voluntario en Cortázar o Celaya, Guanajuato?</span><i aria-hidden="true"></i></summary>
+                <div class="sm-faq-body"><p>Súper fácil: cualquier joven de Cortázar, Celaya o alrededores puede entrar al grupo de WhatsApp y caer a la siguiente campaña. No pedimos experiencia ni cuota.</p></div>
+              </details>
+              <details class="sm-faq-item" data-reveal>
+                <summary><span>¿Dónde puedo donar ropa y juguetes en Cortázar o Celaya?</span><i aria-hidden="true"></i></summary>
+                <div class="sm-faq-body"><p>Con nosotros. Coordinamos la recolección por WhatsApp en Cortázar y Celaya, Guanajuato, y entregamos todo directo a las familias. Antes del Día del Niño y Reyes juntamos juguetes; en invierno, ropa y cobijas.</p></div>
+              </details>
+              <details class="sm-faq-item" data-reveal>
+                <summary><span>¿Cómo participar en la reforestación en Guanajuato?</span><i aria-hidden="true"></i></summary>
+                <div class="sm-faq-body"><p>Nuestra campaña «Un Árbol, un Cambio» sale a plantar cada temporada de lluvias. Avisamos fecha y punto de reunión en el grupo de WhatsApp y en Instagram.</p></div>
+              </details>
+              <details class="sm-faq-item" data-reveal>
+                <summary><span>¿Cómo donar croquetas para perritos de la calle en Cortázar?</span><i aria-hidden="true"></i></summary>
+                <div class="sm-faq-body"><p>En el «Croquetón» juntamos croquetas todo el año. Puedes dejar tu bolsa o aportar dinero por WhatsApp y nosotros alimentamos a los perritos callejeros de Cortázar.</p></div>
               </details>
             </div>
           </div>

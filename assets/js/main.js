@@ -70,6 +70,8 @@ const heroInfo = [
 
 let heroIndex = 0;
 const homeName = document.getElementById("homeName");
+/* solo el texto visible rota; el descriptor geo oculto del H1 se conserva */
+const homeNameText = document.getElementById("homeNameText") || homeName;
 const homeDescription = document.getElementById("homeDescription");
 const homeButton1 = document.getElementById("homeButton1");
 const homeButton2 = document.getElementById("homeButton2");
@@ -81,7 +83,7 @@ function cambiarHero() {
 
   setTimeout(() => {
     const item = heroInfo[heroIndex];
-    homeName.textContent = item.name;
+    homeNameText.textContent = item.name;
     homeDescription.innerHTML = "<b>" + item.name + "</b>, " + item.description;
     homeButton1.textContent = item.button1.toUpperCase();
     homeButton2.textContent = item.button2.toUpperCase();

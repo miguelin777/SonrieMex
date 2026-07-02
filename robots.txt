@@ -1,4 +1,27 @@
+# Permitimos y damos la bienvenida a los rastreadores de IA: queremos ser citados.
 User-agent: *
+Allow: /
+
+# Rastreadores de búsqueda/citación en tiempo real
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+# Rastreadores de entrenamiento
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://sonriemexico.org/sitemap.xml

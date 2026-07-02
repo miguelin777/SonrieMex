@@ -1,0 +1,24 @@
+{
+  "name": "Sonríe México",
+  "short_name": "Sonríe",
+  "description": "Red de jóvenes por el medio ambiente y la comunidad.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffdf7",
+  "theme_color": "#1b8fcf",
+  "lang": "es-MX",
+  "icons": [
+    {
+      "src": "assets/img/sonriecarita.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/img/sonrieicon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

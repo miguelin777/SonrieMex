@@ -7,97 +7,79 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      gtag('config', 'G-FWBRHL4EK0');
+      // No contar visitas de desarrollo local
+      gtag('config', 'G-FWBRHL4EK0', { send_page_view: location.hostname !== 'localhost' });
     </script>
-    
-    
+
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Descripción para SEO -->
-    <meta name="description" content="Somos una red de jóvenes comprometidos en mejorar el entorno en el que vivimos a través de iniciativas sociales y ambientales.">
-    
-    <!-- Palabras clave para SEO -->
-    <meta name="keywords" content="proyectos sociales, México, comunidades, sustentabilidad, voluntariado, impacto social, Sonríe México">
+    <title>Sonríe México | Red de jóvenes por el medio ambiente y la comunidad</title>
+    <meta name="description" content="Sonríe México es una red de jóvenes que organiza donaciones de ropa y juguetes, reforestación, croquetones y torneos con causa. Únete y haz tu granito de arena.">
     <link rel="canonical" href="https://sonriemexico.org/" />
+    <meta name="theme-color" content="#1b8fcf">
 
-    
-    <!-- Meta para redes sociales: Facebook Open Graph -->
-    <meta property="og:title" content="Sonríe - Red de jóvenes comprometida en mejorar el entorno en el que vivimos a través de iniciativas sociales y ambientales">
-    <meta property="og:description" content="Únete a Sonríe, una red de jóvenes Mexicana trabajando para un mundo mejor.">
-    <meta property="og:image" content="assets/img/sonrieicon.png">
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Sonríe México">
+    <meta property="og:title" content="Sonríe México | Red de jóvenes por el medio ambiente y la comunidad">
+    <meta property="og:description" content="Donaciones de ropa y juguetes, reforestación, croquetones y torneos con causa. Únete a la red de jóvenes que hace sonreír a México.">
+    <meta property="og:image" content="https://sonriemexico.org/assets/img/sonriejuntos.jpg">
     <meta property="og:url" content="https://sonriemexico.org/">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
 
-    <!-- Meta para redes sociales: Twitter Cards -->
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sonríe - Red de jóvenes comprometidos">
-    <meta name="twitter:description" content="Únete a Sonríe, una red de jóvenes trabajando para un mundo mejor :).">
-    <meta name="twitter:image" content="assets/img/sonrieicon.png">
-    
-    <!-- Preconexión para acelerar la carga de fuentes -->
+    <meta name="twitter:title" content="Sonríe México | Red de jóvenes por México">
+    <meta name="twitter:description" content="Donaciones, reforestación y torneos con causa. Únete a la red de jóvenes que hace sonreír a México.">
+    <meta name="twitter:image" content="https://sonriemexico.org/assets/img/sonriejuntos.jpg">
+
+    <!-- Datos estructurados -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Sonríe México",
+      "url": "https://sonriemexico.org/",
+      "logo": "https://sonriemexico.org/assets/img/sonrieicon.png",
+      "description": "Red de jóvenes mexicanos que organiza donaciones de ropa y juguetes, reforestación, croquetones y torneos con causa.",
+      "foundingDate": "2023",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cortázar",
+        "addressRegion": "Guanajuato",
+        "addressCountry": "MX"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://wa.me/524111271872"
+      },
+      "areaServed": { "@type": "Country", "name": "México" },
+      "sameAs": [
+        "https://www.instagram.com/sonrie_mexico/"
+      ]
+    }
+    </script>
+
+    <!-- Fuentes: Nerko One + Roboto (secciones conservadas) · Bricolage + Caveat + Instrument (rediseño) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Preload para cargar las fuentes de manera eficiente -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@400;700&display=swap" as="style" onload="this.rel='stylesheet'">
-    
-    <!-- Favicon y iconos para dispositivos -->
-    <link rel="shortcut icon" href="assets/img/sonrieicon.png" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/sonriecarita-180x180.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/sonriecarita-152x152.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/sonriecarita-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/sonriecarita-76x76.png">
-    
-    <!-- Manifesto para PWA (Progressive Web App) -->
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Caveat:wght@700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="shortcut icon" href="assets/img/sonrieicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/img/sonriecarita.png">
     <link rel="manifest" href="manifest.json">
-    
-    <!-- Color de la barra de navegación móvil -->
-    <meta name="theme-color" content="#1b8fcf">
-    
-    <!-- Meta etiquetas de verificación para Google y Bing -->
-    <meta name="google-site-verification" content="your-verification-code"> <!-- Verificación de Google Search Console -->
-    <meta name="bing-site-verification" content="your-verification-code"> <!-- Verificación de Bing Webmaster Tools -->
-
-    <!-- Control de cache -->
-    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
-
-    <!-- Content Security Policy (CSP) para mejorar la seguridad -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net;">
-
-    <!-- Meta para la compatibilidad con idioma -->
-    <meta name="language" content="es-MX">
-
-    <!-- Preconexión de DNS para mejorar la carga -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-
-    <!--=============== REMIXICONS ===============-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css">
-    
-    <!-- Optimización para iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Permitir que el sitio se vea como una app a pantalla completa en iOS -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Ajustar el estilo de la barra de estado en iOS -->
-    <meta name="apple-mobile-web-app-title" content="Sonríe"> <!-- Título cuando el sitio está guardado en la pantalla de inicio de iOS -->
-    <link rel="apple-touch-icon-precomposed" href="assets/img/sonrieicon.png"> <!-- Icono para la pantalla de inicio de iOS -->
-
-    <!-- Fix para evitar zoom en formularios en Safari iOS -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <!-- Desactivar detección de números de teléfono en iOS -->
+    <meta name="apple-mobile-web-app-title" content="Sonríe">
     <meta name="format-detection" content="telephone=no">
 
-    <!-- Meta adicional para iOS Safari -->
-    <meta name="apple-mobile-web-app-orientations" content="portrait"> <!-- Permitir solo el modo retrato en la app web -->
-    <meta name="apple-mobile-web-app-orientations" content="landscape"> <!-- También permitir modo apaisado si es necesario -->
-    
+    <!--=============== REMIXICONS (solo la parte conservada los usa) ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css">
+
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/styles2.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <title>Sonríe México</title>
+    <link rel="stylesheet" href="assets/css/nuevo.css" />
 </head>
 
   <body>
@@ -106,9 +88,9 @@
       <div class="header-bg"></div>
       <nav class="nav container">
         <a href="#" class="nav__logo">
-          <img src="./assets/img/sonriepng.png" alt="Miguel Huizache Logo" class="nav__logo-img" height="10px" />
+          <img src="./assets/img/sonriepng.png" alt="Sonríe México" class="nav__logo-img" />
         </a>
-        
+
 
         <div class="nav__menu" id="nav-menu">
           <span class="nav__title">Menú</span>
@@ -121,11 +103,15 @@
             </li>
 
             <li class="nav__item">
-              <a href="#about" class="nav__link">QUÉ HACEMOS</a>
+              <a href="#hacemos" class="nav__link">QUÉ HACEMOS</a>
             </li>
 
             <li class="nav__item">
               <a href="#projects" class="nav__link">PROYECTOS</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#dona" class="nav__link">DONA</a>
             </li>
 
             <li class="nav__item">
@@ -159,17 +145,16 @@
     <main class="main">
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
-        <video autoplay muted loop playsinline preload="auto" class="home__video-background">
+        <video autoplay muted loop playsinline preload="auto" class="home__video-background" aria-hidden="true">
           <source src="./assets/img/smile.mp4" type="video/mp4">
-          <!-- Puedes agregar un formato adicional si es necesario -->
           Tu navegador no soporta videos HTML5.
         </video>
-        
-        
-    
+
+
+
         <div class="home__container container grid">
           <h1 class="home__name" id="homeName">Sonríe México</h1>
-    
+
           <div class="home__perfil">
             <div class="home__image">
               <img src="./assets/img/curved-arrow.svg" alt="" class="home__arrow" />
@@ -177,19 +162,19 @@
               <div class="geometric-box"></div>
             </div>
           </div>
-    
+
           <div class="home__info">
             <p class="home__description" id="homeDescription">
               <b>Somos una red de jóvenes</b>, comprometidos con mejorar el medio ambiente y nuestra comunidad. Nos enfocamos en formar agentes de cambio que inspiren y lideren iniciativas para crear un futuro mejor y más sostenible.
             </p>
-          
+
             <!-- Aquí los botones -->
             <div class="home__action-buttons">
               <a href="#projects" class="home__button" id="homeButton1">INVOLÚCRATE</a>
               <a href="#projects" class="home__button home__button--ghost" id="homeButton2">PROYECTOS</a>
             </div>
-            
-          
+
+
             <a href="#about" class="home__scroll">
               <div class="home__scroll-box">
                 <i class="ri-arrow-down-s-line"></i>
@@ -197,9 +182,9 @@
               <span class="home__scroll-text">Bajaaaa</span>
             </a>
           </div>
-          
-          
-          
+
+
+
         </div>
       </section>
     </main>
@@ -213,7 +198,7 @@
         <div class="custom-container custom-grid">
           <div class="text-content">
             <h2>
-        
+
               <span class="title-part-two">SONRÍE MÉXICO</span>
             </h2>
             <p>
@@ -226,12 +211,12 @@
               <img id="switchable-image" src="./assets/img/2png-removebg-preview.png" alt="Join us" class="animated-image" />
             </div>
           </div>
-          <!-- Imagen PNG agregada a la esquina inferior derecha -->
-          
+
+
         </div>
       </section>
-      
-      
+
+
 
       <!--==================== SECCIÓN 2 ====================-->
       <section class="custom-section section-two" data-scroll>
@@ -243,7 +228,7 @@
           </div>
           <div class="text-content">
             <h2>
-              <span class="title-part-one">CONOCE LAS</span> 
+              <span class="title-part-one">CONOCE LAS</span>
               <span class="title-part-two">INICIATIVAS</span>
             </h2>
             <p>
@@ -259,7 +244,7 @@
         <div class="custom-container custom-grid">
           <div class="text-content">
             <h2>
-              <span class="title-part-one">CONOCE NUESTRA</span> 
+              <span class="title-part-one">CONOCE NUESTRA</span>
               <span class="title-part-two">MISIÓN</span>
             </h2>
             <p>
@@ -269,7 +254,7 @@
           </div>
           <div class="image-content">
             <div class="image-wrapper">
-              <img id="switchable-image" src="./assets/img/1png-removebg-preview.png" alt="Join us" class="animated-image" />
+              <img src="./assets/img/1png-removebg-preview.png" alt="Join us" class="animated-image" />
             </div>
           </div>
         </div>
@@ -285,602 +270,540 @@
           </div>
           <div class="text-content">
             <h2>
-              <span class="title-part-one">Haz diferencia como</span> 
+              <span class="title-part-one">Haz diferencia como</span>
               <span class="title-part-two">DONADOR</span>
             </h2>
             <p>
-              Al convertirte en donador, puedes ser parte del cambio que transforma vidas. 
+              Al convertirte en donador, puedes ser parte del cambio que transforma vidas.
               Tu apoyo, por pequeño que sea, crea un impacto positivo en las comunidades que más lo necesitan.
             </p>
-            <a href="https://wa.me/524111271872?text=Hola%2C%20quisiera%20contribuir%20con%20una%20donaci%C3%B3n.%20%C2%BFC%C3%B3mo%20puedo%20ayudar%3F%20😁" target="_blank" class="section-button">
-              Dona Ahora 
+            <a href="#dona" class="section-button">
+              Dona Ahora
             </a>
-            
+
           </div>
         </div>
       </section>
     </div>
 
 
+    <!-- ════════════════════════════════════════════════════════════
+         REDISEÑO 2026 — de aquí para abajo todo es nuevo
+         Dirección de arte: papel + tinta + acentos de marca.
+         Motor: GSAP + ScrollTrigger + Lenis (assets/js/animaciones.js)
+         ════════════════════════════════════════════════════════════ -->
+    <div class="sm" id="zona-nueva">
 
+      <!-- ············ S1 · INTRO EDITORIAL ············ -->
+      <section class="sm-intro" id="about">
+        <div class="sm-shell">
+          <p class="sm-eyebrow" data-reveal>01 · Quiénes somos</p>
+          <h2 class="sm-display" data-lines>Somos jóvenes de México que cambian su comunidad</h2>
+          <p class="sm-script-line"><em class="sm-script sm-script--rosa" data-reveal>sonriendo</em></p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
-        <div class="about__container container grid">
-          <h2 class="section__title-1">
-            <span>Sé parte de Sonríe.</span>
-          </h2>
-
-          <div class="about__perfil">
-            <div class="about__image">
-              <img
-                src="./assets/img/SonrieQR.jpg"
-                alt="image"
-                class="about__img"
-              />
-
-              <div class="about__shadow"></div>
-
-              <div class="geometric-box"></div>
-
-              <img
-                src="./assets/img/random-lines.svg"
-                alt=""
-                class="about__line"
-              />
-              <div class="about__box"></div>
-            </div>
-          </div>
-
-          <div class="about__info">
-            <p class="about__description">
-              
-              
-              Si te interesa la realización de <b>Proyectos sociales, Campañas de Donación, Torneos, Dinámicas</b>
-              o quieres ser el <a href="https://www.instagram.com/sonrie_mexicoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><b> Líder</b></a> o  
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6"><b> Representante</b></a>
-              de <b>"Sonríe" en tu Comunidad</b>
-              estás en en <b>Lugar Correcto.</b>
-            </p>
-            
-
-            <ul class="about__list">
-              <li class="about__item">
-                Nuestra <b>misión</b> es <b>llegar a todo México</b> y sabemos que con tu apoyo podremos <b>cumplir esta meta. </b> 
-              </li>
-            </ul>
-
-            <div class="about__buttons">
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" class="button">
-                <i class="ri-send-plane-line"></i> Involúcrate
-              </a>
-
-              <a
-                href="https://www.instagram.com/sonrie_mexicoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                target="_blank"
-                class="button__ghost"
-              >
-                <i class="ri-instagram-line"></i>
-
+          <div class="sm-intro-grid">
+            <figure class="sm-media sm-intro-media" data-clip>
+              <img src="./assets/img/sonriejuntos.jpg" alt="La banda de Sonríe con dos camionetas llenas de donaciones, bajo el sol de Guanajuato" class="sm-par" width="1280" height="960">
+              <figcaption class="sm-cap">Colecta de ropa · Cortázar, Gto.</figcaption>
+            </figure>
+            <div class="sm-intro-copy">
+              <p data-reveal>
+                Sin oficinas y sin discursos. Juntamos ropa, juguetes y croquetas,
+                plantamos arbolitos y armamos torneos donde hasta el que pierde gana.
+                Así le hacemos desde 2023, y cada vez somos más.
+              </p>
+              <a class="sm-link" href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" target="_blank" rel="noopener" data-reveal>
+                <span class="sm-link-t" data-text="Cae con la banda">Cae con la banda</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 12h14m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      
+      <!-- ············ S2 · QUÉ HACEMOS (filas con imagen flotante) ············ -->
+      <section class="sm-hacemos" id="hacemos">
+        <div class="sm-shell">
+          <p class="sm-eyebrow" data-reveal>02 · Qué hacemos</p>
+          <h2 class="sm-h2" data-lines>Cinco maneras de mover a tu comunidad</h2>
 
-
-      
-
-      
-      
-
-
-
-
-      
-      
-
-
-      <!--==================== BANNER ====================-->
-      
-      
-
-
-
-      <!--==================== PROJECTS ====================-->
-      <section class="projects section" id="projects">
-        <h2 class="section__title-1">
-          <span>Súmate a las iniciativas.</span>
-        </h2>
-      
-        <div class="projects__container container grid">
-          <article class="projects__card">
-            <div class="projects__image">
-              <img class="projects__img" src="assets/img/S2.jpg" alt="image" />
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" class="projects__button button">
-                <i class="ri-arrow-right-up-line"></i>
+          <ul class="sm-rows" id="filasHacemos">
+            <li>
+              <a class="sm-row" href="#projects" data-img="./assets/img/sjuguetes.jpg" style="--acc:#f7c948" data-cursor-text="Ver">
+                <span class="sm-row-num">01</span>
+                <span class="sm-row-name">Juguetes</span>
+                <span class="sm-row-desc">Día del Niño y Reyes con regalo seguro</span>
+                <span class="sm-row-arrow" aria-hidden="true">→</span>
+                <img class="sm-row-thumb" src="./assets/img/sjuguetes.jpg" alt="" loading="lazy" aria-hidden="true">
               </a>
-            </div>
-      
-            <div class="projects__content">
-              <h3 class="projects__subtitle">05/07/2023</h3>
-              <h2 class="projects__title">Donación de Ropa</h2>
-              <p class="projects__description">
-                Logramos recolectar y entregar más de mil prendas a personas en situación de vulnerabilidad, ayudando a mejorar sus condiciones de vida.
-              </p>
-            </div>
-      
-            <div class="projects__buttons">
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" target="_blank" class="projects__link">
-                <i class="ri-hand-heart-line"></i> Contribuir
+            </li>
+            <li>
+              <a class="sm-row" href="#projects" data-img="./assets/img/sperros.jpg" style="--acc:#4caf7d" data-cursor-text="Ver">
+                <span class="sm-row-num">02</span>
+                <span class="sm-row-name">Perritos callejeros</span>
+                <span class="sm-row-desc">Croquetón: pancita llena, corazón contento</span>
+                <span class="sm-row-arrow" aria-hidden="true">→</span>
+                <img class="sm-row-thumb" src="./assets/img/sperros.jpg" alt="" loading="lazy" aria-hidden="true">
               </a>
-              <a href="https://www.instagram.com/sonrie_mexicoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="projects__link">
-                <i class="ri-eye-line"></i> Ver más
+            </li>
+            <li>
+              <a class="sm-row" href="#projects" data-img="./assets/img/sonrieeddy.jpg" style="--acc:#4caf7d" data-cursor-text="Ver">
+                <span class="sm-row-num">03</span>
+                <span class="sm-row-name">Reforestación</span>
+                <span class="sm-row-desc">Un árbol, un cambio</span>
+                <span class="sm-row-arrow" aria-hidden="true">→</span>
+                <img class="sm-row-thumb" src="./assets/img/sonrieeddy.jpg" alt="" loading="lazy" aria-hidden="true">
               </a>
-            </div>
-          </article>
-      
-          <article class="projects__card">
-            <div class="projects__image">
-              <img class="projects__img" src="assets/img/sarbol.jpg" alt="image" />
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" class="projects__button button">
-                <i class="ri-arrow-right-up-line"></i>
+            </li>
+            <li>
+              <a class="sm-row" href="#projects" data-img="./assets/img/sonriefucho.jpg" style="--acc:#1b8fcf" data-cursor-text="Ver">
+                <span class="sm-row-num">04</span>
+                <span class="sm-row-name">Deporte con causa</span>
+                <span class="sm-row-desc">Torneos donde todos ganan</span>
+                <span class="sm-row-arrow" aria-hidden="true">→</span>
+                <img class="sm-row-thumb" src="./assets/img/sonriefucho.jpg" alt="" loading="lazy" aria-hidden="true">
               </a>
-            </div>
-      
-            <div class="projects__content">
-              <h3 class="projects__subtitle">15/08/2023</h3>
-              <h2 class="projects__title">Un Árbol, un Cambio</h2>
-              <p class="projects__description">
-                Plantamos arbolitos en zonas deforestadas, contribuyendo a la reforestación y a la lucha contra el cambio climático.
-              </p>
-            </div>
-      
-            <div class="projects__buttons">
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" target="_blank" class="projects__link">
-                <i class="ri-hand-heart-line"></i> Apoyar
+            </li>
+            <li>
+              <a class="sm-row" href="#projects" data-img="https://images.unsplash.com/photo-1714317437445-785581e4ff7a?q=80&amp;w=900&amp;auto=format&amp;fit=crop" style="--acc:#e85a8b" data-cursor-text="Ver">
+                <span class="sm-row-num">05</span>
+                <span class="sm-row-name">Ropa y cobijas</span>
+                <span class="sm-row-desc">Más de mil prendas ya encontraron dueño</span>
+                <span class="sm-row-arrow" aria-hidden="true">→</span>
+                <img class="sm-row-thumb" src="https://images.unsplash.com/photo-1714317437445-785581e4ff7a?q=80&amp;w=200&amp;auto=format&amp;fit=crop" alt="" loading="lazy" aria-hidden="true">
               </a>
-              <a href="https://www.instagram.com/sonrie_mexicoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="projects__link">
-                <i class="ri-eye-line"></i> Ver más
-              </a>
-            </div>
-          </article>
-      
-          <article class="projects__card">
-            <div class="projects__image">
-              <img class="projects__img" src="assets/img/sjuguetes.jpg" alt="image" />
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" class="projects__button button">
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-      
-            <div class="projects__content">
-              <h3 class="projects__subtitle">30/04/2024</h3>
-              <h2 class="projects__title">Recolección de Juguetes</h2>
-              <p class="projects__description">
-                Recolectamos más de 300 juguetes para los niños en comunidades rurales, alegrando su Día del Niño y sacando una Sonrisa.
-              </p>
-            </div>
-      
-            <div class="projects__buttons">
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" target="_blank" class="projects__link">
-                <i class="ri-hand-heart-line"></i> Participar
-              </a>
-              <a href="https://www.instagram.com/sonrie_mexicoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="projects__link">
-                <i class="ri-eye-line"></i> Ver más
-              </a>
-            </div>
-          </article>
-      
-          <article class="projects__card">
-            <div class="projects__image">
-              <img class="projects__img" src="assets/img/sjuguetes2.jpg" alt="image" />
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" class="projects__button button">
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-      
-            <div class="projects__content">
-              <h3 class="projects__subtitle">6/01/2024</h3>
-              <h2 class="projects__title">Colecta de Juguetes</h2>
-              <p class="projects__description">
-                Organizamos una colecta de juguetes donde logramos entregar regalos a más de 70 niños.
-              </p>
-            </div>
-      
-            <div class="projects__buttons">
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" target="_blank" class="projects__link">
-                <i class="ri-hand-heart-line"></i> Donar
-              </a>
-              <a href="https://www.instagram.com/sonrie_mexicoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="projects__link">
-                <i class="ri-eye-line"></i> Ver más
-              </a>
-            </div>
-          </article>
-      
-          <article class="projects__card">
-            <div class="projects__image">
-              <img class="projects__img" src="assets/img/sperros.jpg" alt="image" />
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" class="projects__button button">
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-      
-            <div class="projects__content">
-              <h3 class="projects__subtitle">26/11/2023</h2>
-              <h2 class="projects__title">Croquetón</h2>
-              <p class="projects__description">
-                Recolectamos croquetas para perritos en situación de abandono y se las fuimos a regalar.
-              </p>
-            </div>
-      
-            <div class="projects__buttons">
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" target="_blank" class="projects__link">
-                <i class="ri-hand-heart-line"></i> Apoyar
-              </a>
-              <a href="https://www.instagram.com/sonrie_mexicoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="projects__link">
-                <i class="ri-eye-line"></i> Ver más
-              </a>
-            </div>
-          </article>
-      
-          <article class="projects__card">
-            <div class="projects__image">
-              <img class="projects__img" src="assets/img/sonriefucho.jpg" alt="image" />
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" class="projects__button button">
-                <i class="ri-arrow-right-up-line"></i>
-              </a>
-            </div>
-      
-            <div class="projects__content">
-              <h3 class="projects__subtitle">En curso...</h3>
-              <h2 class="projects__title">Torneo de Fútbol Sonríe</h2>
-              <p class="projects__description">
-                Es un torneo donde además de jugar y practicar el deporte, ayudamos a los que más lo necesitan con los fondos recaudados.
-              </p>
-            </div>
-      
-            <div class="projects__buttons">
-              <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" target="_blank" class="projects__link">
-                <i class="ri-hand-heart-line"></i> Contribuir
-              </a>
-              <a href="https://www.instagram.com/sonrie_mexicoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="projects__link">
-                <i class="ri-eye-line"></i> Ver más
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-      
-      
-
-            <!-- <form action="" class="contact__form" id="contact-form"> -->
-              
-      
-    </main>
-
-    
-
-    <section class="custom-banner">
-      <div class="custom-banner__content">
-        <h2 class="custom-banner__title">Únete a nuestra misión</h2>
-        <p class="custom-banner__description">Trabajamos juntos por un futuro mejor, donde todos podemos contribuir a hacer del mundo un lugar mucho mejor.</p>
-        
-        <div class="custom-banner__button-container">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF45wJ-o1NG7utR22QReI8o83I6qxhMpJnznvYPood75BIlQ/viewform?pli=1" class="button">
-            <i class="ri-send-plane-line"></i> Involúcrate
-          </a>
-        </div>
-      </div>
-      
-      <div class="custom-banner__image">
-        <img src="./assets/img/sonriejuntos.jpg" alt="Banner Image">
-      </div>
-    </section>
-
-    <!--==================== SERVICES ====================-->
-    
-
-
-    
-
-   
-    <section class="social-benefits section">
-      <h2 class="section__title-22">
-        <span>Beneficios de</span>
-        <img src="./assets/img/sonriesolo.png" alt="Sonríe" class="sonrie-title-image" />
-      </h2>
-      <div class="social-benefits__container">
-        <div class="social-benefit">
-          <div class="social-benefit__image-wrapper">
-            <img src="./assets/img/imgyendi.png" alt="Beneficio 1" class="social-benefit__image" />
-            <div class="social-benefit__text">
-              <h3 class="social-benefit__title">Ser Mejor Persona</h3>
-              <p>Ayudar a los demás no solo beneficia a quienes reciben, sino que también te convierte en una mejor persona,
-                promoviendo empatía, solidaridad y crecimiento personal.</p>
-            </div>
-            <button class="social-benefit__button">Descubre más</button>
-          </div>
-        </div>
-    
-        <div class="social-benefit">
-          <div class="social-benefit__image-wrapper">
-            <img src="./assets/img/todoss.png" alt="Beneficio 2" class="social-benefit__image" />
-            <div class="social-benefit__text">
-              <h3 class="social-benefit__title">Cambia tus ideas</h3>
-              <p>Valorar la vida desde una nueva perspectiva. Ayudar a otros puede cambiar por completo cómo vemos nuestro día a día,
-                dándonos una apreciación más profunda por todo lo que tenemos.</p>
-            </div>
-            <button class="social-benefit__button">Conoce más</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-  
-
-    
-
-
-
-
-    <section class="info-section">
-      <div class="info-container">
-        <!-- Imagen ocupando el 40% -->
-        <div class="info-image">
-          <img src="assets/img/niño.png" alt="Niño feliz recibiendo un juguete o ayuda">
-        </div>
-    
-        <!-- Bloques de información -->
-        <div class="info-content">
-          <!-- Bloque superior con 2/3 del espacio -->
-          <div class="info-content__main">
-            <h2 class="section__title-1">
-              <span>Sé parte de esto.</span>
-            </h2>
-            <p>
-              Cada donación, sin importar su tamaño, <strong>lleva esperanza y alegría</strong> a quienes más lo necesitan. 
-              Desde ropa, alimentos, hasta juguetes o apoyo financiero, tu gesto <em>tiene un impacto real</em> y transforma vidas. 
-              <strong>Haz la diferencia</strong> hoy y contribuye a crear un futuro más brillante para todos.
-            </p>
-          </div>
-    
-          <!-- Bloque inferior con 1/3 del espacio en color azul con división media recta -->
-          <div class="info-content__secondary">
-            <p>
-              <strong><i class="ri-gift-line"></i> ¡Súmate!</strong> Cada aportación cuenta.  <em>Con tu ayuda, estamos construyendo un mañana mejor para muchas personas.</em>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    
-    
-    <section class="info-section reverse">
-      <div class="info-container reverse">
-        <!-- Bloques de información ocupando 60% -->
-        <div class="info-content">
-          <!-- Bloque superior con 2/3 del espacio -->
-          <div class="info-content__main">
-            <h2><i class="ri-calendar-event-line"></i> ¡Únete a la diversión en comunidad!</h2>
-            <p>
-              Aquí no solo se trata de donar. Organizamos todo tipo de actividades, desde torneos deportivos, salidas al aire libre, 
-              hasta fiestas y convivencias. ¡Hay algo para todos! <strong>La idea es pasarla bien</strong>, conocer gente nueva y 
-              <em>crear recuerdos juntos</em>. Cada actividad nos acerca más y hace que nuestra comunidad crezca más unida.
-            </p>
-          </div>
-    
-          <!-- Bloque inferior con 1/3 del espacio en color azul con división media recta -->
-          <div class="info-content__secondary">
-            <p>
-              <strong>¡No te lo pierdas!</strong> Ya sea que quieras competir, relajarte o solo pasar un buen rato, 
-              tenemos algo preparado para ti. <i class="ri-hand-heart-line"></i> <em>Únete y sé parte de estos momentos especiales</em>.
-            </p>
-          </div>
-        </div>
-    
-        <!-- Imagen ocupando el 40% -->
-        <div class="info-image">
-          <img src="assets/img/sonrienat.jpeg" alt="Personas disfrutando de actividades comunitarias">
-        </div>
-      </div>
-    </section>
-    
-    <section class="about section" id="mex">
-      <div class="about__container container grid">
-        <h2 class="section__title-1">
-          <span>Llegar a todo México.</span>
-        </h2>
-
-        <div class="about__perfil">
-          <div class="about__image">
-            <img src="./assets/img/mxmap.png" alt="Mapa de México con las ubicaciones de Sonríe" class="about__img map" />
-
-            <div class="about__shadow hihi"></div>
-
-            <div class="geometric-box"></div>
-
-            <img
-              src="./assets/img/random-lines.svg"
-              alt=""
-              class="about__line"
-            />
-            <div class="about__box"></div>
-          </div>
-        </div>
-
-        <div class="about__info">
-          <p class="about__description">
-            Les comparto que una gran meta que tenemos es <b>llegar a cuantas más partes de México mejor</b> y sabemos que hay muchas personitas que están <b>interesadas en hacer 
-              el cambio como un/a</b> <a href="https://www.instagram.com/sonrie_mexicoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><b>Líder</b></a> 
-              o <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6"><b>Representante</b></a> en su Comunidad.</b>
-          </p>
-        
-          <ul class="about__list">
-            <li class="about__item">
-             Es por eso que confiamos en ustedes y sabemos que algún día lo lograremos con todo su apoyo, por eso los invitamos a <b>participar </b>y ser un <b>Líder en su comunidad.</b>
-             
             </li>
           </ul>
+        </div>
+        <div class="sm-float" id="floatImg" aria-hidden="true"></div>
+      </section>
 
-          <div class="about__buttons">
-            <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" class="button">
-              <i class="ri-send-plane-line"></i> Involúcrate
-            </a>
+      <!-- ············ S3 · PROYECTOS (scroll horizontal anclado) ············ -->
+      <section class="sm-proyectos" id="projects">
+        <div class="sm-shell sm-proyectos-head">
+          <p class="sm-eyebrow" data-reveal>03 · Proyectos</p>
+          <h2 class="sm-h2" data-lines>Lo que ya pasó de verdad</h2>
+          <p class="sm-hint" data-reveal aria-hidden="true">Sigue bajando — esto se mueve solo ↓</p>
+        </div>
 
-            <a
-              href="https://www.instagram.com/sonrie_mexicoo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-              target="_blank"
-              class="button__ghost"
-            >
-              <i class="ri-instagram-line"></i>
+        <div class="sm-hwrap" id="hWrap">
+          <div class="sm-track" id="hTrack">
+            <article class="sm-proj" data-cursor-text="Míralo">
+              <figure class="sm-proj-media"><img src="./assets/img/sonriet.jpg" alt="Jóvenes entregando ropa donada de camioneta a camioneta" loading="lazy" width="1280" height="960"></figure>
+              <div class="sm-proj-info">
+                <span class="sm-proj-tag" style="--acc:#e85a8b">Ropa</span>
+                <h3>Donación de Ropa</h3>
+                <p>+1,000 prendas · Julio 2023</p>
+              </div>
+            </article>
 
+            <article class="sm-proj -alt" data-cursor-text="Míralo">
+              <figure class="sm-proj-media"><img src="./assets/img/sonrieeddy.jpg" alt="Voluntario plantando un arbolito en zona deforestada" loading="lazy" width="732" height="1245"></figure>
+              <div class="sm-proj-info">
+                <span class="sm-proj-tag" style="--acc:#4caf7d">Ambiental</span>
+                <h3>Un Árbol, un Cambio</h3>
+                <p>Reforestación · Agosto 2023</p>
+              </div>
+            </article>
+
+            <article class="sm-proj" data-cursor-text="Míralo">
+              <figure class="sm-proj-media"><img src="./assets/img/sonrienat.jpeg" alt="Voluntarios regalando globos a niños en la calle" loading="lazy" width="600" height="800"></figure>
+              <div class="sm-proj-info">
+                <span class="sm-proj-tag" style="--acc:#f7c948">Comunidad</span>
+                <h3>Día del Niño</h3>
+                <p>+300 juguetes · Abril 2024</p>
+              </div>
+            </article>
+
+            <article class="sm-proj -alt" data-cursor-text="Míralo">
+              <figure class="sm-proj-media"><img src="./assets/img/sjuguetes2.jpg" alt="Niño corriendo feliz con su juguete nuevo" loading="lazy" width="800" height="1067"></figure>
+              <div class="sm-proj-info">
+                <span class="sm-proj-tag" style="--acc:#f7c948">Comunidad</span>
+                <h3>Colecta de Reyes</h3>
+                <p>+70 niños con regalo · Enero 2024</p>
+              </div>
+            </article>
+
+            <article class="sm-proj" data-cursor-text="Míralo">
+              <figure class="sm-proj-media"><img src="./assets/img/sperros.jpg" alt="Cartel del Croquetón de Sonríe" loading="lazy" width="828" height="828"></figure>
+              <div class="sm-proj-info">
+                <span class="sm-proj-tag" style="--acc:#4caf7d">Animales</span>
+                <h3>Croquetón</h3>
+                <p>Perritos con pancita llena · Nov 2023</p>
+              </div>
+            </article>
+
+            <article class="sm-proj -alt" data-cursor-text="Míralo">
+              <figure class="sm-proj-media"><img src="./assets/img/sonriefucho.jpg" alt="Equipos del torneo de fútbol Sonríe en la cancha" loading="lazy" width="1280" height="854"></figure>
+              <div class="sm-proj-info">
+                <span class="sm-proj-tag" style="--acc:#1b8fcf">Deporte</span>
+                <h3>Torneo Sonríe</h3>
+                <p>En curso · los fondos se donan</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ············ S4 · IMPACTO (fondo noche) ············ -->
+      <section class="sm-stats" data-cursor="-inverse">
+        <div class="sm-shell">
+          <p class="sm-eyebrow -claro" data-reveal>04 · El marcador</p>
+          <div class="sm-stats-grid">
+            <div class="sm-stat" data-reveal>
+              <span class="sm-stat-num"><span data-count="1000">1,000</span><i>+</i></span>
+              <span class="sm-stat-label" style="--acc:#e85a8b">prendas donadas</span>
+            </div>
+            <div class="sm-stat" data-reveal>
+              <span class="sm-stat-num"><span data-count="370">370</span><i>+</i></span>
+              <span class="sm-stat-label" style="--acc:#f7c948">juguetes entregados</span>
+            </div>
+            <div class="sm-stat" data-reveal>
+              <span class="sm-stat-num"><span data-count="6">6</span></span>
+              <span class="sm-stat-label" style="--acc:#1b8fcf">proyectos realizados</span>
+            </div>
+            <div class="sm-stat" data-reveal>
+              <span class="sm-stat-num">∞</span>
+              <span class="sm-stat-label" style="--acc:#4caf7d">sonrisas compartidas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm-marquee" aria-hidden="true">
+          <div class="sm-marquee-track" id="marqueeTrack">
+            <span>Sonríe México&nbsp;—&nbsp;haz tu granito&nbsp;—&nbsp;</span><span>Sonríe México&nbsp;—&nbsp;haz tu granito&nbsp;—&nbsp;</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ············ S5 · VIDEO EXPANDIBLE ············ -->
+      <section class="sm-video" id="videoSec">
+        <figure class="sm-video-fig" id="videoFig" data-cursor-text="Súbele">
+          <video id="videoBanda" muted loop playsinline controls preload="none" poster="./assets/img/sonriet.jpg">
+            <source src="./assets/img/sonrievideo.mp4" type="video/mp4">
+          </video>
+          <figcaption class="sm-video-quote">
+            <span data-lines>Un pequeño acto puede generar un gran impacto.</span>
+          </figcaption>
+          <button class="sm-video-sound" id="videoSound" aria-label="Activar sonido del video">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z" fill="currentColor"/><path class="ondas" d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </figure>
+      </section>
+
+      <!-- ············ S6 · GALERÍA (momentos) ············ -->
+      <section class="sm-galeria" id="galeria">
+        <div class="sm-shell">
+          <p class="sm-eyebrow" data-reveal>05 · La banda en acción</p>
+          <h2 class="sm-h2" data-lines>Momentos que valen todo</h2>
+
+          <div class="sm-gal-grid">
+            <figure class="sm-media sm-gal-a" data-clip>
+              <img src="./assets/img/sonriet.jpg" alt="El equipo completo después de la entrega de donaciones" class="sm-par skew-el" loading="lazy" width="1280" height="960">
+              <figcaption class="sm-cap">La banda completa · 2024</figcaption>
+            </figure>
+            <figure class="sm-media sm-gal-b" data-clip data-dir="left">
+              <img src="./assets/img/niño.png" alt="Niño corriendo feliz con su peluche y pelota nuevos" class="sm-par skew-el" loading="lazy" width="791" height="1069">
+              <figcaption class="sm-cap">Colecta de Reyes · Ene 2024</figcaption>
+              <span class="sm-nota" aria-hidden="true">¡esa sonrisa! <svg viewBox="0 0 40 24" width="34" height="20"><path d="M2 4c10 14 24 16 36 8m0 0-8-1m8 1-4 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </figure>
+            <figure class="sm-media sm-gal-c" data-clip>
+              <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1200&auto=format&fit=crop" alt="Manos de voluntarios apiladas en equipo" class="sm-par skew-el" loading="lazy" width="1200" height="800">
+              <figcaption class="sm-cap">Manos que suman</figcaption>
+            </figure>
+            <figure class="sm-media sm-gal-d" data-clip data-dir="left">
+              <img src="./assets/img/sonrienat.jpeg" alt="Voluntaria regalando globos a niños de la comunidad" class="sm-par skew-el" loading="lazy" width="600" height="800">
+              <figcaption class="sm-cap">Día del Niño · Abr 2024</figcaption>
+            </figure>
+            <figure class="sm-media sm-gal-e" data-clip>
+              <img src="./assets/img/S1.jpg" alt="Voluntaria alimentando a cuatro perritos callejeros bajo un árbol" class="sm-par skew-el" loading="lazy" width="960" height="576">
+              <figcaption class="sm-cap">Croquetón · Nov 2023</figcaption>
+            </figure>
+            <figure class="sm-media sm-gal-f" data-clip data-dir="left">
+              <img src="https://images.unsplash.com/photo-1510566337590-2fc1f21d0faa?q=80&w=1200&auto=format&fit=crop" alt="Niños jugando fútbol en la calle" class="sm-par skew-el" loading="lazy" width="1200" height="800">
+              <figcaption class="sm-cap">El deporte también ayuda</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ············ S7 · DONAR ············ -->
+      <section class="sm-donar" id="dona">
+        <div class="sm-shell sm-donar-grid">
+          <div class="sm-donar-izq">
+            <div class="sm-donar-sticky">
+              <p class="sm-eyebrow" data-reveal>06 · Dona</p>
+              <h2 class="sm-h2" data-lines>Tu ayuda se convierte en sonrisas</h2>
+              <p class="sm-donar-p" data-reveal>
+                Cada peso, cada prenda y cada bolsa de croquetas llega directo:
+                nosotros mismos hacemos las entregas y las publicamos en redes.
+              </p>
+              <p class="sm-script sm-script--rosa sm-donar-nota" data-reveal>¡desde $50 ya ayudas!
+                <svg viewBox="0 0 40 34" width="36" height="30" aria-hidden="true"><path d="M6 2c2 14 10 22 28 24m0 0-9-3m9 3-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </p>
+            </div>
+          </div>
+
+          <div class="sm-donar-der">
+            <article class="sm-dcard sm-dcard--banco" data-reveal>
+              <h3>Transferencia</h3>
+              <dl class="sm-banco">
+                <div><dt>Titular</dt><dd id="donaTitular">Sonríe México</dd></div>
+                <div id="filaBanco" hidden><dt>Banco</dt><dd id="donaBanco" data-banco=""></dd></div>
+                <div id="filaClabe" hidden><dt>CLABE</dt><dd id="donaClabe" data-clabe=""></dd></div>
+              </dl>
+              <button class="sm-btn sm-btn--copiar" id="btnCopiarClabe" hidden>
+                <span class="t" data-text="Copiar CLABE">Copiar CLABE</span>
+              </button>
+              <a class="sm-btn" id="btnPedirClabe" href="https://wa.me/524111271872?text=Hola%2C%20quiero%20hacer%20una%20transferencia%20a%20Sonr%C3%ADe%20%C2%BFme%20pasan%20la%20CLABE%3F" target="_blank" rel="noopener">
+                <span class="t" data-text="Pedir la CLABE">Pedir la CLABE</span>
+              </a>
+              <p class="sm-dcard-nota">Te la mandamos al momento, y después te contamos exactamente a qué se fue tu apoyo.</p>
+            </article>
+
+            <article class="sm-dcard" data-reveal>
+              <h3>Por WhatsApp</h3>
+              <p>Dinos cuánto quieres aportar o qué tienes para donar y coordinamos la entrega el mismo día.</p>
+              <span class="sm-magnet" data-magnetic>
+                <a class="sm-btn sm-btn--lleno" href="https://wa.me/524111271872?text=Hola%2C%20quiero%20donar%20a%20Sonr%C3%ADe%20M%C3%A9xico%20%3A%29" target="_blank" rel="noopener">
+                  <span class="fill" aria-hidden="true"><span></span></span>
+                  <span class="t" data-text="Donar por WhatsApp">Donar por WhatsApp</span>
+                </a>
+              </span>
+            </article>
+
+            <article class="sm-dcard sm-dcard--especie" data-reveal>
+              <figure><img src="https://images.unsplash.com/photo-1701645970699-bb9ce831d043?q=80&w=1200&auto=format&fit=crop" alt="Cajas de madera llenas de ropa donada" loading="lazy" width="1200" height="800"></figure>
+              <h3>En especie</h3>
+              <p>Ropa y cobijas en buen estado, juguetes completos, alimentos no perecederos y croquetas. Todo se entrega tal cual nos lo das.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ············ S8 · DÓNDE ESTAMOS ············ -->
+      <section class="sm-mex" id="mex">
+        <div class="sm-shell sm-mex-grid">
+          <div class="sm-mex-info">
+            <p class="sm-eyebrow" data-reveal>07 · Sedes</p>
+            <h2 class="sm-h2" data-lines>Hoy Cortázar. Mañana todo México.</h2>
+            <ul class="sm-sedes">
+              <li class="sm-sede -activa" data-reveal>
+                <span class="sm-sede-dot" style="--acc:#e85a8b"></span>
+                <span class="sm-sede-city">Cortázar, Gto.</span>
+                <span class="sm-sede-meta">Sede original · 2023</span>
+              </li>
+              <li class="sm-sede" data-reveal>
+                <span class="sm-sede-dot" style="--acc:#f7c948"></span>
+                <span class="sm-sede-city">Celaya · Salvatierra · Villagrán</span>
+                <span class="sm-sede-meta">Ya nos tocan la puerta</span>
+              </li>
+              <li class="sm-sede" data-reveal>
+                <span class="sm-sede-dot" style="--acc:#1b8fcf"></span>
+                <span class="sm-sede-city">¿Tu ciudad?</span>
+                <span class="sm-sede-meta">Ábrela tú — te acompañamos</span>
+              </li>
+            </ul>
+            <span class="sm-magnet" data-magnetic data-reveal>
+              <a class="sm-btn sm-btn--lleno" href="https://docs.google.com/forms/d/e/1FAIpQLSfF45wJ-o1NG7utR22QReI8o83I6qxhMpJnznvYPood75BIlQ/viewform" target="_blank" rel="noopener">
+                <span class="fill" aria-hidden="true"><span></span></span>
+                <span class="t" data-text="Quiero abrir mi sede">Quiero abrir mi sede</span>
+              </a>
+            </span>
+          </div>
+
+          <figure class="sm-mex-mapa" data-clip>
+            <img src="./assets/img/mxmap.png" alt="Mapa 3D de México con la sede de Sonríe en Guanajuato" loading="lazy" width="2297" height="1732">
+            <span class="sm-pin" style="--px:47%; --py:57%; --acc:#e85a8b"><i></i></span>
+            <span class="sm-pin -meta" style="--px:52%; --py:62%; --acc:#f7c948"><i></i></span>
+            <span class="sm-pin -meta" style="--px:31%; --py:31%; --acc:#f7c948"><i></i></span>
+            <span class="sm-pin -meta" style="--px:72%; --py:73%; --acc:#f7c948"><i></i></span>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ············ S9 · CURSO LSM ············ -->
+      <section class="sm-lsm" id="lsm">
+        <div class="sm-shell">
+          <p class="sm-eyebrow -centrado" data-reveal>08 · Inclusión</p>
+          <h2 class="sm-h2 -centrado" data-lines>Aprende a decir «sonríe» con las manos</h2>
+
+          <div class="sm-manos" data-reveal>
+            <figure><img src="./assets/img/s.jpg" alt="Seña de la letra S en Lengua de Señas Mexicana" loading="lazy" width="628" height="713"><figcaption>S</figcaption></figure>
+            <figure><img src="./assets/img/o.jpg" alt="Seña de la letra O" loading="lazy" width="628" height="713"><figcaption>O</figcaption></figure>
+            <figure><img src="./assets/img/n.jpg" alt="Seña de la letra N" loading="lazy" width="628" height="713"><figcaption>N</figcaption></figure>
+            <figure><img src="./assets/img/r.jpg" alt="Seña de la letra R" loading="lazy" width="628" height="713"><figcaption>R</figcaption></figure>
+            <figure><img src="./assets/img/i.jpg" alt="Seña de la letra I" loading="lazy" width="628" height="713"><figcaption>I</figcaption></figure>
+            <figure><img src="./assets/img/e.jpg" alt="Seña de la letra E" loading="lazy" width="628" height="713"><figcaption>E</figcaption></figure>
+          </div>
+
+          <p class="sm-lsm-p" data-reveal>Hicimos un mini curso gratuito de Lengua de Señas Mexicana para que nadie se quede fuera de la conversación.</p>
+          <div class="-centrado" data-reveal>
+            <a class="sm-link" href="./assets/cursolsm/index.html">
+              <span class="sm-link-t" data-text="Tomar el curso gratis">Tomar el curso gratis</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 12h14m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
           </div>
         </div>
-      </div>
-    </section>
-    
+      </section>
 
+      <!-- ············ S10 · FAQ ············ -->
+      <section class="sm-faq" id="faq">
+        <div class="sm-shell">
+          <div class="sm-faq-inner">
+            <p class="sm-eyebrow" data-reveal>09 · Dudas</p>
+            <h2 class="sm-h2" data-lines>Lo que siempre nos preguntan</h2>
 
-    <section class="services section">
-      <h2 class="section__title-2"><span>Nuestras Iniciativas</span></h2>
-    
-      <div class="services__container container grid">
-        <article class="services__card">
-          <div class="services__border"></div>
-    
-          <div class="services__content">
-            <div class="services__icon">
-              <div class="services__box"></div>
-              <i class="ri-leaf-line"></i>
+            <div class="sm-faq-list">
+              <details class="sm-faq-item" data-reveal>
+                <summary><span>¿Cómo me uno a Sonríe?</span><i aria-hidden="true"></i></summary>
+                <div class="sm-faq-body"><p>Entra al <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" target="_blank" rel="noopener">grupo de WhatsApp</a>, saluda y listo. Ahí se avisa de cada campaña y evento.</p></div>
+              </details>
+              <details class="sm-faq-item" data-reveal>
+                <summary><span>¿Participar cuesta algo?</span><i aria-hidden="true"></i></summary>
+                <div class="sm-faq-body"><p>Nada. Traes tus ganas y ya. Si además quieres donar algo, bienvenido sea.</p></div>
+              </details>
+              <details class="sm-faq-item" data-reveal>
+                <summary><span>¿Necesito experiencia o cierta edad?</span><i aria-hidden="true"></i></summary>
+                <div class="sm-faq-body"><p>Para nada. Cada quien aporta lo suyo: cargar cajas, tomar fotos, hacer diseños o traer las mejores playlists.</p></div>
+              </details>
+              <details class="sm-faq-item" data-reveal>
+                <summary><span>¿Puedo llevar Sonríe a mi ciudad?</span><i aria-hidden="true"></i></summary>
+                <div class="sm-faq-body"><p>Ese es el plan. Llena el <a href="https://docs.google.com/forms/d/e/1FAIpQLSfF45wJ-o1NG7utR22QReI8o83I6qxhMpJnznvYPood75BIlQ/viewform" target="_blank" rel="noopener">formulario de líderes</a> y te acompañamos a arrancar tu sede.</p></div>
+              </details>
+              <details class="sm-faq-item" data-reveal>
+                <summary><span>¿Qué puedo donar?</span><i aria-hidden="true"></i></summary>
+                <div class="sm-faq-body"><p>Ropa y cobijas en buen estado, juguetes completos, alimentos no perecederos, croquetas… y si prefieres aportar dinero, <a href="#dona">aquí te decimos cómo</a>.</p></div>
+              </details>
             </div>
-    
-            <h2 class="services__title">Cuidado del Medio Ambiente</h2>
-    
-            <p class="services__description">
-              A través de la reforestación, la limpieza de áreas naturales y campañas de reciclaje, nos dedicamos a proteger el medio ambiente y a crear conciencia sobre su importancia.
-            </p>
           </div>
-        </article>
-    
-        <article class="services__card">
-          <div class="services__border"></div>
-    
-          <div class="services__content">
-            <div class="services__icon">
-              <div class="services__box"></div>
-              <i class="ri-hand-heart-line"></i>
+        </div>
+      </section>
+
+      <!-- ············ S10.5 · INSTAGRAM ············ -->
+      <section class="sm-ig" id="instagram">
+        <div class="sm-shell">
+          <div class="sm-ig-head">
+            <div>
+              <p class="sm-eyebrow" data-reveal>10 · Síguenos</p>
+              <h2 class="sm-h2" data-lines>Todo pasa primero en Instagram</h2>
             </div>
-    
-            <h2 class="services__title">Apoyo Comunitario</h2>
-    
-            <p class="services__description">
-              Organizamos donaciones de ropa, juguetes y alimentos para las personas más vulnerables, promoviendo la empatía y la solidaridad en nuestra comunidad.
-            </p>
+            <span class="sm-magnet" data-magnetic data-reveal>
+              <a class="sm-btn sm-btn--lleno" href="https://www.instagram.com/sonrie_mexico/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.4" fill="currentColor"/></svg>
+                <span class="t" data-text="@sonrie_mexico">@sonrie_mexico</span>
+              </a>
+            </span>
           </div>
-        </article>
-    
-        <article class="services__card">
-          <div class="services__border"></div>
-    
-          <div class="services__content">
-            <div class="services__icon">
-              <div class="services__box"></div>
-              <i class="ri-team-line"></i>
-            </div>
-    
-            <h2 class="services__title">Formación de Agentes de Cambio</h2>
-    
-            <p class="services__description">
-              Nos enfocamos en formar jóvenes comprometidos, enseñándoles a ser líderes en iniciativas sociales y ambientales, impulsando el cambio desde las bases de la comunidad.
-            </p>
+
+          <!-- Pared de Instagram: fotos reales de las campañas, cada una lleva al perfil.
+               (Para feed EN VIVO con likes/caption: pegar aquí blockquotes
+               .instagram-media con la URL de cada post; embed.js los renderiza.) -->
+          <div class="sm-ig-wall">
+            <a class="sm-ig-item" href="https://www.instagram.com/sonrie_mexico/" target="_blank" rel="noopener" data-cursor-text="Ver">
+              <img src="./assets/img/sonriejuntos.jpg" alt="La banda de Sonríe con las camionetas de donaciones" loading="lazy" width="1280" height="960">
+              <span class="sm-ig-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.4" fill="currentColor"/></svg></span>
+            </a>
+            <a class="sm-ig-item" href="https://www.instagram.com/sonrie_mexico/" target="_blank" rel="noopener" data-cursor-text="Ver">
+              <img src="./assets/img/sonrienat.jpeg" alt="Regalando globos a niños en el Día del Niño" loading="lazy" width="600" height="800">
+              <span class="sm-ig-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.4" fill="currentColor"/></svg></span>
+            </a>
+            <a class="sm-ig-item" href="https://www.instagram.com/sonrie_mexico/" target="_blank" rel="noopener" data-cursor-text="Ver">
+              <img src="./assets/img/S1.jpg" alt="Alimentando perritos callejeros en el Croquetón" loading="lazy" width="960" height="576">
+              <span class="sm-ig-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.4" fill="currentColor"/></svg></span>
+            </a>
+            <a class="sm-ig-item" href="https://www.instagram.com/sonrie_mexico/" target="_blank" rel="noopener" data-cursor-text="Ver">
+              <img src="./assets/img/niño.png" alt="Niño feliz corriendo con su juguete nuevo" loading="lazy" width="791" height="1069">
+              <span class="sm-ig-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.4" fill="currentColor"/></svg></span>
+            </a>
+            <a class="sm-ig-item" href="https://www.instagram.com/sonrie_mexico/" target="_blank" rel="noopener" data-cursor-text="Ver">
+              <img src="./assets/img/sonrieeddy.jpg" alt="Plantando un arbolito al atardecer" loading="lazy" width="732" height="1245">
+              <span class="sm-ig-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.4" fill="currentColor"/></svg></span>
+            </a>
+            <a class="sm-ig-item" href="https://www.instagram.com/sonrie_mexico/" target="_blank" rel="noopener" data-cursor-text="Ver">
+              <img src="./assets/img/sjuguetes.jpg" alt="Entrega de juguetes en comunidades rurales" loading="lazy" width="1280" height="960">
+              <span class="sm-ig-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.4" r="1.4" fill="currentColor"/></svg></span>
+            </a>
           </div>
-        </article>
-      </div>
-    </section>
-z
+        </div>
+      </section>
 
-    
-    
-    <!-- Sección con efecto parallax -->
-<!-- Sección con parallax y borde no recto -->
-<!-- Sección con parallax y borde inclinado -->
-<!-- Sección con parallax y borde superior inclinado -->
-<section class="parallax-section">
-  <div class="parallax-content">
-    
-  </div>
-</section>
+      <!-- ············ S11 · FOOTER GIGANTE ············ -->
+      <footer class="sm-footer" id="contacto" data-cursor="-inverse">
+        <figure class="sm-footer-franja" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1545886082-e66c6b9e011a?q=80&w=1600&auto=format&fit=crop" alt="" loading="lazy" class="sm-par" width="1600" height="1067">
+        </figure>
 
+        <div class="sm-shell sm-footer-cta">
+          <h2 class="sm-h2 -claro" data-lines>¿Hacemos equipo?</h2>
+          <span class="sm-magnet" data-magnetic>
+            <a class="sm-btn sm-btn--lleno sm-btn--grande" href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" target="_blank" rel="noopener">
+              <span class="fill" aria-hidden="true"><span></span></span>
+              <span class="t" data-text="Únete al grupo">Únete al grupo</span>
+            </a>
+          </span>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+          <div class="sm-badge" aria-hidden="true">
+            <svg viewBox="0 0 120 120" width="110" height="110">
+              <defs><path id="circ" d="M 60,60 m -46,0 a 46,46 0 1,1 92,0 a 46,46 0 1,1 -92,0"/></defs>
+              <text><textPath href="#circ">SONRÍE MÉXICO · DESDE 2023 · SONRÍE MÉXICO ·</textPath></text>
+            </svg>
+            <img src="./assets/img/sonriecarita.png" alt="" width="34" height="34">
+          </div>
+        </div>
 
+        <div class="sm-shell sm-footer-cols">
+          <nav class="sm-footer-col" aria-label="Navegación del pie">
+            <h3>Navega</h3>
+            <a href="#home">Inicio</a>
+            <a href="#hacemos">Qué hacemos</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#dona">Dona</a>
+            <a href="./assets/cursolsm/index.html">Curso LSM</a>
+          </nav>
+          <div class="sm-footer-col">
+            <h3>Redes</h3>
+            <a href="#instagram">Instagram</a>
+            <a href="https://www.facebook.com/search/top?q=Sonrie%20Mx" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://chat.whatsapp.com/EVDJWwduoSY5h7GKEu5VW6" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+          <div class="sm-footer-col">
+            <h3>Base</h3>
+            <p>Cortázar, Guanajuato<br>México</p>
+            <p class="sm-script sm-script--rosa sm-footer-gracias">gracias por estar aquí</p>
+          </div>
+        </div>
 
+        <div class="sm-footer-gigante" aria-hidden="true">
+          <span data-lines>SONRÍE</span>
+        </div>
 
-    <!--==================== FOOTER ====================-->
-    <footer class="footer">
-      <div class="footer__container container grid">
-        <ul class="footer__links">
-          <li><a href="#about" class="footer__link"><b>Sobre Sonríe</b></a></li>
-          <li><a href="#projects" class="footer__link"><b>Proyectos</b></a></li>
-          <li><a href="#about" class="footer__link"><b>Únete</b></a></li>
-          <li><a href="#about" class="footer__link"><b>Misión</b></a></li>
-        </ul>
+        <div class="sm-shell sm-footer-legal">
+          <span>© <span id="anioFooter">2026</span> Sonríe México</span>
+          <span>Hecho por jóvenes como tú</span>
+        </div>
+      </footer>
 
-        <span class="footer__copy">
-          &#169; Hola amigos :)
-          <a href="">Sonríe </a>
-        </span>
-      </div>
-    </footer>
+    </div><!-- /zona-nueva -->
+
+    <!-- Cursor personalizado (solo escritorio, lo activa animaciones.js) -->
+    <div class="sm-cursor" id="cursor" aria-hidden="true"><span id="cursorText"></span></div>
 
     <!--========== SCROLL UP ==========-->
-    <a href="#" class="scrollup" id="scroll-up">
+    <a href="#" class="scrollup" id="scroll-up" aria-label="Volver arriba">
       <i class="ri-arrow-up-s-line"></i>
     </a>
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="./assets/js/scrollreveal.min.js"></script>
 
-    <!--=============== EMAIL JS ===============-->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!--=============== SCROLLREVEAL (hero conservado) ===============-->
+    <script src="./assets/js/scrollreveal.min.js" defer></script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <!--=============== GSAP + LENIS (rediseño) ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js" defer></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/animaciones.js" defer></script>
   </body>
 </html>
